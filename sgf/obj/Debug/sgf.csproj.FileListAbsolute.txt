@@ -45,3 +45,4 @@ C:\Git\sgf\sgf\obj\Debug\sgf.exe
 C:\Git\sgf\sgf\obj\Debug\sgf.pdb
 C:\Git\sgf\sgf\obj\Debug\sgf.Form1.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadFuncionario.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadCliente.resources

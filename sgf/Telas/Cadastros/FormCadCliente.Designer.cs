@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_endereco = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tb_telefone = new System.Windows.Forms.TextBox();
+            this.tb_cpf = new System.Windows.Forms.TextBox();
+            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.bt_editar = new System.Windows.Forms.Button();
+            this.bt_salvar = new System.Windows.Forms.Button();
+            this.bt_excluir = new System.Windows.Forms.Button();
+            this.dgv_cliente = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -54,13 +54,13 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "ID";
             // 
-            // textBox5
+            // tb_id
             // 
-            this.textBox5.Location = new System.Drawing.Point(14, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(75, 20);
-            this.textBox5.TabIndex = 43;
+            this.tb_id.Location = new System.Drawing.Point(14, 31);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
+            this.tb_id.Size = new System.Drawing.Size(75, 20);
+            this.tb_id.TabIndex = 43;
             // 
             // label4
             // 
@@ -71,12 +71,12 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "Endereço";
             // 
-            // textBox4
+            // tb_endereco
             // 
-            this.textBox4.Location = new System.Drawing.Point(14, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 20);
-            this.textBox4.TabIndex = 41;
+            this.tb_endereco.Location = new System.Drawing.Point(14, 187);
+            this.tb_endereco.Name = "tb_endereco";
+            this.tb_endereco.Size = new System.Drawing.Size(164, 20);
+            this.tb_endereco.TabIndex = 41;
             // 
             // label3
             // 
@@ -105,61 +105,65 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Nome";
             // 
-            // textBox3
+            // tb_telefone
             // 
-            this.textBox3.Location = new System.Drawing.Point(14, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 20);
-            this.textBox3.TabIndex = 37;
+            this.tb_telefone.Location = new System.Drawing.Point(14, 148);
+            this.tb_telefone.Name = "tb_telefone";
+            this.tb_telefone.Size = new System.Drawing.Size(164, 20);
+            this.tb_telefone.TabIndex = 37;
             // 
-            // textBox2
+            // tb_cpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(14, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 36;
+            this.tb_cpf.Location = new System.Drawing.Point(14, 109);
+            this.tb_cpf.Name = "tb_cpf";
+            this.tb_cpf.Size = new System.Drawing.Size(164, 20);
+            this.tb_cpf.TabIndex = 36;
             // 
-            // textBox1
+            // tb_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(14, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 35;
+            this.tb_nome.Location = new System.Drawing.Point(14, 70);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(164, 20);
+            this.tb_nome.TabIndex = 35;
             // 
-            // button3
+            // bt_editar
             // 
-            this.button3.Location = new System.Drawing.Point(184, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 25);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt_editar.Location = new System.Drawing.Point(184, 206);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(117, 25);
+            this.bt_editar.TabIndex = 34;
+            this.bt_editar.Text = "Editar";
+            this.bt_editar.UseVisualStyleBackColor = true;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
-            // button2
+            // bt_salvar
             // 
-            this.button2.Location = new System.Drawing.Point(673, 206);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 25);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_salvar.Location = new System.Drawing.Point(673, 206);
+            this.bt_salvar.Name = "bt_salvar";
+            this.bt_salvar.Size = new System.Drawing.Size(117, 25);
+            this.bt_salvar.TabIndex = 33;
+            this.bt_salvar.Text = "Salvar";
+            this.bt_salvar.UseVisualStyleBackColor = true;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // button1
+            // bt_excluir
             // 
-            this.button1.Location = new System.Drawing.Point(307, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 25);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bt_excluir.Location = new System.Drawing.Point(307, 206);
+            this.bt_excluir.Name = "bt_excluir";
+            this.bt_excluir.Size = new System.Drawing.Size(117, 25);
+            this.bt_excluir.TabIndex = 32;
+            this.bt_excluir.Text = "Excluir";
+            this.bt_excluir.UseVisualStyleBackColor = true;
+            this.bt_excluir.Click += new System.EventHandler(this.bt_excluir_Click);
             // 
-            // dataGridView1
+            // dgv_cliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 237);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 198);
-            this.dataGridView1.TabIndex = 31;
+            this.dgv_cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_cliente.Location = new System.Drawing.Point(14, 237);
+            this.dgv_cliente.Name = "dgv_cliente";
+            this.dgv_cliente.Size = new System.Drawing.Size(776, 198);
+            this.dgv_cliente.TabIndex = 31;
+            this.dgv_cliente.SelectionChanged += new System.EventHandler(this.dgv_cliente_SelectionChanged);
             // 
             // FormCadCliente
             // 
@@ -167,22 +171,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tb_endereco);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tb_telefone);
+            this.Controls.Add(this.tb_cpf);
+            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.bt_editar);
+            this.Controls.Add(this.bt_salvar);
+            this.Controls.Add(this.bt_excluir);
+            this.Controls.Add(this.dgv_cliente);
             this.Name = "FormCadCliente";
             this.Text = "FormCadCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormCadCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,18 +195,18 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_endereco;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox tb_telefone;
+        private System.Windows.Forms.TextBox tb_cpf;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.Button bt_editar;
+        private System.Windows.Forms.Button bt_salvar;
+        private System.Windows.Forms.Button bt_excluir;
+        private System.Windows.Forms.DataGridView dgv_cliente;
     }
 }
