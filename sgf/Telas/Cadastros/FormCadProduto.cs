@@ -108,6 +108,22 @@ namespace sgf.Telas.Cadastros
 
         private void bt_excluir_Click(object sender, EventArgs e)
         {
+            int id = int.Parse(tb_id.Text);
+            
+            Produto.ExcluirProduto(id);
+            tb_id.Clear();
+            tb_nome.Clear();
+            tb_valor.Clear();
+            tb_qtd.Clear();
+            tb_lote.Clear();
+
+            dgv_produto.DataSource = Produto.ListarProdutos();
+
+            dgv_produto.Columns["id_produto"].HeaderText = "ID";
+            dgv_produto.Columns["name_produto"].HeaderText = "Nome do Produto";
+            dgv_produto.Columns["valor_produto"].HeaderText = "Valor";
+            dgv_produto.Columns["qtd_produto"].HeaderText = "Quantidade";
+            dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
 
         }
     }

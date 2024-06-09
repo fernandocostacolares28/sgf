@@ -113,7 +113,7 @@ namespace sgf.Entidades
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "DELETE FROM Produtos WHERE id = @Id";
+                string query = "DELETE FROM Produto WHERE id_produto = @Id";
 
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
