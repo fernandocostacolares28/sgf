@@ -111,6 +111,7 @@ namespace sgf.Telas.Cadastros
             int id = int.Parse(tb_id.Text);
             
             Produto.ExcluirProduto(id);
+
             tb_id.Clear();
             tb_nome.Clear();
             tb_valor.Clear();

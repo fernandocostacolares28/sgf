@@ -154,6 +154,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Cadastros\FormCadFuncionario.resx">
+      <DependentUpon>FormCadFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\FormCadProduto.resx">
       <DependentUpon>FormCadProduto.cs</DependentUpon>
     </EmbeddedResource>

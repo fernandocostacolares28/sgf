@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_endereco = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tb_telefone = new System.Windows.Forms.TextBox();
+            this.tb_cpf = new System.Windows.Forms.TextBox();
+            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.bt_editar = new System.Windows.Forms.Button();
+            this.bt_salvar = new System.Windows.Forms.Button();
+            this.bt_excluir = new System.Windows.Forms.Button();
+            this.dgv_funcionario = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cb_funcao = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -56,13 +56,13 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "ID";
             // 
-            // textBox5
+            // tb_id
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(75, 20);
-            this.textBox5.TabIndex = 26;
+            this.tb_id.Location = new System.Drawing.Point(12, 31);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
+            this.tb_id.Size = new System.Drawing.Size(75, 20);
+            this.tb_id.TabIndex = 26;
             // 
             // label4
             // 
@@ -73,12 +73,12 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Endereço";
             // 
-            // textBox4
+            // tb_endereco
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 20);
-            this.textBox4.TabIndex = 24;
+            this.tb_endereco.Location = new System.Drawing.Point(12, 187);
+            this.tb_endereco.Name = "tb_endereco";
+            this.tb_endereco.Size = new System.Drawing.Size(164, 20);
+            this.tb_endereco.TabIndex = 24;
             // 
             // label3
             // 
@@ -108,61 +108,65 @@
             this.label1.Text = "Nome Funcionario";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox3
+            // tb_telefone
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 20);
-            this.textBox3.TabIndex = 20;
+            this.tb_telefone.Location = new System.Drawing.Point(12, 148);
+            this.tb_telefone.Name = "tb_telefone";
+            this.tb_telefone.Size = new System.Drawing.Size(164, 20);
+            this.tb_telefone.TabIndex = 20;
             // 
-            // textBox2
+            // tb_cpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 19;
+            this.tb_cpf.Location = new System.Drawing.Point(12, 109);
+            this.tb_cpf.Name = "tb_cpf";
+            this.tb_cpf.Size = new System.Drawing.Size(164, 20);
+            this.tb_cpf.TabIndex = 19;
             // 
-            // textBox1
+            // tb_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 18;
+            this.tb_nome.Location = new System.Drawing.Point(12, 70);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(164, 20);
+            this.tb_nome.TabIndex = 18;
             // 
-            // button3
+            // bt_editar
             // 
-            this.button3.Location = new System.Drawing.Point(182, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 25);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt_editar.Location = new System.Drawing.Point(182, 206);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(117, 25);
+            this.bt_editar.TabIndex = 17;
+            this.bt_editar.Text = "Editar";
+            this.bt_editar.UseVisualStyleBackColor = true;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
-            // button2
+            // bt_salvar
             // 
-            this.button2.Location = new System.Drawing.Point(671, 206);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 25);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_salvar.Location = new System.Drawing.Point(671, 206);
+            this.bt_salvar.Name = "bt_salvar";
+            this.bt_salvar.Size = new System.Drawing.Size(117, 25);
+            this.bt_salvar.TabIndex = 16;
+            this.bt_salvar.Text = "Salvar";
+            this.bt_salvar.UseVisualStyleBackColor = true;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // button1
+            // bt_excluir
             // 
-            this.button1.Location = new System.Drawing.Point(305, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 25);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bt_excluir.Location = new System.Drawing.Point(305, 206);
+            this.bt_excluir.Name = "bt_excluir";
+            this.bt_excluir.Size = new System.Drawing.Size(117, 25);
+            this.bt_excluir.TabIndex = 15;
+            this.bt_excluir.Text = "Excluir";
+            this.bt_excluir.UseVisualStyleBackColor = true;
+            this.bt_excluir.Click += new System.EventHandler(this.bt_excluir_Click);
             // 
-            // dataGridView1
+            // dgv_funcionario
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 237);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 198);
-            this.dataGridView1.TabIndex = 14;
+            this.dgv_funcionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_funcionario.Location = new System.Drawing.Point(12, 237);
+            this.dgv_funcionario.Name = "dgv_funcionario";
+            this.dgv_funcionario.Size = new System.Drawing.Size(776, 198);
+            this.dgv_funcionario.TabIndex = 14;
+            this.dgv_funcionario.SelectionChanged += new System.EventHandler(this.dgv_funcionario_SelectionChanged);
             // 
             // label6
             // 
@@ -173,42 +177,43 @@
             this.label6.TabIndex = 29;
             this.label6.Text = "Função";
             // 
-            // comboBox1
+            // cb_funcao
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb_funcao.FormattingEnabled = true;
+            this.cb_funcao.Items.AddRange(new object[] {
             "CEO",
             "Vendedor",
             "Auxiliar"});
-            this.comboBox1.Location = new System.Drawing.Point(182, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 30;
+            this.cb_funcao.Location = new System.Drawing.Point(182, 29);
+            this.cb_funcao.Name = "cb_funcao";
+            this.cb_funcao.Size = new System.Drawing.Size(121, 21);
+            this.cb_funcao.TabIndex = 30;
             // 
             // FormCadFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_funcao);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tb_endereco);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tb_telefone);
+            this.Controls.Add(this.tb_cpf);
+            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.bt_editar);
+            this.Controls.Add(this.bt_salvar);
+            this.Controls.Add(this.bt_excluir);
+            this.Controls.Add(this.dgv_funcionario);
             this.Name = "FormCadFuncionario";
             this.Text = "FormCadFuncionario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormCadFuncionario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,20 +222,20 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_endereco;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox tb_telefone;
+        private System.Windows.Forms.TextBox tb_cpf;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.Button bt_editar;
+        private System.Windows.Forms.Button bt_salvar;
+        private System.Windows.Forms.Button bt_excluir;
+        private System.Windows.Forms.DataGridView dgv_funcionario;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_funcao;
     }
 }

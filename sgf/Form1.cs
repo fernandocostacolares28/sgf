@@ -23,5 +23,11 @@ namespace sgf
             FormCadProduto produto = new FormCadProduto();
             produto.ShowDialog();
         }
+
+        private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadFuncionario funcionario = new FormCadFuncionario();
+            funcionario.ShowDialog();
+        }
     }
 }
