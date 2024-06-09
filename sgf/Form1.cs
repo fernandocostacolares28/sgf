@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sgf.Telas.Cadastros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace sgf
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadProduto produto = new FormCadProduto();
+            produto.ShowDialog();
         }
     }
 }

@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.bt_excluir = new System.Windows.Forms.Button();
+            this.bt_salvar = new System.Windows.Forms.Button();
+            this.bt_editar = new System.Windows.Forms.Button();
+            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.tb_lote = new System.Windows.Forms.TextBox();
+            this.tb_qtd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,53 +53,54 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 198);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // bt_excluir
             // 
-            this.button1.Location = new System.Drawing.Point(305, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bt_excluir.Location = new System.Drawing.Point(305, 200);
+            this.bt_excluir.Name = "bt_excluir";
+            this.bt_excluir.Size = new System.Drawing.Size(117, 25);
+            this.bt_excluir.TabIndex = 1;
+            this.bt_excluir.Text = "Excluir";
+            this.bt_excluir.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bt_salvar
             // 
-            this.button2.Location = new System.Drawing.Point(671, 200);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 25);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_salvar.Location = new System.Drawing.Point(671, 200);
+            this.bt_salvar.Name = "bt_salvar";
+            this.bt_salvar.Size = new System.Drawing.Size(117, 25);
+            this.bt_salvar.TabIndex = 2;
+            this.bt_salvar.Text = "Salvar";
+            this.bt_salvar.UseVisualStyleBackColor = true;
+            this.bt_salvar.Click += new System.EventHandler(this.bt_salvar_Click);
             // 
-            // button3
+            // bt_editar
             // 
-            this.button3.Location = new System.Drawing.Point(182, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 25);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt_editar.Location = new System.Drawing.Point(182, 200);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(117, 25);
+            this.bt_editar.TabIndex = 3;
+            this.bt_editar.Text = "Editar";
+            this.bt_editar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tb_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 4;
+            this.tb_nome.Location = new System.Drawing.Point(12, 64);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(164, 20);
+            this.tb_nome.TabIndex = 4;
             // 
-            // textBox2
+            // tb_lote
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 5;
+            this.tb_lote.Location = new System.Drawing.Point(12, 103);
+            this.tb_lote.Name = "tb_lote";
+            this.tb_lote.Size = new System.Drawing.Size(164, 20);
+            this.tb_lote.TabIndex = 5;
             // 
-            // textBox3
+            // tb_qtd
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 20);
-            this.textBox3.TabIndex = 6;
+            this.tb_qtd.Location = new System.Drawing.Point(12, 142);
+            this.tb_qtd.Name = "tb_qtd";
+            this.tb_qtd.Size = new System.Drawing.Size(164, 20);
+            this.tb_qtd.TabIndex = 6;
             // 
             // label1
             // 
@@ -130,12 +131,12 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Quantidade";
             // 
-            // textBox4
+            // tb_valor
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 181);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 20);
-            this.textBox4.TabIndex = 10;
+            this.tb_valor.Location = new System.Drawing.Point(12, 181);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(164, 20);
+            this.tb_valor.TabIndex = 10;
             // 
             // label4
             // 
@@ -155,13 +156,13 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "ID";
             // 
-            // textBox5
+            // tb_id
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 25);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(75, 20);
-            this.textBox5.TabIndex = 12;
+            this.tb_id.Location = new System.Drawing.Point(12, 25);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
+            this.tb_id.Size = new System.Drawing.Size(75, 20);
+            this.tb_id.TabIndex = 12;
             // 
             // FormCadProduto
             // 
@@ -169,18 +170,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tb_qtd);
+            this.Controls.Add(this.tb_lote);
+            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.bt_editar);
+            this.Controls.Add(this.bt_salvar);
+            this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormCadProduto";
             this.Text = "FormCadProduto";
@@ -193,18 +194,18 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button bt_excluir;
+        private System.Windows.Forms.Button bt_salvar;
+        private System.Windows.Forms.Button bt_editar;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.TextBox tb_lote;
+        private System.Windows.Forms.TextBox tb_qtd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_id;
     }
 }

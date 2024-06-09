@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace sgf.Entidades
 {
@@ -11,40 +12,49 @@ namespace sgf.Entidades
     {
         public int Id { get; set; }
         public string NomeProduto { get; set; }
-        public string Lote { get; set; }
-        public int Quantidade { get; set; }
         public float Valor { get; set; }
+        public int Quantidade { get; set; }
+        public string Lote { get; set; }
 
-        // Construtor
-        public Produto(string nomeProduto, string lote, int quantidade, float valor)
+        // Construtor 
+        public Produto(int id, string nomeProduto, float valor, int quantidade, string lote)
         {
+            Id = id;
             NomeProduto = nomeProduto;
-            Lote = lote;
-            Quantidade = quantidade;
             Valor = valor;
+            Quantidade = quantidade;
+            Lote = lote;
         }
 
+        public Produto(string nomeProduto, float valor, int quantidade, string lote)
+        {
+            NomeProduto = nomeProduto;
+            Valor = valor;
+            Quantidade = quantidade;
+            Lote = lote;
+        }
 
         // Método para listar todos os produtos
         public static List<Produto> ListarProdutos()
         {
             var produtos = new List<Produto>();
 
-            using (SqlConnection connection = new SqlConnection(DBConnection.GetConnectionString()))
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "SELECT Id, NomeProduto, Lote, Quantidade, Valor FROM Produtos";
+                string query = "SELECT id_produto, name_produto, valor_produto, qtd_produto, lote_produto FROM PRODUTO";
 
-                SqlCommand command = new SqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, connection);
                 connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
+                MySqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        (string)reader["NomeProduto"],
-                        (string)reader["Lote"],
+                        (int)reader["id"],
+                        (string)reader["Nome Produto"],
+                        (float)reader["Valor"],
                         (int)reader["Quantidade"],
-                        (float)reader["Valor"]
+                        (string)reader["Lote"]
                     );
                     produtos.Add(produto);
                 }
@@ -56,15 +66,15 @@ namespace sgf.Entidades
         // Método para salvar um novo produto
         public static void SalvarProduto(Produto produto)
         {
-            using (SqlConnection connection = new SqlConnection(DBConnection.GetConnectionString()))
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "INSERT INTO Produtos (NomeProduto, Lote, Quantidade, Valor) VALUES (@NomeProduto, @Lote, @Quantidade, @Valor)";
+                string query = "INSERT INTO Produto (name_produto, valor_produto, qtd_produto, lote_produto) VALUES (@NomeProduto, @Valor, @Quantidade, @Lote)";
 
-                SqlCommand command = new SqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@NomeProduto", produto.NomeProduto);
-                command.Parameters.AddWithValue("@Lote", produto.Lote);
-                command.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
                 command.Parameters.AddWithValue("@Valor", produto.Valor);
+                command.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
+                command.Parameters.AddWithValue("@Lote", produto.Lote);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -74,16 +84,16 @@ namespace sgf.Entidades
         // Método para editar um produto
         public static void EditarProduto(Produto produto)
         {
-            using (SqlConnection connection = new SqlConnection(DBConnection.GetConnectionString()))
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "UPDATE Produtos SET NomeProduto = @NomeProduto, Lote = @Lote, Quantidade = @Quantidade, Valor = @Valor WHERE Id = @Id";
+                string query = "UPDATE Produtos SET name_produto = @NomeProduto, valor_produto = @Valor, qtd_produto = @Quantidade, lote_produto = @Lote WHERE id = @Id";
 
-                SqlCommand command = new SqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", produto.Id);
                 command.Parameters.AddWithValue("@NomeProduto", produto.NomeProduto);
-                command.Parameters.AddWithValue("@Lote", produto.Lote);
-                command.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
                 command.Parameters.AddWithValue("@Valor", produto.Valor);
+                command.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
+                command.Parameters.AddWithValue("@Lote", produto.Lote);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -93,11 +103,11 @@ namespace sgf.Entidades
         // Método para excluir um produto
         public static void ExcluirProduto(int id)
         {
-            using (SqlConnection connection = new SqlConnection(DBConnection.GetConnectionString()))
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "DELETE FROM Produtos WHERE Id = @Id";
+                string query = "DELETE FROM Produtos WHERE id = @Id";
 
-                SqlCommand command = new SqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
 
                 connection.Open();
@@ -110,10 +120,11 @@ namespace sgf.Entidades
         {
             Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Nome do Produto: {NomeProduto}");
-            Console.WriteLine($"Lote: {Lote}");
+            Console.WriteLine($"Valor: {Valor}");
             Console.WriteLine($"Quantidade: {Quantidade}");
-            Console.WriteLine($"Valor: {Valor:C}");
+            Console.WriteLine($"Lote: {Lote}");
         }
     }
 }
+
 

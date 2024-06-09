@@ -16,7 +16,9 @@ namespace sgf
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Entidades.DBConnection.TestarConexao();
             Application.Run(new Form1());
+            
         }
     }
 }
