@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,11 +70,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormCadProduto.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadProduto.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAASwG4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T20:12:05.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -103,33 +112,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormCadProduto.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
-              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadProduto.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
-              "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAtwCwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:12:05.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
               "RelativeDocumentMoniker": "Entidades\\Produto.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
               "RelativeToolTip": "Entidades\\Produto.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAwEwAAABHAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAiwFwAAACoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T17:40:36.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -137,12 +133,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T18:31:27.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T18:31:27.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\DBConnection.cs",
               "RelativeDocumentMoniker": "Entidades\\DBConnection.cs",
@@ -150,8 +145,7 @@
               "RelativeToolTip": "Entidades\\DBConnection.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:57:45.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T17:57:45.613Z"
             },
             {
               "$type": "Document",
@@ -163,8 +157,7 @@
               "RelativeToolTip": "Entidades\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:39:59.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T17:39:59.744Z"
             },
             {
               "$type": "Document",
@@ -176,8 +169,7 @@
               "RelativeToolTip": "Entidades\\Fornecedor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:39:48.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T17:39:48.722Z"
             },
             {
               "$type": "Document",
@@ -189,12 +181,11 @@
               "RelativeToolTip": "Entidades\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:39:30.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T17:39:30.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "FormCadProduto.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadProduto.cs",
@@ -203,6 +194,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T17:22:39.995Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -214,8 +209,7 @@
               "RelativeToolTip": "Entidades\\Funcionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:40:17.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T17:40:17.735Z"
             },
             {
               "$type": "Document",
@@ -226,8 +220,7 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFuncionario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:38:47.653Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T17:38:47.653Z"
             },
             {
               "$type": "Document",
@@ -238,8 +231,7 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:38:46.616Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T17:38:46.616Z"
             },
             {
               "$type": "Document",
@@ -250,8 +242,7 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadCliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:38:45.237Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T17:38:45.237Z"
             },
             {
               "$type": "Document",
@@ -262,8 +253,7 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T17:28:21.101Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T17:28:21.101Z"
             }
           ]
         }

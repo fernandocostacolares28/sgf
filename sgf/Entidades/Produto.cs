@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -35,32 +36,30 @@ namespace sgf.Entidades
         }
 
         // Método para listar todos os produtos
-        public static List<Produto> ListarProdutos()
+        public static DataTable ListarProdutos()
         {
-            var produtos = new List<Produto>();
-
+            DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "SELECT id_produto, name_produto, valor_produto, qtd_produto, lote_produto FROM PRODUTO";
-
-                MySqlCommand command = new MySqlCommand(query, connection);
+                // Abre a conexão
                 connection.Open();
-                MySqlDataReader reader = command.ExecuteReader();
 
-                while (reader.Read())
+                // Define a consulta SQL
+                string query = "SELECT * FROM Produto";
+
+                // Cria um comando para executar a consulta
+                using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    Produto produto = new Produto(
-                        (int)reader["id"],
-                        (string)reader["Nome Produto"],
-                        (float)reader["Valor"],
-                        (int)reader["Quantidade"],
-                        (string)reader["Lote"]
-                    );
-                    produtos.Add(produto);
+                    // Cria um adaptador de dados MySQL
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        // Preenche o DataTable com os dados da consulta
+                        adapter.Fill(dataTable);
+                    }
                 }
             }
 
-            return produtos;
+            return dataTable;
         }
 
         // Método para salvar um novo produto
@@ -81,22 +80,31 @@ namespace sgf.Entidades
             }
         }
 
-        // Método para editar um produto
-        public static void EditarProduto(Produto produto)
+        public static void EditarProduto(int id, string nomeProduto, float valor, int quantidade, string lote)
         {
+
+            // Cria uma conexão com o banco de dados
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "UPDATE Produtos SET name_produto = @NomeProduto, valor_produto = @Valor, qtd_produto = @Quantidade, lote_produto = @Lote WHERE id = @Id";
-
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", produto.Id);
-                command.Parameters.AddWithValue("@NomeProduto", produto.NomeProduto);
-                command.Parameters.AddWithValue("@Valor", produto.Valor);
-                command.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
-                command.Parameters.AddWithValue("@Lote", produto.Lote);
-
+                // Abre a conexão
                 connection.Open();
-                command.ExecuteNonQuery();
+
+                // Define a consulta SQL de atualização
+                string query = "UPDATE Produto SET name_produto = @NomeProduto, valor_produto = @Valor, qtd_produto = @Quantidade, lote_produto = @lote WHERE id_produto = @Id";
+
+                // Cria um comando para executar a consulta
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    // Define os parâmetros da consulta
+                    command.Parameters.AddWithValue("@NomeProduto", nomeProduto);
+                    command.Parameters.AddWithValue("@Lote", lote);
+                    command.Parameters.AddWithValue("@Quantidade", quantidade);
+                    command.Parameters.AddWithValue("@Valor", valor);
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    // Executa a consulta
+                    command.ExecuteNonQuery();
+                }
             }
         }
 

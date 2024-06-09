@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_produto = new System.Windows.Forms.DataGridView();
             this.bt_excluir = new System.Windows.Forms.Button();
             this.bt_salvar = new System.Windows.Forms.Button();
             this.bt_editar = new System.Windows.Forms.Button();
@@ -42,16 +42,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_produto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 231);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 198);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_produto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_produto.Location = new System.Drawing.Point(12, 231);
+            this.dgv_produto.Name = "dgv_produto";
+            this.dgv_produto.Size = new System.Drawing.Size(776, 198);
+            this.dgv_produto.TabIndex = 0;
+            this.dgv_produto.SelectionChanged += new System.EventHandler(this.dgv_produto_SelectionChanged);
             // 
             // bt_excluir
             // 
@@ -61,6 +62,7 @@
             this.bt_excluir.TabIndex = 1;
             this.bt_excluir.Text = "Excluir";
             this.bt_excluir.UseVisualStyleBackColor = true;
+            this.bt_excluir.Click += new System.EventHandler(this.bt_excluir_Click);
             // 
             // bt_salvar
             // 
@@ -80,6 +82,7 @@
             this.bt_editar.TabIndex = 3;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = true;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // tb_nome
             // 
@@ -182,10 +185,11 @@
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_produto);
             this.Name = "FormCadProduto";
             this.Text = "FormCadProduto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormCadProduto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +197,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_produto;
         private System.Windows.Forms.Button bt_excluir;
         private System.Windows.Forms.Button bt_salvar;
         private System.Windows.Forms.Button bt_editar;
