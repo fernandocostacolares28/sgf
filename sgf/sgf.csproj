@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\DBConnection.cs" />
+    <Compile Include="Entidades\Fornecedor.cs" />
+    <Compile Include="Entidades\Funcionario.cs" />
+    <Compile Include="Entidades\Produto.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +118,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
