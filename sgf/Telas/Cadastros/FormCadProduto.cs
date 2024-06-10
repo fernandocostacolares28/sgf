@@ -127,5 +127,10 @@ namespace sgf.Telas.Cadastros
             dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadCliente));
             this.label5 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,11 @@
             this.bt_salvar = new System.Windows.Forms.Button();
             this.bt_excluir = new System.Windows.Forms.Button();
             this.dgv_cliente = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -161,15 +166,45 @@
             this.dgv_cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_cliente.Location = new System.Drawing.Point(14, 237);
             this.dgv_cliente.Name = "dgv_cliente";
-            this.dgv_cliente.Size = new System.Drawing.Size(776, 198);
+            this.dgv_cliente.Size = new System.Drawing.Size(776, 180);
             this.dgv_cliente.TabIndex = 31;
             this.dgv_cliente.SelectionChanged += new System.EventHandler(this.dgv_cliente_SelectionChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(1, 423);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(799, 23);
+            this.panel1.TabIndex = 46;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(662, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "by Fernando Costa Colares";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "V 2.0 - 2024";
             // 
             // FormCadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label4);
@@ -184,10 +219,13 @@
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dgv_cliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadCliente";
             this.Text = "FormCadCliente";
             this.Load += new System.EventHandler(this.FormCadCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +246,8 @@
         private System.Windows.Forms.Button bt_salvar;
         private System.Windows.Forms.Button bt_excluir;
         private System.Windows.Forms.DataGridView dgv_cliente;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }

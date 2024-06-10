@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadFuncionario));
             this.label5 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,11 @@
             this.dgv_funcionario = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.cb_funcao = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -164,7 +169,7 @@
             this.dgv_funcionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_funcionario.Location = new System.Drawing.Point(12, 237);
             this.dgv_funcionario.Name = "dgv_funcionario";
-            this.dgv_funcionario.Size = new System.Drawing.Size(776, 198);
+            this.dgv_funcionario.Size = new System.Drawing.Size(776, 173);
             this.dgv_funcionario.TabIndex = 14;
             this.dgv_funcionario.SelectionChanged += new System.EventHandler(this.dgv_funcionario_SelectionChanged);
             // 
@@ -189,11 +194,41 @@
             this.cb_funcao.Size = new System.Drawing.Size(121, 21);
             this.cb_funcao.TabIndex = 30;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(1, 428);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(799, 22);
+            this.panel1.TabIndex = 46;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(662, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "by Fernando Costa Colares";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "V 2.0 - 2024";
+            // 
             // FormCadFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cb_funcao);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -210,10 +245,13 @@
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dgv_funcionario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadFuncionario";
             this.Text = "FormCadFuncionario";
             this.Load += new System.EventHandler(this.FormCadFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +275,8 @@
         private System.Windows.Forms.DataGridView dgv_funcionario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cb_funcao;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
