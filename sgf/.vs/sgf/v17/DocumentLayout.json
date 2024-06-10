@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Git\\sgf\\sgf\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -19,19 +23,15 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -81,25 +81,24 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:07:19.886Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-10T03:07:19.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "FormCadUsuario.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadUsuario.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadUsuario.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAMwGQAAAAlAAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAewIkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T01:13:18.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormCadUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadUsuario.cs",
@@ -111,31 +110,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormCadCliente.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadCliente.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadCliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:34:45.887Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T23:34:45.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormCadFuncionario.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFuncionario.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFuncionario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T22:35:55.097Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T22:35:55.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -154,8 +151,7 @@
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:08:03.443Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-10T03:08:03.443Z"
             },
             {
               "$type": "Document",
@@ -167,8 +163,7 @@
               "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs",
               "ViewState": "AQIAAHMAAAAAAAAAAAD4v4QAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T03:16:54.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T03:16:54.268Z"
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFuncionario.cs",
               "ViewState": "AQIAAEoAAAAAAAAAAAAhwFoAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:00:50.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T23:00:50.361Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAlwC8AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:20:05.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T23:20:05.587Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "Telas\\Cadastros\\FormCadCliente.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAEwGcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T23:36:38.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T23:36:38.286Z"
             }
           ]
         }

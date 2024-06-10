@@ -135,7 +135,7 @@ namespace sgf.Telas.Cadastros
             dgv_usuario.Columns["name_usuario"].HeaderText = "User";
             dgv_usuario.Columns["password_usuario"].HeaderText = "Password";
             dgv_usuario.Columns["lvl_usuario"].HeaderText = "Level";
-            dgv_usuario.Columns["id_funcionario"].HeaderText = "Funcionario";
+            dgv_usuario.Columns["name_funcionario"].HeaderText = "Funcionario";
 
         }
 
