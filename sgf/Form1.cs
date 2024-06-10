@@ -35,5 +35,17 @@ namespace sgf
             FormCadCliente cliente = new FormCadCliente();
             cliente.ShowDialog();
         }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadFornecedor fornecedor = new FormCadFornecedor();
+            fornecedor.ShowDialog();
+        }
+
+        private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadUsuario usuario = new FormCadUsuario();
+            usuario.ShowDialog();
+        }
     }
 }

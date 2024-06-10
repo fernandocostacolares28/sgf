@@ -157,6 +157,9 @@
     <EmbeddedResource Include="Telas\Cadastros\FormCadCliente.resx">
       <DependentUpon>FormCadCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastros\FormCadFornecedor.resx">
+      <DependentUpon>FormCadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\FormCadFuncionario.resx">
       <DependentUpon>FormCadFuncionario.cs</DependentUpon>
     </EmbeddedResource>
