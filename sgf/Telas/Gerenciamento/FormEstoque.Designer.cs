@@ -110,14 +110,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_lote);
             this.Controls.Add(this.dgv_produto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormEstoque";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estoque";
             this.Load += new System.EventHandler(this.FormEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).EndInit();

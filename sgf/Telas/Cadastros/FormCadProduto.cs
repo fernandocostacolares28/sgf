@@ -1,4 +1,5 @@
 ﻿using sgf.Entidades;
+using sgf.Telas.Gerenciamento;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -136,6 +137,12 @@ namespace sgf.Telas.Cadastros
         private void dgv_produto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void estoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEstoque estoque = new FormEstoque();
+            estoque.ShowDialog();
         }
     }
 }

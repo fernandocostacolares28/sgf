@@ -136,7 +136,7 @@
             // 
             // bt_editar
             // 
-            this.bt_editar.Location = new System.Drawing.Point(182, 206);
+            this.bt_editar.Location = new System.Drawing.Point(186, 206);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(117, 25);
             this.bt_editar.TabIndex = 17;
@@ -246,8 +246,11 @@
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dgv_funcionario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormCadFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Funcionário";
             this.Load += new System.EventHandler(this.FormCadFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).EndInit();

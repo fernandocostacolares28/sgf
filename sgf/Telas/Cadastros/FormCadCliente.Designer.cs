@@ -220,8 +220,11 @@
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dgv_cliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormCadCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Cliente";
             this.Load += new System.EventHandler(this.FormCadCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).EndInit();

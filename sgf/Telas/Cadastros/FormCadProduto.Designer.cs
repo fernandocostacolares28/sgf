@@ -46,8 +46,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).BeginInit();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv_produto
@@ -93,21 +96,21 @@
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(12, 64);
+            this.tb_nome.Location = new System.Drawing.Point(12, 85);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(164, 20);
             this.tb_nome.TabIndex = 4;
             // 
             // tb_lote
             // 
-            this.tb_lote.Location = new System.Drawing.Point(12, 103);
+            this.tb_lote.Location = new System.Drawing.Point(12, 124);
             this.tb_lote.Name = "tb_lote";
             this.tb_lote.Size = new System.Drawing.Size(164, 20);
             this.tb_lote.TabIndex = 5;
             // 
             // tb_qtd
             // 
-            this.tb_qtd.Location = new System.Drawing.Point(12, 142);
+            this.tb_qtd.Location = new System.Drawing.Point(12, 163);
             this.tb_qtd.Name = "tb_qtd";
             this.tb_qtd.Size = new System.Drawing.Size(164, 20);
             this.tb_qtd.TabIndex = 6;
@@ -115,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 48);
+            this.label1.Location = new System.Drawing.Point(12, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 7;
@@ -125,7 +128,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 87);
+            this.label2.Location = new System.Drawing.Point(12, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 8;
@@ -135,7 +138,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 126);
+            this.label3.Location = new System.Drawing.Point(12, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 9;
@@ -143,7 +146,7 @@
             // 
             // tb_valor
             // 
-            this.tb_valor.Location = new System.Drawing.Point(12, 181);
+            this.tb_valor.Location = new System.Drawing.Point(12, 202);
             this.tb_valor.Name = "tb_valor";
             this.tb_valor.Size = new System.Drawing.Size(164, 20);
             this.tb_valor.TabIndex = 10;
@@ -151,7 +154,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 165);
+            this.label4.Location = new System.Drawing.Point(12, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 11;
@@ -160,7 +163,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Location = new System.Drawing.Point(12, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 13;
@@ -168,7 +171,7 @@
             // 
             // tb_id
             // 
-            this.tb_id.Location = new System.Drawing.Point(12, 25);
+            this.tb_id.Location = new System.Drawing.Point(12, 46);
             this.tb_id.Name = "tb_id";
             this.tb_id.ReadOnly = true;
             this.tb_id.Size = new System.Drawing.Size(75, 20);
@@ -204,6 +207,23 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "V 2.0 - 2024";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.estoqueToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 34;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // estoqueToolStripMenuItem
+            // 
+            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.estoqueToolStripMenuItem.Text = "Estoque";
+            this.estoqueToolStripMenuItem.Click += new System.EventHandler(this.estoqueToolStripMenuItem_Click);
+            // 
             // FormCadProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,13 +244,20 @@
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.dgv_produto);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "FormCadProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Produto";
             this.Load += new System.EventHandler(this.FormCadProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +282,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
     }
 }
