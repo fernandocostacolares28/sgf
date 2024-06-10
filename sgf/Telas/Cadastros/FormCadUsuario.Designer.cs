@@ -45,8 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tb_funcionario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -142,6 +142,8 @@
             // 
             // dgv_usuario
             // 
+            this.dgv_usuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_usuario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dgv_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_usuario.Location = new System.Drawing.Point(12, 237);
             this.dgv_usuario.Name = "dgv_usuario";
@@ -200,15 +202,6 @@
             this.panel1.Size = new System.Drawing.Size(799, 27);
             this.panel1.TabIndex = 32;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "V 2.0 - 2024";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -217,6 +210,15 @@
             this.label7.Size = new System.Drawing.Size(134, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "by Fernando Costa Colares";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "V 2.0 - 2024";
             // 
             // FormCadUsuario
             // 
@@ -241,7 +243,7 @@
             this.Controls.Add(this.dgv_usuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadUsuario";
-            this.Text = "FormCadUsuario";
+            this.Text = "Cadastro Usuário";
             this.Load += new System.EventHandler(this.FormCadUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).EndInit();
             this.panel1.ResumeLayout(false);

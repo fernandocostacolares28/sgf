@@ -166,6 +166,7 @@
             // 
             // dgv_funcionario
             // 
+            this.dgv_funcionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_funcionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_funcionario.Location = new System.Drawing.Point(12, 237);
             this.dgv_funcionario.Name = "dgv_funcionario";
@@ -247,7 +248,7 @@
             this.Controls.Add(this.dgv_funcionario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadFuncionario";
-            this.Text = "FormCadFuncionario";
+            this.Text = "Cadastro Funcionário";
             this.Load += new System.EventHandler(this.FormCadFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_funcionario)).EndInit();
             this.panel1.ResumeLayout(false);

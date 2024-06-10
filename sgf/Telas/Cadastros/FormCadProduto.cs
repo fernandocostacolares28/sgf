@@ -132,5 +132,10 @@ namespace sgf.Telas.Cadastros
         {
 
         }
+
+        private void dgv_produto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

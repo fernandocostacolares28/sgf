@@ -1,4 +1,5 @@
 ﻿using sgf.Telas.Cadastros;
+using sgf.Telas.Gerenciamento;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,12 @@ namespace sgf
         {
             FormCadUsuario usuario = new FormCadUsuario();
             usuario.ShowDialog();
+        }
+
+        private void estoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEstoque estoque = new FormEstoque();
+            estoque.ShowDialog();
         }
     }
 }

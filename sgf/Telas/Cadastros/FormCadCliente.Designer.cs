@@ -163,6 +163,7 @@
             // 
             // dgv_cliente
             // 
+            this.dgv_cliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_cliente.Location = new System.Drawing.Point(14, 237);
             this.dgv_cliente.Name = "dgv_cliente";
@@ -221,7 +222,7 @@
             this.Controls.Add(this.dgv_cliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadCliente";
-            this.Text = "FormCadCliente";
+            this.Text = "Cadastro Cliente";
             this.Load += new System.EventHandler(this.FormCadCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controle\Estoque.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\DBConnection.cs" />
     <Compile Include="Entidades\Fornecedor.cs" />
@@ -142,6 +143,12 @@
     <Compile Include="Telas\Cadastros\FormCadUsuario.Designer.cs">
       <DependentUpon>FormCadUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Gerenciamento\FormEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Gerenciamento\FormEstoque.Designer.cs">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\FormCadUsuario.resx">
       <DependentUpon>FormCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -163,6 +163,7 @@
             // 
             // dgv_fornecedor
             // 
+            this.dgv_fornecedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_fornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_fornecedor.Location = new System.Drawing.Point(14, 237);
             this.dgv_fornecedor.Name = "dgv_fornecedor";
@@ -221,7 +222,7 @@
             this.Controls.Add(this.dgv_fornecedor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadFornecedor";
-            this.Text = "FormCadFornecedor";
+            this.Text = "Cadastro Fornecedor";
             this.Load += new System.EventHandler(this.FormCadFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fornecedor)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -52,11 +52,13 @@
             // 
             // dgv_produto
             // 
+            this.dgv_produto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_produto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_produto.Location = new System.Drawing.Point(12, 231);
             this.dgv_produto.Name = "dgv_produto";
             this.dgv_produto.Size = new System.Drawing.Size(776, 191);
             this.dgv_produto.TabIndex = 0;
+            this.dgv_produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_produto_CellContentClick);
             this.dgv_produto.SelectionChanged += new System.EventHandler(this.dgv_produto_SelectionChanged);
             // 
             // bt_excluir
@@ -224,7 +226,7 @@
             this.Controls.Add(this.dgv_produto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadProduto";
-            this.Text = "FormCadProduto";
+            this.Text = "Cadastro Produto";
             this.Load += new System.EventHandler(this.FormCadProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).EndInit();
             this.panel1.ResumeLayout(false);
