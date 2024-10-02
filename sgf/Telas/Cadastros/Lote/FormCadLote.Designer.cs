@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadLote));
+            this.DGVLote = new System.Windows.Forms.DataGridView();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btView = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -45,55 +46,55 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btAdicionar = new System.Windows.Forms.Button();
+            this.btRemover = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CBativo = new System.Windows.Forms.CheckBox();
+            this.CBdesativado = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVLote)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DGVLote
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 347);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.DGVLote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVLote.Location = new System.Drawing.Point(12, 347);
+            this.DGVLote.Name = "DGVLote";
+            this.DGVLote.Size = new System.Drawing.Size(776, 150);
+            this.DGVLote.TabIndex = 0;
             // 
-            // button1
+            // btSalvar
             // 
-            this.button1.Location = new System.Drawing.Point(691, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btSalvar.Location = new System.Drawing.Point(691, 318);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btSalvar.TabIndex = 1;
+            this.btSalvar.Text = "Salvar";
+            this.btSalvar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btExcluir
             // 
-            this.button2.Location = new System.Drawing.Point(497, 318);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btExcluir.Location = new System.Drawing.Point(497, 318);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btExcluir.TabIndex = 2;
+            this.btExcluir.Text = "Excluir";
+            this.btExcluir.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btView
             // 
-            this.button3.Location = new System.Drawing.Point(591, 318);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btView.Location = new System.Drawing.Point(591, 318);
+            this.btView.Name = "btView";
+            this.btView.Size = new System.Drawing.Size(75, 23);
+            this.btView.TabIndex = 3;
+            this.btView.Text = "Visualizar";
+            this.btView.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(281, 72);
+            this.listBox1.Location = new System.Drawing.Point(229, 56);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(210, 212);
             this.listBox1.TabIndex = 4;
@@ -102,7 +103,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(581, 72);
+            this.listBox2.Location = new System.Drawing.Point(529, 56);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(217, 212);
             this.listBox2.TabIndex = 5;
@@ -117,14 +118,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 140);
+            this.textBox1.Location = new System.Drawing.Point(14, 108);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 88);
+            this.textBox2.Location = new System.Drawing.Point(12, 69);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 8;
@@ -148,7 +149,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 124);
+            this.label2.Location = new System.Drawing.Point(10, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 11;
@@ -176,7 +177,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 72);
+            this.label5.Location = new System.Drawing.Point(10, 53);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 14;
@@ -185,7 +186,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(278, 56);
+            this.label6.Location = new System.Drawing.Point(226, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 13);
             this.label6.TabIndex = 15;
@@ -194,33 +195,33 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(578, 56);
+            this.label7.Location = new System.Drawing.Point(526, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 16;
             this.label7.Text = "Produtos Lotes";
             // 
-            // button4
+            // btAdicionar
             // 
-            this.button4.Location = new System.Drawing.Point(497, 137);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Adicionar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btAdicionar.Location = new System.Drawing.Point(445, 121);
+            this.btAdicionar.Name = "btAdicionar";
+            this.btAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btAdicionar.TabIndex = 17;
+            this.btAdicionar.Text = "Adicionar";
+            this.btAdicionar.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btRemover
             // 
-            this.button5.Location = new System.Drawing.Point(497, 171);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Remover";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btRemover.Location = new System.Drawing.Point(445, 155);
+            this.btRemover.Name = "btRemover";
+            this.btRemover.Size = new System.Drawing.Size(75, 23);
+            this.btRemover.TabIndex = 18;
+            this.btRemover.Text = "Remover";
+            this.btRemover.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(497, 111);
+            this.textBox4.Location = new System.Drawing.Point(445, 95);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(75, 20);
             this.textBox4.TabIndex = 19;
@@ -228,7 +229,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(494, 91);
+            this.label8.Location = new System.Drawing.Point(442, 75);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 13);
             this.label8.TabIndex = 20;
@@ -244,38 +245,38 @@
             this.label9.Text = "Status";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // checkBox1
+            // CBativo
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 287);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(50, 17);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "Ativo";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CBativo.AutoSize = true;
+            this.CBativo.Location = new System.Drawing.Point(15, 287);
+            this.CBativo.Name = "CBativo";
+            this.CBativo.Size = new System.Drawing.Size(50, 17);
+            this.CBativo.TabIndex = 22;
+            this.CBativo.Text = "Ativo";
+            this.CBativo.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // CBdesativado
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(71, 287);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "Desativado";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.CBdesativado.AutoSize = true;
+            this.CBdesativado.Location = new System.Drawing.Point(71, 287);
+            this.CBdesativado.Name = "CBdesativado";
+            this.CBdesativado.Size = new System.Drawing.Size(80, 17);
+            this.CBdesativado.TabIndex = 23;
+            this.CBdesativado.Text = "Desativado";
+            this.CBdesativado.UseVisualStyleBackColor = true;
             // 
             // FormCadLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 509);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.CBdesativado);
+            this.Controls.Add(this.CBativo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btRemover);
+            this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -289,13 +290,14 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btView);
+            this.Controls.Add(this.btExcluir);
+            this.Controls.Add(this.btSalvar);
+            this.Controls.Add(this.DGVLote);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadLote";
             this.Text = "FormCadLote";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVLote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,10 +305,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView DGVLote;
+        private System.Windows.Forms.Button btSalvar;
+        private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.Button btView;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -320,12 +322,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btAdicionar;
+        private System.Windows.Forms.Button btRemover;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox CBativo;
+        private System.Windows.Forms.CheckBox CBdesativado;
     }
 }
