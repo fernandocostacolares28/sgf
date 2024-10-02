@@ -272,7 +272,7 @@
             this.loteToolStripMenuItem.Name = "loteToolStripMenuItem";
             this.loteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loteToolStripMenuItem.Text = "Lote";
-            this.loteToolStripMenuItem.Click += new System.EventHandler(this.loteToolStripMenuItem_Click);
+            
             // 
             // Form1
             // 
