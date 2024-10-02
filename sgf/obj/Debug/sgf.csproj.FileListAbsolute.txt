@@ -48,3 +48,4 @@ C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadFuncionario.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadCliente.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadFornecedor.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Gerenciamento.FormEstoque.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.FormCadLote.resources

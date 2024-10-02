@@ -54,5 +54,11 @@ namespace sgf
             FormEstoque estoque = new FormEstoque();
             estoque.ShowDialog();
         }
+
+        private void loteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadLote lote = new FormCadLote();
+            lote.ShowDialog();
+        }
     }
 }
