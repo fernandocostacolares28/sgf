@@ -143,6 +143,12 @@
     <Compile Include="Telas\Cadastros\FormCadUsuario.Designer.cs">
       <DependentUpon>FormCadUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Cadastros\Lote\FormCadLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastros\Lote\FormCadLote.Designer.cs">
+      <DependentUpon>FormCadLote.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Gerenciamento\FormEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     <EmbeddedResource Include="Telas\Cadastros\FormCadUsuario.resx">
       <DependentUpon>FormCadUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastros\Lote\FormCadLote.resx">
+      <DependentUpon>FormCadLote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,8 +206,6 @@
   <ItemGroup>
     <None Include="img\fundo de tela.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Telas\Cadastros\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
