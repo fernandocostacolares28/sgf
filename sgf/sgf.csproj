@@ -197,5 +197,8 @@
   <ItemGroup>
     <None Include="img\fundo de tela.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Telas\Cadastros\NewFolder1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
