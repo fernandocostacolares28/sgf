@@ -49,5 +49,19 @@ namespace sgf.Controle
                 command.ExecuteNonQuery();
             }
         }
+
+        public static void ExcluirLote(int id)
+        {
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "DELETE FROM Lote WHERE id_lote = @Id";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", id);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }
