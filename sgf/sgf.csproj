@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle\Estoque.cs" />
+    <Compile Include="Controle\Lote.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\DBConnection.cs" />
     <Compile Include="Entidades\Fornecedor.cs" />
