@@ -33,26 +33,24 @@ namespace sgf.Telas.Cadastros
         {
             string nomeProduto = tb_nome.Text;
             float valor = float.Parse(tb_valor.Text);
-            int quantidade = int.Parse(tb_qtd.Text);
-            string lote = tb_lote.Text;
 
-            var novoProduto = new Produto(nomeProduto, valor, quantidade, lote);
+            
+
+            var novoProduto = new Produto(nomeProduto, valor);
 
             Produto.SalvarProduto(novoProduto);
 
             tb_id.Clear();
             tb_nome.Clear();
             tb_valor.Clear();
-            tb_qtd.Clear();
-            tb_lote.Clear();
+
 
             dgv_produto.DataSource = Produto.ListarProdutos();
 
             dgv_produto.Columns["id_produto"].HeaderText = "ID";
             dgv_produto.Columns["name_produto"].HeaderText = "Nome do Produto";
             dgv_produto.Columns["valor_produto"].HeaderText = "Valor";
-            dgv_produto.Columns["qtd_produto"].HeaderText = "Quantidade";
-            dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
+
         }
 
         private void FormCadProduto_Load(object sender, EventArgs e)
@@ -62,8 +60,7 @@ namespace sgf.Telas.Cadastros
             dgv_produto.Columns["id_produto"].HeaderText = "ID";
             dgv_produto.Columns["name_produto"].HeaderText = "Nome do Produto";
             dgv_produto.Columns["valor_produto"].HeaderText = "Valor";
-            dgv_produto.Columns["qtd_produto"].HeaderText = "Quantidade";
-            dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
+
         }
 
         private void dgv_produto_SelectionChanged(object sender, EventArgs e)
@@ -77,8 +74,6 @@ namespace sgf.Telas.Cadastros
                 tb_id.Text = selectedRow.Cells["id_produto"].Value.ToString();
                 tb_nome.Text = selectedRow.Cells["name_produto"].Value.ToString();
                 tb_valor.Text = selectedRow.Cells["valor_produto"].Value.ToString();
-                tb_qtd.Text = selectedRow.Cells["qtd_produto"].Value.ToString();
-                tb_lote.Text = selectedRow.Cells["lote_produto"].Value.ToString();
             }
         }
 
@@ -87,24 +82,21 @@ namespace sgf.Telas.Cadastros
             int id = int.Parse(tb_id.Text);
             string nomeProduto = tb_nome.Text;
             float valor = float.Parse(tb_valor.Text);
-            int quantidade = int.Parse(tb_qtd.Text);
-            string lote = tb_lote.Text;
 
-            Produto.EditarProduto(id, nomeProduto, valor, quantidade, lote);
+
+            Produto.EditarProduto(id, nomeProduto, valor);
 
             tb_id.Clear();
             tb_nome.Clear();
             tb_valor.Clear();
-            tb_qtd.Clear();
-            tb_lote.Clear();
+
 
             dgv_produto.DataSource = Produto.ListarProdutos();
 
             dgv_produto.Columns["id_produto"].HeaderText = "ID";
             dgv_produto.Columns["name_produto"].HeaderText = "Nome do Produto";
             dgv_produto.Columns["valor_produto"].HeaderText = "Valor";
-            dgv_produto.Columns["qtd_produto"].HeaderText = "Quantidade";
-            dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
+
         }
 
         private void bt_excluir_Click(object sender, EventArgs e)
@@ -116,16 +108,14 @@ namespace sgf.Telas.Cadastros
             tb_id.Clear();
             tb_nome.Clear();
             tb_valor.Clear();
-            tb_qtd.Clear();
-            tb_lote.Clear();
+
 
             dgv_produto.DataSource = Produto.ListarProdutos();
 
             dgv_produto.Columns["id_produto"].HeaderText = "ID";
             dgv_produto.Columns["name_produto"].HeaderText = "Nome do Produto";
             dgv_produto.Columns["valor_produto"].HeaderText = "Valor";
-            dgv_produto.Columns["qtd_produto"].HeaderText = "Quantidade";
-            dgv_produto.Columns["lote_produto"].HeaderText = "Lote";
+
 
         }
 

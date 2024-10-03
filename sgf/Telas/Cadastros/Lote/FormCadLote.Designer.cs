@@ -34,7 +34,7 @@
             this.btExcluir = new System.Windows.Forms.Button();
             this.btView = new System.Windows.Forms.Button();
             this.lb_pc = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lb_pl = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btAdicionar = new System.Windows.Forms.Button();
             this.btRemover = new System.Windows.Forms.Button();
-            this.tbQtd = new System.Windows.Forms.TextBox();
+            this.tb_Qtd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.CBativo = new System.Windows.Forms.CheckBox();
@@ -100,13 +100,13 @@
             this.lb_pc.TabIndex = 4;
             this.lb_pc.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox2
+            // lb_pl
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(529, 56);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(217, 212);
-            this.listBox2.TabIndex = 5;
+            this.lb_pl.FormattingEnabled = true;
+            this.lb_pl.Location = new System.Drawing.Point(529, 56);
+            this.lb_pl.Name = "lb_pl";
+            this.lb_pl.Size = new System.Drawing.Size(217, 212);
+            this.lb_pl.TabIndex = 5;
             // 
             // comboBox1
             // 
@@ -220,13 +220,14 @@
             this.btRemover.TabIndex = 18;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
+            this.btRemover.Click += new System.EventHandler(this.btRemover_Click);
             // 
-            // tbQtd
+            // tb_Qtd
             // 
-            this.tbQtd.Location = new System.Drawing.Point(445, 95);
-            this.tbQtd.Name = "tbQtd";
-            this.tbQtd.Size = new System.Drawing.Size(75, 20);
-            this.tbQtd.TabIndex = 19;
+            this.tb_Qtd.Location = new System.Drawing.Point(445, 95);
+            this.tb_Qtd.Name = "tb_Qtd";
+            this.tb_Qtd.Size = new System.Drawing.Size(75, 20);
+            this.tb_Qtd.TabIndex = 19;
             // 
             // label8
             // 
@@ -276,7 +277,7 @@
             this.Controls.Add(this.CBativo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tbQtd);
+            this.Controls.Add(this.tb_Qtd);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.label7);
@@ -290,7 +291,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.lb_pl);
             this.Controls.Add(this.lb_pc);
             this.Controls.Add(this.btView);
             this.Controls.Add(this.btExcluir);
@@ -312,7 +313,7 @@
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btView;
         private System.Windows.Forms.ListBox lb_pc;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lb_pl;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -326,7 +327,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btAdicionar;
         private System.Windows.Forms.Button btRemover;
-        private System.Windows.Forms.TextBox tbQtd;
+        private System.Windows.Forms.TextBox tb_Qtd;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox CBativo;

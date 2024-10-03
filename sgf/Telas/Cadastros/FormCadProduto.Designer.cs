@@ -34,9 +34,7 @@
             this.bt_salvar = new System.Windows.Forms.Button();
             this.bt_editar = new System.Windows.Forms.Button();
             this.tb_nome = new System.Windows.Forms.TextBox();
-            this.tb_qtd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,6 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -97,13 +97,6 @@
             this.tb_nome.Size = new System.Drawing.Size(164, 20);
             this.tb_nome.TabIndex = 4;
             // 
-            // tb_qtd
-            // 
-            this.tb_qtd.Location = new System.Drawing.Point(12, 124);
-            this.tb_qtd.Name = "tb_qtd";
-            this.tb_qtd.Size = new System.Drawing.Size(164, 20);
-            this.tb_qtd.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -113,15 +106,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Nome Produto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Quantidade";
             // 
             // label5
             // 
@@ -187,17 +171,33 @@
             this.estoqueToolStripMenuItem.Text = "Estoque";
             this.estoqueToolStripMenuItem.Click += new System.EventHandler(this.estoqueToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Valor";
+            // 
+            // tb_valor
+            // 
+            this.tb_valor.Location = new System.Drawing.Point(12, 124);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(164, 20);
+            this.tb_valor.TabIndex = 35;
+            // 
             // FormCadProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_id);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb_qtd);
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_salvar);
@@ -229,9 +229,7 @@
         private System.Windows.Forms.Button bt_salvar;
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.TextBox tb_nome;
-        private System.Windows.Forms.TextBox tb_qtd;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Panel panel1;
@@ -239,5 +237,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_valor;
     }
 }
