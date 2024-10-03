@@ -1,4 +1,5 @@
 ﻿using sgf.Telas.Cadastros;
+using sgf.Telas.Cadastros.Lote;
 using sgf.Telas.Gerenciamento;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,10 @@ namespace sgf
             estoque.ShowDialog();
         }
 
-
+        private void loteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadLote lote = new FormCadLote();
+            lote.ShowDialog();
+        }
     }
 }
