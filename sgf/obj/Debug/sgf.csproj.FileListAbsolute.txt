@@ -49,3 +49,4 @@ C:\Git\sgf\sgf\obj\Debug\sgf.csproj.Up2Date
 C:\Git\sgf\sgf\obj\Debug\sgf.exe
 C:\Git\sgf\sgf\obj\Debug\sgf.pdb
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.Lote.FormCadLote.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.Lote.FormDetalhesLote.resources

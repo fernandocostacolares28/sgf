@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sgf.Controle;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,15 @@ namespace sgf.Telas.Cadastros.Lote
 
         private void FormDetalhesLote_Load(object sender, EventArgs e)
         {
+            DGV_produtos.DataSource = ProdutoLote.ListarProdutos();
 
+            DGV_produtos.Columns["id_produto"].HeaderText = "ID";
+            DGV_produtos.Columns["name_produto"].HeaderText = "Nome do Produto";
+            DGV_produtos.Columns["valor_produto"].HeaderText = "Valor";
+            DGV_produtos.Columns["qtd_produto"].HeaderText = "Quantidade";
+            DGV_produtos.Columns["code_lote"].HeaderText = "Lote";
         }
+
+
     }
 }
