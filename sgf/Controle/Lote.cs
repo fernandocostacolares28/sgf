@@ -25,7 +25,7 @@ namespace sgf.Controle
             Status = status;
         }
 
-        public Lote(string code_Lote, string fornecedor, string vencimento, string status)
+        public Lote(string code_Lote, string vencimento, string status, string fornecedor)
         {
             Code_Lote = code_Lote;
             Fornecedor = fornecedor;

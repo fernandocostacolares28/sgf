@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using sgf.Controle;
 using sgf.Entidades;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace sgf.Telas.Cadastros.Lote
         {
             InitializeComponent();
             CarregarProdutos();
+            CarregarFornecedores();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -103,6 +105,85 @@ namespace sgf.Telas.Cadastros.Lote
             {
                 // Exibir mensagem de erro se nenhum item estiver selecionado
                 MessageBox.Show("Selecione um item na ListBox2 para remover.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+            // Pegar os valores dos controles
+            string code_lote = tb_codelote.Text;
+            string vencimento = tb_vencimento.Text;
+            string fornecedor = cb_fornecedor.SelectedItem.ToString();
+
+            // Verificar o status do checkbox (Ativo ou Inativo)
+            string status = cbx_ativo.Checked ? "Ativo" : "Inativo";
+
+            var lote = new Controle.Lote(code_lote, vencimento, status, fornecedor);
+
+            // Chamar o método Salvar com os valores capturados
+            Controle.Lote.SalvarLote(lote);
+
+            try
+            {
+                // Iterar sobre os itens da ListBox2 (onde estão os produtos a serem salvos)
+                foreach (string item in lb_pl.Items)
+                {
+                    // Supondo que o item esteja no formato "Produto - Quantidade: X"
+                    string[] partes = item.Split(new[] { " - Quantidade: " }, StringSplitOptions.None);
+                    string nomeProduto = partes[0]; // Nome do produto
+                    int quantidade = int.Parse(partes[1]); // Quantidade
+                    
+                    float valor = Controle.ProdutoLote.ObterValorProduto(nomeProduto);
+                    int id_lote = Controle.ProdutoLote.ObterIdLote(code_lote);
+
+                    var ProdutoLote = new ProdutoLote(nomeProduto, valor, quantidade, id_lote);
+                    // Chamar o método existente SalvarProduto
+                    Controle.ProdutoLote.SalvarProdutoLote(ProdutoLote);
+                }
+
+                MessageBox.Show("Produtos cadastrados com sucesso na tabela produto_lote!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao salvar produtos: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void CarregarFornecedores()
+        {
+
+            // Usar SqlConnection e SqlCommand para conectar ao banco de dados
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "SELECT razaosocial_fornecedor FROM Fornecedor";
+                try
+                {
+                    // Abrir a conexão com o banco
+                    connection.Open();
+
+                    
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        // Executar a leitura dos dados
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Limpar o ComboBox antes de adicionar os novos itens
+                            cb_fornecedor.Items.Clear();
+
+                            // Adicionar os fornecedores no ComboBox
+                            while (reader.Read())
+                            {
+                                // Pegar o valor da coluna 'NomeFornecedor' e adicionar ao ComboBox
+                                cb_fornecedor.Items.Add(reader["razaosocial_fornecedor"].ToString());
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Exibir mensagem de erro, se ocorrer
+                    MessageBox.Show($"Erro ao carregar fornecedores: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

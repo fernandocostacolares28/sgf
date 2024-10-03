@@ -35,10 +35,10 @@
             this.btView = new System.Windows.Forms.Button();
             this.lb_pc = new System.Windows.Forms.ListBox();
             this.lb_pl = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cb_fornecedor = new System.Windows.Forms.ComboBox();
+            this.tb_vencimento = new System.Windows.Forms.TextBox();
+            this.tb_codelote = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,8 +51,7 @@
             this.tb_Qtd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.CBativo = new System.Windows.Forms.CheckBox();
-            this.CBdesativado = new System.Windows.Forms.CheckBox();
+            this.cbx_ativo = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGVLote)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +71,7 @@
             this.btSalvar.TabIndex = 1;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // btExcluir
             // 
@@ -108,35 +108,35 @@
             this.lb_pl.Size = new System.Drawing.Size(217, 212);
             this.lb_pl.TabIndex = 5;
             // 
-            // comboBox1
+            // cb_fornecedor
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 187);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cb_fornecedor.FormattingEnabled = true;
+            this.cb_fornecedor.Location = new System.Drawing.Point(12, 187);
+            this.cb_fornecedor.Name = "cb_fornecedor";
+            this.cb_fornecedor.Size = new System.Drawing.Size(121, 21);
+            this.cb_fornecedor.TabIndex = 6;
             // 
-            // textBox1
+            // tb_vencimento
             // 
-            this.textBox1.Location = new System.Drawing.Point(14, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.tb_vencimento.Location = new System.Drawing.Point(14, 108);
+            this.tb_vencimento.Name = "tb_vencimento";
+            this.tb_vencimento.Size = new System.Drawing.Size(100, 20);
+            this.tb_vencimento.TabIndex = 7;
             // 
-            // textBox2
+            // tb_codelote
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.tb_codelote.Location = new System.Drawing.Point(12, 69);
+            this.tb_codelote.Name = "tb_codelote";
+            this.tb_codelote.Size = new System.Drawing.Size(100, 20);
+            this.tb_codelote.TabIndex = 8;
             // 
-            // textBox3
+            // tb_id
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.tb_id.Location = new System.Drawing.Point(12, 30);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
+            this.tb_id.Size = new System.Drawing.Size(100, 20);
+            this.tb_id.TabIndex = 9;
             // 
             // label1
             // 
@@ -248,33 +248,22 @@
             this.label9.Text = "Status";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // CBativo
+            // cbx_ativo
             // 
-            this.CBativo.AutoSize = true;
-            this.CBativo.Location = new System.Drawing.Point(15, 287);
-            this.CBativo.Name = "CBativo";
-            this.CBativo.Size = new System.Drawing.Size(50, 17);
-            this.CBativo.TabIndex = 22;
-            this.CBativo.Text = "Ativo";
-            this.CBativo.UseVisualStyleBackColor = true;
-            // 
-            // CBdesativado
-            // 
-            this.CBdesativado.AutoSize = true;
-            this.CBdesativado.Location = new System.Drawing.Point(71, 287);
-            this.CBdesativado.Name = "CBdesativado";
-            this.CBdesativado.Size = new System.Drawing.Size(80, 17);
-            this.CBdesativado.TabIndex = 23;
-            this.CBdesativado.Text = "Desativado";
-            this.CBdesativado.UseVisualStyleBackColor = true;
+            this.cbx_ativo.AutoSize = true;
+            this.cbx_ativo.Location = new System.Drawing.Point(15, 287);
+            this.cbx_ativo.Name = "cbx_ativo";
+            this.cbx_ativo.Size = new System.Drawing.Size(50, 17);
+            this.cbx_ativo.TabIndex = 22;
+            this.cbx_ativo.Text = "Ativo";
+            this.cbx_ativo.UseVisualStyleBackColor = true;
             // 
             // FormCadLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 509);
-            this.Controls.Add(this.CBdesativado);
-            this.Controls.Add(this.CBativo);
+            this.Controls.Add(this.cbx_ativo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tb_Qtd);
@@ -287,10 +276,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tb_id);
+            this.Controls.Add(this.tb_codelote);
+            this.Controls.Add(this.tb_vencimento);
+            this.Controls.Add(this.cb_fornecedor);
             this.Controls.Add(this.lb_pl);
             this.Controls.Add(this.lb_pc);
             this.Controls.Add(this.btView);
@@ -314,10 +303,10 @@
         private System.Windows.Forms.Button btView;
         private System.Windows.Forms.ListBox lb_pc;
         private System.Windows.Forms.ListBox lb_pl;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cb_fornecedor;
+        private System.Windows.Forms.TextBox tb_vencimento;
+        private System.Windows.Forms.TextBox tb_codelote;
+        private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -330,7 +319,6 @@
         private System.Windows.Forms.TextBox tb_Qtd;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox CBativo;
-        private System.Windows.Forms.CheckBox CBdesativado;
+        private System.Windows.Forms.CheckBox cbx_ativo;
     }
 }
