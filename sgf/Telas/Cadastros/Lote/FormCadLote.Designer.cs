@@ -33,7 +33,7 @@
             this.btSalvar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btView = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lb_pc = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btAdicionar = new System.Windows.Forms.Button();
             this.btRemover = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbQtd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.CBativo = new System.Windows.Forms.CheckBox();
@@ -91,14 +91,14 @@
             this.btView.Text = "Visualizar";
             this.btView.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lb_pc
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(229, 56);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(210, 212);
-            this.listBox1.TabIndex = 4;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lb_pc.FormattingEnabled = true;
+            this.lb_pc.Location = new System.Drawing.Point(229, 56);
+            this.lb_pc.Name = "lb_pc";
+            this.lb_pc.Size = new System.Drawing.Size(210, 212);
+            this.lb_pc.TabIndex = 4;
+            this.lb_pc.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -210,6 +210,7 @@
             this.btAdicionar.TabIndex = 17;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
+            this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
             // btRemover
             // 
@@ -220,12 +221,12 @@
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // tbQtd
             // 
-            this.textBox4.Location = new System.Drawing.Point(445, 95);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(75, 20);
-            this.textBox4.TabIndex = 19;
+            this.tbQtd.Location = new System.Drawing.Point(445, 95);
+            this.tbQtd.Name = "tbQtd";
+            this.tbQtd.Size = new System.Drawing.Size(75, 20);
+            this.tbQtd.TabIndex = 19;
             // 
             // label8
             // 
@@ -275,7 +276,7 @@
             this.Controls.Add(this.CBativo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbQtd);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.label7);
@@ -290,7 +291,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lb_pc);
             this.Controls.Add(this.btView);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
@@ -310,7 +311,7 @@
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btView;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lb_pc;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
@@ -325,7 +326,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btAdicionar;
         private System.Windows.Forms.Button btRemover;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbQtd;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox CBativo;

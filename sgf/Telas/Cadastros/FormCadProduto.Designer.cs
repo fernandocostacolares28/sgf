@@ -34,13 +34,9 @@
             this.bt_salvar = new System.Windows.Forms.Button();
             this.bt_editar = new System.Windows.Forms.Button();
             this.tb_nome = new System.Windows.Forms.TextBox();
-            this.tb_lote = new System.Windows.Forms.TextBox();
             this.tb_qtd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb_valor = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -101,16 +97,9 @@
             this.tb_nome.Size = new System.Drawing.Size(164, 20);
             this.tb_nome.TabIndex = 4;
             // 
-            // tb_lote
-            // 
-            this.tb_lote.Location = new System.Drawing.Point(12, 124);
-            this.tb_lote.Name = "tb_lote";
-            this.tb_lote.Size = new System.Drawing.Size(164, 20);
-            this.tb_lote.TabIndex = 5;
-            // 
             // tb_qtd
             // 
-            this.tb_qtd.Location = new System.Drawing.Point(12, 163);
+            this.tb_qtd.Location = new System.Drawing.Point(12, 124);
             this.tb_qtd.Name = "tb_qtd";
             this.tb_qtd.Size = new System.Drawing.Size(164, 20);
             this.tb_qtd.TabIndex = 6;
@@ -125,40 +114,14 @@
             this.label1.Text = "Nome Produto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Lote";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 147);
+            this.label3.Location = new System.Drawing.Point(12, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Quantidade";
-            // 
-            // tb_valor
-            // 
-            this.tb_valor.Location = new System.Drawing.Point(12, 202);
-            this.tb_valor.Name = "tb_valor";
-            this.tb_valor.Size = new System.Drawing.Size(164, 20);
-            this.tb_valor.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Valor";
             // 
             // label5
             // 
@@ -232,13 +195,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_id);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.tb_valor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_qtd);
-            this.Controls.Add(this.tb_lote);
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_salvar);
@@ -270,13 +229,9 @@
         private System.Windows.Forms.Button bt_salvar;
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.TextBox tb_nome;
-        private System.Windows.Forms.TextBox tb_lote;
         private System.Windows.Forms.TextBox tb_qtd;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tb_valor;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Panel panel1;
