@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadLote));
-            this.DGVLote = new System.Windows.Forms.DataGridView();
+            this.DGV_Lote = new System.Windows.Forms.DataGridView();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btView = new System.Windows.Forms.Button();
@@ -52,20 +52,28 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbx_ativo = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVLote)).BeginInit();
+            this.bt_desativar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Lote)).BeginInit();
             this.SuspendLayout();
             // 
-            // DGVLote
+            // DGV_Lote
             // 
-            this.DGVLote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVLote.Location = new System.Drawing.Point(12, 347);
-            this.DGVLote.Name = "DGVLote";
-            this.DGVLote.Size = new System.Drawing.Size(776, 150);
-            this.DGVLote.TabIndex = 0;
+            this.DGV_Lote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGV_Lote.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV_Lote.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGV_Lote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Lote.Location = new System.Drawing.Point(12, 347);
+            this.DGV_Lote.Name = "DGV_Lote";
+            this.DGV_Lote.ReadOnly = true;
+            this.DGV_Lote.Size = new System.Drawing.Size(776, 150);
+            this.DGV_Lote.TabIndex = 0;
+            this.DGV_Lote.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Lote_CellContentClick);
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(691, 318);
+            this.btSalvar.Location = new System.Drawing.Point(713, 318);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(75, 23);
             this.btSalvar.TabIndex = 1;
@@ -75,21 +83,23 @@
             // 
             // btExcluir
             // 
-            this.btExcluir.Location = new System.Drawing.Point(497, 318);
+            this.btExcluir.Location = new System.Drawing.Point(551, 318);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(75, 23);
             this.btExcluir.TabIndex = 2;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btView
             // 
-            this.btView.Location = new System.Drawing.Point(591, 318);
+            this.btView.Location = new System.Drawing.Point(632, 318);
             this.btView.Name = "btView";
             this.btView.Size = new System.Drawing.Size(75, 23);
             this.btView.TabIndex = 3;
             this.btView.Text = "Visualizar";
             this.btView.UseVisualStyleBackColor = true;
+            this.btView.Click += new System.EventHandler(this.btView_Click);
             // 
             // lb_pc
             // 
@@ -258,11 +268,22 @@
             this.cbx_ativo.Text = "Ativo";
             this.cbx_ativo.UseVisualStyleBackColor = true;
             // 
+            // bt_desativar
+            // 
+            this.bt_desativar.Location = new System.Drawing.Point(470, 318);
+            this.bt_desativar.Name = "bt_desativar";
+            this.bt_desativar.Size = new System.Drawing.Size(75, 23);
+            this.bt_desativar.TabIndex = 23;
+            this.bt_desativar.Text = "Desativar";
+            this.bt_desativar.UseVisualStyleBackColor = true;
+            this.bt_desativar.Click += new System.EventHandler(this.bt_desativar_Click);
+            // 
             // FormCadLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 509);
+            this.Controls.Add(this.bt_desativar);
             this.Controls.Add(this.cbx_ativo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -285,11 +306,13 @@
             this.Controls.Add(this.btView);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.DGVLote);
+            this.Controls.Add(this.DGV_Lote);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormCadLote";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCadLote";
-            ((System.ComponentModel.ISupportInitialize)(this.DGVLote)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Lote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,7 +320,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DGVLote;
+        private System.Windows.Forms.DataGridView DGV_Lote;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btView;
@@ -320,5 +343,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox cbx_ativo;
+        private System.Windows.Forms.Button bt_desativar;
     }
 }

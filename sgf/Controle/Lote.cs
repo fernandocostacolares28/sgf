@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace sgf.Controle
 {
@@ -55,13 +56,39 @@ namespace sgf.Controle
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
                 string query = "DELETE FROM Lote WHERE id_lote = @Id";
+                string query_produto = "DELETE FROM produto_lote WHERE id_lote = @Id";
 
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
-
+                MySqlCommand command2 = new MySqlCommand(query_produto, connection);
+                command.Parameters.AddWithValue("@lote", id);
+                command2.Parameters.AddWithValue("@Id", id);
                 connection.Open();
+                command2.ExecuteNonQuery();
                 command.ExecuteNonQuery();
             }
         }
+
+        public static void DesativarLote(int idLote)
+        {
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "UPDATE lote SET status_lote = 'Desativado' WHERE id_lote = @idlote";
+                try
+                {
+                    connection.Open();
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@idLote", idLote);
+                        command.ExecuteNonQuery(); // Executa a atualização
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao desativar lote: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
     }
 }

@@ -2,6 +2,7 @@
 using sgf.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -106,6 +107,46 @@ namespace sgf.Controle
                     }
                 }
             }
+        }
+
+        public static void ExcluirProdutoLote(int id)
+        {
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "DELETE FROM produto_lote WHERE id_lote = @Id";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", id);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public static DataTable ListarProdutos()
+        {
+            DataTable dataTable = new DataTable();
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                // Abre a conexão
+                connection.Open();
+
+                // Define a consulta SQL
+                string query = "SELECT p.id_produto, p.name_produto, p.qtd_produto, p.valor_produto, l.code_lote FROM produto_lote p INNER JOIN lote l ON p.id_Lote = l.id_lote WHERE l.status_lote = 'Ativo';";
+
+                // Cria um comando para executar a consulta
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    // Cria um adaptador de dados MySQL
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        // Preenche o DataTable com os dados da consulta
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+
+            return dataTable;
         }
     }
 }

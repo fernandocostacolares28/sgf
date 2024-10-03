@@ -21,6 +21,7 @@ namespace sgf.Telas.Cadastros.Lote
             InitializeComponent();
             CarregarProdutos();
             CarregarFornecedores();
+            CarregarDadosLote();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -139,6 +140,7 @@ namespace sgf.Telas.Cadastros.Lote
                     var ProdutoLote = new ProdutoLote(nomeProduto, valor, quantidade, id_lote);
                     // Chamar o método existente SalvarProduto
                     Controle.ProdutoLote.SalvarProdutoLote(ProdutoLote);
+
                 }
 
                 MessageBox.Show("Produtos cadastrados com sucesso na tabela produto_lote!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -147,6 +149,7 @@ namespace sgf.Telas.Cadastros.Lote
             {
                 MessageBox.Show($"Erro ao salvar produtos: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            CarregarDadosLote();
         }
 
         private void CarregarFornecedores()
@@ -184,6 +187,109 @@ namespace sgf.Telas.Cadastros.Lote
                     // Exibir mensagem de erro, se ocorrer
                     MessageBox.Show($"Erro ao carregar fornecedores: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+        private void CarregarDadosLote()
+        {
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "SELECT id_lote, Code_Lote, dt_validade_lote, farmaceutica_lote, status_lote FROM lote";
+                try
+                {
+                    connection.Open();
+                    MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, connection);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable); // Preencher o DataTable com os dados
+
+                    // Definir a fonte de dados do DataGridView
+                    DGV_Lote.DataSource = dataTable;
+
+                    DGV_Lote.Columns[0].HeaderText = "ID";                // ID
+                    DGV_Lote.Columns[1].HeaderText = "Código Lote";      // Código Lote
+                    DGV_Lote.Columns[2].HeaderText = "Vencimento";       // Vencimento
+                    DGV_Lote.Columns[3].HeaderText = "Farmaceutica";     // Farmacêutica
+                    DGV_Lote.Columns[4].HeaderText = "Status Lote";      // Status Lote
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao carregar dados: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            if (DGV_Lote.SelectedRows.Count > 0)
+            {
+                
+                int idLote = Convert.ToInt32(DGV_Lote.SelectedRows[0].Cells["id_lote"].Value); 
+
+                
+                DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir este lote?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Excluir o lote
+                    Controle.Lote.ExcluirLote(idLote);
+
+                    // Recarregar os dados do DataGridView
+                    CarregarDadosLote();
+
+                    MessageBox.Show("Lote excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um lote para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void DGV_Lote_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bt_desativar_Click(object sender, EventArgs e)
+        {
+            if (DGV_Lote.SelectedRows.Count > 0)
+            {
+                // Obter o ID do lote selecionado
+                int idLote = Convert.ToInt32(DGV_Lote.SelectedRows[0].Cells["id_lote"].Value); // Assumindo que a coluna ID é nomeada "ID"
+
+                // Confirmar a desativação
+                DialogResult resultado = MessageBox.Show("Tem certeza que deseja desativar este lote?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Desativar o lote
+                    Controle.Lote.DesativarLote(idLote);
+
+                    // Recarregar os dados do DataGridView
+                    CarregarDadosLote();
+
+                    MessageBox.Show("Lote desativado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um lote para desativar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btView_Click(object sender, EventArgs e)
+        {
+            if (DGV_Lote.SelectedRows.Count > 0)
+            {
+                // Obter o ID do lote selecionado
+                int idLote = Convert.ToInt32(DGV_Lote.SelectedRows[0].Cells["id_lote"].Value); // Assumindo que a coluna ID é nomeada "ID"
+
+                // Criar e mostrar o formulário de detalhes
+                FormDetalhesLote formDetalhes = new FormDetalhesLote(idLote);
+                formDetalhes.ShowDialog(); // Ou Show() se você não quiser que o formulário seja modal
+            }
+            else
+            {
+                MessageBox.Show("Selecione um lote para visualizar os detalhes.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
