@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenda));
             this.nud_parcelas = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.dtp_data = new System.Windows.Forms.DateTimePicker();
@@ -349,7 +350,10 @@
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.DGV_Lote);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormVenda";
             this.Load += new System.EventHandler(this.FormVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).EndInit();
