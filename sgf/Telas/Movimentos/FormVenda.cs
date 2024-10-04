@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace sgf.Telas.Movimentos
 {
-    public partial class FormVenda : Form
+    public partial class Venda : Form
     {
-        public FormVenda()
+        public Venda()
         {
             InitializeComponent();
+        }
+
+        private void Venda_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

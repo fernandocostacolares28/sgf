@@ -1,6 +1,7 @@
 ﻿using sgf.Telas.Cadastros;
 using sgf.Telas.Cadastros.Lote;
 using sgf.Telas.Gerenciamento;
+using sgf.Telas.Movimentos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,11 @@ namespace sgf
         {
             FormCadLote lote = new FormCadLote();
             lote.ShowDialog();
+        }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormVenda venda = new FormVenda();
         }
     }
 }

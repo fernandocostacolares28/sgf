@@ -113,6 +113,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVenda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\Cadastros\FormCadCliente.cs">
@@ -211,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Movimentos\FormVenda.resx">
+      <DependentUpon>FormVenda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
