@@ -31,25 +31,19 @@ namespace sgf.Entidades
 
         }
 
-        // Método para listar todos os produtos
         public static DataTable ListarProdutos()
         {
             DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
                 connection.Open();
 
-                // Define a consulta SQL
                 string query = "SELECT * FROM Produto";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Cria um adaptador de dados MySQL
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        // Preenche o DataTable com os dados da consulta
                         adapter.Fill(dataTable);
                     }
                 }
@@ -58,7 +52,7 @@ namespace sgf.Entidades
             return dataTable;
         }
 
-        // Método para salvar um novo produto
+
         public static void SalvarProduto(Produto produto)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
