@@ -292,5 +292,10 @@ namespace sgf.Telas.Cadastros.Lote
                 MessageBox.Show("Selecione um lote para visualizar os detalhes.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void FormCadLote_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

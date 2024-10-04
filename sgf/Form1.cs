@@ -66,6 +66,7 @@ namespace sgf
         private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormVenda venda = new FormVenda();
+            venda.ShowDialog();
         }
     }
 }
