@@ -163,6 +163,18 @@
     <Compile Include="Telas\Gerenciamento\FormEstoque.Designer.cs">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Movimentos\FormCompraLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Movimentos\FormCompraLote.Designer.cs">
+      <DependentUpon>FormCompraLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Movimentos\FormVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Movimentos\FormVenda.Designer.cs">
+      <DependentUpon>FormVenda.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
