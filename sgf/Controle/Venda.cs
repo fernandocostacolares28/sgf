@@ -14,13 +14,13 @@ namespace sgf.Controle
         public int Id { get; set; }
         public int Cliente { get; set; }
         public string Receita_venda { get; set; }
-        public string Data_venda { get; set; }
+        public DateTime Data_venda { get; set; }
         public string Metodopagamento_venda { get; set; }
-        public string Parcelas_venda { get; set; }
-        public string Total_venda { get; set; }
-        public string Desconto_venda { get; set; }
+        public int Parcelas_venda { get; set; }
+        public float Total_venda { get; set; }
+        public float Desconto_venda { get; set; }
 
-        public void VendaID(int id, int cliente, string receita_venda, string data_venda, string metodopagamento_venda, string parcelas_venda, string total_venda, string desconto_venda)
+        public void VendaID(int id, int cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
         {
             Id = id;
             Cliente = cliente;
@@ -32,9 +32,8 @@ namespace sgf.Controle
             Desconto_venda = desconto_venda;
         }
 
-        public Venda(int id_itemvenda, int cliente, string receita_venda, string data_venda, string metodopagamento_venda, string parcelas_venda, string total_venda, string desconto_venda)
+        public Venda(int cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
         {
-
             Cliente = cliente;
             Receita_venda = receita_venda;
             Data_venda = data_venda;
@@ -43,6 +42,7 @@ namespace sgf.Controle
             Total_venda = total_venda;
             Desconto_venda = desconto_venda;
         }
+
 
         public static float ObterValorProduto(string nomeProduto)
         {
@@ -71,6 +71,70 @@ namespace sgf.Controle
             }
 
             return valorProduto;
+        }
+
+        public static int SalvarVenda(Venda Venda)
+        {
+            int idVenda = 0;
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "INSERT INTO venda (id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda, carrinho_venda) " +
+                    "VALUES (@cliente, @receita_venda, @data_venda, @metodopagamento_venda, @parcelas_venda, @total_venda, @desconto_venda, @carrinho_venda)";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@cliente", Venda.Cliente);
+                command.Parameters.AddWithValue("@receita_venda", Venda.Receita_venda);
+                command.Parameters.AddWithValue("@data_venda", Venda.Data_venda);
+                command.Parameters.AddWithValue("@metodopagamento_venda", Venda.Metodopagamento_venda);
+                command.Parameters.AddWithValue("@parcelas_venda", Venda.Parcelas_venda);
+                command.Parameters.AddWithValue("@total_venda", Venda.Total_venda);
+                command.Parameters.AddWithValue("@desconto_venda", Venda.Desconto_venda);
+
+
+                connection.Open();
+                command.ExecuteNonQuery();
+
+                try
+                {
+                    connection.Open();
+                    // Executa a query e captura o ID da venda recém-inserida
+                    idVenda = Convert.ToInt32(command.ExecuteScalar());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao salvar a venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            return idVenda;
+        }
+
+        public static int ObterIdCliente(string nomeCliente)
+        {
+            int idCliente = 0;
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "SELECT id_cliente FROM cliente WHERE name_cliente = @nomeCliente";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@nomeCliente", nomeCliente);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        idCliente = Convert.ToInt32(result);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao obter ID do cliente: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return idCliente;
         }
     }
 }

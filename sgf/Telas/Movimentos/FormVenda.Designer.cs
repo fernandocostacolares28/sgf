@@ -35,10 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_receita = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bt_desativar = new System.Windows.Forms.Button();
-            this.cbx_ativo = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.cb_metodo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_Qtd = new System.Windows.Forms.TextBox();
             this.btRemover = new System.Windows.Forms.Button();
@@ -83,7 +80,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 334);
+            this.label1.Location = new System.Drawing.Point(9, 334);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 80;
@@ -122,46 +119,18 @@
             this.tb_receita.Size = new System.Drawing.Size(212, 20);
             this.tb_receita.TabIndex = 76;
             // 
-            // comboBox1
+            // cb_metodo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb_metodo.FormattingEnabled = true;
+            this.cb_metodo.Items.AddRange(new object[] {
             "Pix",
             "Cartão Débito",
             "Cartão Crédito",
             "Dinheiro"});
-            this.comboBox1.Location = new System.Drawing.Point(26, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 75;
-            // 
-            // bt_desativar
-            // 
-            this.bt_desativar.Location = new System.Drawing.Point(484, 321);
-            this.bt_desativar.Name = "bt_desativar";
-            this.bt_desativar.Size = new System.Drawing.Size(75, 23);
-            this.bt_desativar.TabIndex = 74;
-            this.bt_desativar.Text = "Desativar";
-            this.bt_desativar.UseVisualStyleBackColor = true;
-            // 
-            // cbx_ativo
-            // 
-            this.cbx_ativo.AutoSize = true;
-            this.cbx_ativo.Location = new System.Drawing.Point(29, 290);
-            this.cbx_ativo.Name = "cbx_ativo";
-            this.cbx_ativo.Size = new System.Drawing.Size(50, 17);
-            this.cbx_ativo.TabIndex = 73;
-            this.cbx_ativo.Text = "Ativo";
-            this.cbx_ativo.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 275);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 72;
-            this.label9.Text = "Status";
+            this.cb_metodo.Location = new System.Drawing.Point(26, 72);
+            this.cb_metodo.Name = "cb_metodo";
+            this.cb_metodo.Size = new System.Drawing.Size(121, 21);
+            this.cb_metodo.TabIndex = 75;
             // 
             // label8
             // 
@@ -297,6 +266,7 @@
             this.btSalvar.TabIndex = 57;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // DGV_Venda
             // 
@@ -316,7 +286,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(348, 275);
+            this.label12.Location = new System.Drawing.Point(22, 280);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 83;
@@ -324,7 +294,7 @@
             // 
             // tb_totalvenda
             // 
-            this.tb_totalvenda.Location = new System.Drawing.Point(351, 291);
+            this.tb_totalvenda.Location = new System.Drawing.Point(25, 296);
             this.tb_totalvenda.Name = "tb_totalvenda";
             this.tb_totalvenda.ReadOnly = true;
             this.tb_totalvenda.Size = new System.Drawing.Size(212, 20);
@@ -333,7 +303,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(570, 275);
+            this.label11.Location = new System.Drawing.Point(244, 280);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 85;
@@ -341,14 +311,14 @@
             // 
             // tb_desconto
             // 
-            this.tb_desconto.Location = new System.Drawing.Point(572, 291);
+            this.tb_desconto.Location = new System.Drawing.Point(246, 296);
             this.tb_desconto.Name = "tb_desconto";
             this.tb_desconto.Size = new System.Drawing.Size(72, 20);
             this.tb_desconto.TabIndex = 84;
             // 
             // bt_desconto
             // 
-            this.bt_desconto.Location = new System.Drawing.Point(680, 288);
+            this.bt_desconto.Location = new System.Drawing.Point(354, 293);
             this.bt_desconto.Name = "bt_desconto";
             this.bt_desconto.Size = new System.Drawing.Size(123, 23);
             this.bt_desconto.TabIndex = 86;
@@ -359,7 +329,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(650, 298);
+            this.label13.Location = new System.Drawing.Point(324, 303);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(15, 13);
             this.label13.TabIndex = 87;
@@ -368,11 +338,6 @@
             // cb_cliente
             // 
             this.cb_cliente.FormattingEnabled = true;
-            this.cb_cliente.Items.AddRange(new object[] {
-            "Pix",
-            "Cartão Débito",
-            "Cartão Crédito",
-            "Dinheiro"});
             this.cb_cliente.Location = new System.Drawing.Point(25, 225);
             this.cb_cliente.Name = "cb_cliente";
             this.cb_cliente.Size = new System.Drawing.Size(121, 21);
@@ -406,10 +371,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tb_receita);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bt_desativar);
-            this.Controls.Add(this.cbx_ativo);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.cb_metodo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tb_Qtd);
             this.Controls.Add(this.btRemover);
@@ -448,10 +410,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tb_receita;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button bt_desativar;
-        private System.Windows.Forms.CheckBox cbx_ativo;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cb_metodo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tb_Qtd;
         private System.Windows.Forms.Button btRemover;
