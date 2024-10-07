@@ -106,5 +106,48 @@ namespace sgf.Telas.Movimentos
                 MessageBox.Show("Por favor, selecione um produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btRemover_Click(object sender, EventArgs e)
+        {
+            string itemSelecionado = lb_carrinho.SelectedItem.ToString();
+
+            string[] partesItem = itemSelecionado.Split('-');
+            string nomeProduto = partesItem[0].Trim();
+            int quantidade = int.Parse(partesItem[1].Replace("Quantidade: ", "").Trim());
+            float valorUnitario = float.Parse(partesItem[2].Replace("Valor Unitário: R$", "").Trim());
+
+            float valorTotalRemovido = valorUnitario * quantidade;
+
+            float valorAtualTotal = float.Parse(tb_totalvenda.Text);
+
+            float novoTotal = valorAtualTotal - valorTotalRemovido;
+
+            tb_totalvenda.Text = novoTotal.ToString("F2");
+
+            lb_carrinho.Items.Remove(lb_carrinho.SelectedItem);
+        }
+
+        private void bt_desconto_Click(object sender, EventArgs e)
+        {
+            if (float.TryParse(tb_desconto.Text, out float desconto) && desconto > 0 && desconto <= 100)
+            {
+                if (float.TryParse(tb_totalvenda.Text, out float valorTotal))
+                {
+                    float valorDesconto = (desconto / 100) * valorTotal;
+
+                    float novoTotal = valorTotal - valorDesconto;
+
+                    tb_totalvenda.Text = novoTotal.ToString("F2"); 
+                }
+                else
+                {
+                    MessageBox.Show("Valor total inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira um valor de desconto válido entre 0 e 100.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

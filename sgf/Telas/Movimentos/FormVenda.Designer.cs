@@ -70,7 +70,7 @@
             // nud_parcelas
             // 
             this.nud_parcelas.Location = new System.Drawing.Point(26, 111);
-            this.nud_parcelas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nud_parcelas.Margin = new System.Windows.Forms.Padding(2);
             this.nud_parcelas.Name = "nud_parcelas";
             this.nud_parcelas.Size = new System.Drawing.Size(47, 20);
             this.nud_parcelas.TabIndex = 81;
@@ -92,7 +92,7 @@
             // dtp_data
             // 
             this.dtp_data.Location = new System.Drawing.Point(26, 187);
-            this.dtp_data.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_data.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_data.Name = "dtp_data";
             this.dtp_data.Size = new System.Drawing.Size(212, 20);
             this.dtp_data.TabIndex = 79;
@@ -187,6 +187,7 @@
             this.btRemover.TabIndex = 69;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
+            this.btRemover.Click += new System.EventHandler(this.btRemover_Click);
             // 
             // btAdicionar
             // 
@@ -353,6 +354,7 @@
             this.bt_desconto.TabIndex = 86;
             this.bt_desconto.Text = "Aplicar Desconto";
             this.bt_desconto.UseVisualStyleBackColor = true;
+            this.bt_desconto.Click += new System.EventHandler(this.bt_desconto_Click);
             // 
             // label13
             // 
@@ -425,7 +427,7 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.DGV_Venda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
