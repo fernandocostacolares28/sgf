@@ -20,6 +20,9 @@ namespace sgf.Telas.Movimentos
             InitializeComponent();
             CarregarProdutos();
             CarregarClientes();
+            DataTable vendas = Venda.CarregarVendas();
+            DGV_Venda.DataSource = vendas; // Atribui a DataTable ao DataGridView
+
         }
 
         private void FormVenda_Load(object sender, EventArgs e)
@@ -216,7 +219,14 @@ namespace sgf.Telas.Movimentos
                 // Salva os itens do carrinho relacionados a essa venda
                 Controle.ItemVenda.SalvarItensVenda(idVenda, carrinho);
 
+                foreach (ItemVenda produto in carrinho)
+                {
+                    Controle.ItemVenda.AtualizarEstoque(produto.NomeProduto, produto.Quantidade);
+                }
+
                 MessageBox.Show("Venda salva com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataTable vendas = Venda.CarregarVendas();
+                DGV_Venda.DataSource = vendas;
             }
             catch (Exception ex)
             {
@@ -224,5 +234,30 @@ namespace sgf.Telas.Movimentos
             }
         }
 
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            if (DGV_Venda.SelectedRows.Count > 0) // Verifica se alguma linha está selecionada
+            {
+                int idVenda = Convert.ToInt32(DGV_Venda.SelectedRows[0].Cells["ID"].Value); // Obtém o ID da venda selecionada
+
+                // Exclui a venda
+                try
+                {
+                    Venda.Excluir(idVenda);
+                    MessageBox.Show("Venda excluída com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    DataTable vendas = Venda.CarregarVendas();
+                    DGV_Venda.DataSource = vendas;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma venda para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

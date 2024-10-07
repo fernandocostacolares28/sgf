@@ -2,6 +2,7 @@
 using sgf.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,31 +74,29 @@ namespace sgf.Controle
             return valorProduto;
         }
 
-        public static int SalvarVenda(Venda Venda)
+        public static int SalvarVenda(int id_cliente, string receita, DateTime data, string metodoPagamento, int parcelas, float totalVenda, float desconto_venda)
         {
             int idVenda = 0;
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "INSERT INTO venda (id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda, carrinho_venda) " +
-                    "VALUES (@cliente, @receita_venda, @data_venda, @metodopagamento_venda, @parcelas_venda, @total_venda, @desconto_venda, @carrinho_venda)";
+                string query = @"
+            INSERT INTO venda (id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda)
+            VALUES (@id_cliente, @receita, @data, @metodo_pagamento, @parcelas, @total_venda, @desconto);
+            SELECT LAST_INSERT_ID();";  // O ID da última inserção será retornado aqui.
 
                 MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@cliente", Venda.Cliente);
-                command.Parameters.AddWithValue("@receita_venda", Venda.Receita_venda);
-                command.Parameters.AddWithValue("@data_venda", Venda.Data_venda);
-                command.Parameters.AddWithValue("@metodopagamento_venda", Venda.Metodopagamento_venda);
-                command.Parameters.AddWithValue("@parcelas_venda", Venda.Parcelas_venda);
-                command.Parameters.AddWithValue("@total_venda", Venda.Total_venda);
-                command.Parameters.AddWithValue("@desconto_venda", Venda.Desconto_venda);
-
-
-                connection.Open();
-                command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@id_cliente", id_cliente);
+                command.Parameters.AddWithValue("@receita", receita);
+                command.Parameters.AddWithValue("@data", data);
+                command.Parameters.AddWithValue("@metodo_pagamento", metodoPagamento);
+                command.Parameters.AddWithValue("@parcelas", parcelas);
+                command.Parameters.AddWithValue("@total_venda", totalVenda);
+                command.Parameters.AddWithValue("@desconto", desconto_venda);
 
                 try
                 {
                     connection.Open();
-                    // Executa a query e captura o ID da venda recém-inserida
+                    // ExecuteScalar() retorna o ID da última inserção
                     idVenda = Convert.ToInt32(command.ExecuteScalar());
                 }
                 catch (Exception ex)
@@ -105,7 +104,7 @@ namespace sgf.Controle
                     MessageBox.Show($"Erro ao salvar a venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            return idVenda;
+            return idVenda;  // Retorna o ID da venda recém-inserida
         }
 
         public static int ObterIdCliente(string nomeCliente)
@@ -135,6 +134,78 @@ namespace sgf.Controle
             }
 
             return idCliente;
+        }
+
+        public static DataTable CarregarVendas()
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "SELECT id_venda, id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda FROM venda";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(dt);
+
+                    // Definir os nomes das colunas
+                    dt.Columns["id_venda"].ColumnName = "ID";
+                    dt.Columns["id_cliente"].ColumnName = "ID Cliente";
+                    dt.Columns["receita_venda"].ColumnName = "Receita";
+                    dt.Columns["data_venda"].ColumnName = "Data";
+                    dt.Columns["metodopagamento_venda"].ColumnName = "Método de Pagamento";
+                    dt.Columns["parcelas_venda"].ColumnName = "Parcelas";
+                    dt.Columns["total_venda"].ColumnName = "Total";
+                    dt.Columns["desconto_venda"].ColumnName = "Desconto";
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao carregar vendas: " + ex.Message);
+                }
+            }
+
+            return dt;
+        }
+        public static void Excluir(int idVenda)
+        {
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                // Inicia uma transação para garantir a integridade dos dados
+                connection.Open();
+                MySqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    // Primeiro, exclui os itens da venda
+                    string deleteItemsQuery = "DELETE FROM item_venda WHERE id_venda = @id_venda";
+                    using (MySqlCommand command = new MySqlCommand(deleteItemsQuery, connection, transaction))
+                    {
+                        command.Parameters.AddWithValue("@id_venda", idVenda);
+                        command.ExecuteNonQuery();
+                    }
+
+                    // Em seguida, exclui a venda
+                    string deleteVendaQuery = "DELETE FROM venda WHERE id_venda = @id_venda";
+                    using (MySqlCommand command = new MySqlCommand(deleteVendaQuery, connection, transaction))
+                    {
+                        command.Parameters.AddWithValue("@id_venda", idVenda);
+                        command.ExecuteNonQuery();
+                    }
+
+                    // Confirma a transação
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    // Desfaz a transação em caso de erro
+                    transaction.Rollback();
+                    throw new Exception("Erro ao excluir a venda: " + ex.Message);
+                }
+            }
         }
     }
 }

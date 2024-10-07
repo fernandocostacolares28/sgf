@@ -68,6 +68,39 @@ namespace sgf.Controle
                     MessageBox.Show($"Erro ao salvar os itens da venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            
+
+        }
+
+        public static void AtualizarEstoque(string nomeProduto, int quantidadeVendida)
+        {
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string queryAtualizarEstoque = @"
+                UPDATE produto_lote AS pl
+                JOIN lote AS l ON pl.id_lote = l.id_lote
+                SET pl.qtd_produto = pl.qtd_produto - @quantidadeVendida 
+                WHERE pl.name_produto = @nomeProduto 
+                AND l.status_lote = 'ativo';";
+                MySqlCommand command = new MySqlCommand(queryAtualizarEstoque, connection);
+                command.Parameters.AddWithValue("@quantidadeVendida", quantidadeVendida);
+                command.Parameters.AddWithValue("@nomeProduto", nomeProduto);
+
+                try
+                {
+                    connection.Open();
+                    int linhasAfetadas = command.ExecuteNonQuery();
+                    if (linhasAfetadas == 0)
+                    {
+                        MessageBox.Show("Produto não encontrado no estoque.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao atualizar o estoque: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

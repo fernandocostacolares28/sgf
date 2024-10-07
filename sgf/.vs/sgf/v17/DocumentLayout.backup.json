@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Git\\sgf\\sgf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,24 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ItemVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
               "RelativeDocumentMoniker": "Controle\\ItemVenda.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
               "RelativeToolTip": "Controle\\ItemVenda.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAcwCgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAIAwwFMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T19:47:45.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormVenda.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\FormVenda.cs",
@@ -71,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Venda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
               "RelativeDocumentMoniker": "Controle\\Venda.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
               "RelativeToolTip": "Controle\\Venda.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCIAAACXAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAawGoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T13:27:47.417Z",
               "EditorCaption": ""
@@ -95,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Lote.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Lote.cs",
               "RelativeDocumentMoniker": "Controle\\Lote.cs",
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ProdutoLote.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
               "RelativeDocumentMoniker": "Controle\\ProdutoLote.cs",
@@ -121,13 +121,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\FormVenda.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\FormVenda.cs",
               "RelativeToolTip": "Telas\\Movimentos\\FormVenda.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAhwNUAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAmwOQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T20:04:40.119Z",
               "EditorCaption": ""
