@@ -44,6 +44,7 @@
             this.DGV_produtos.ReadOnly = true;
             this.DGV_produtos.Size = new System.Drawing.Size(768, 379);
             this.DGV_produtos.TabIndex = 0;
+            this.DGV_produtos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_produtos_CellContentClick);
             // 
             // Produtos
             // 

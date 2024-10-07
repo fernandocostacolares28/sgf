@@ -196,6 +196,7 @@
             this.btAdicionar.TabIndex = 68;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
+            this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
             // label7
             // 
@@ -252,10 +253,12 @@
             // 
             // lb_carrinho
             // 
+            this.lb_carrinho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_carrinho.FormattingEnabled = true;
             this.lb_carrinho.Location = new System.Drawing.Point(588, 63);
             this.lb_carrinho.Name = "lb_carrinho";
-            this.lb_carrinho.Size = new System.Drawing.Size(217, 212);
+            this.lb_carrinho.Size = new System.Drawing.Size(252, 212);
             this.lb_carrinho.TabIndex = 61;
             // 
             // lb_prod
@@ -265,6 +268,7 @@
             this.lb_prod.Name = "lb_prod";
             this.lb_prod.Size = new System.Drawing.Size(210, 212);
             this.lb_prod.TabIndex = 60;
+            this.lb_prod.SelectedIndexChanged += new System.EventHandler(this.lb_prod_SelectedIndexChanged);
             // 
             // btView
             // 
@@ -301,11 +305,11 @@
             this.DGV_Venda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_Venda.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_Venda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Venda.Location = new System.Drawing.Point(26, 350);
+            this.DGV_Venda.Location = new System.Drawing.Point(12, 350);
             this.DGV_Venda.Name = "DGV_Venda";
             this.DGV_Venda.ReadOnly = true;
             this.DGV_Venda.RowHeadersWidth = 51;
-            this.DGV_Venda.Size = new System.Drawing.Size(776, 150);
+            this.DGV_Venda.Size = new System.Drawing.Size(828, 150);
             this.DGV_Venda.TabIndex = 56;
             // 
             // label12
@@ -385,7 +389,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 513);
+            this.ClientSize = new System.Drawing.Size(852, 513);
             this.Controls.Add(this.cb_cliente);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);

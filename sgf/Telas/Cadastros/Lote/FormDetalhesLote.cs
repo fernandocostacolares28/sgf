@@ -30,6 +30,9 @@ namespace sgf.Telas.Cadastros.Lote
 
         }
 
+        private void DGV_produtos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
