@@ -101,6 +101,7 @@
     <Compile Include="Controle\Estoque.cs" />
     <Compile Include="Controle\Lote.cs" />
     <Compile Include="Controle\ProdutoLote.cs" />
+    <Compile Include="Controle\Venda.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\DBConnection.cs" />
     <Compile Include="Entidades\Fornecedor.cs" />
