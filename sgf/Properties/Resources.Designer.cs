@@ -63,6 +63,16 @@ namespace sgf.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_10_18_100921 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-10-18 100921", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fundo_de_tela {
             get {
                 object obj = ResourceManager.GetObject("fundo de tela", resourceCulture);

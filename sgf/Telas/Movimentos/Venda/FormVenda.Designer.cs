@@ -248,6 +248,7 @@
             this.btView.TabIndex = 59;
             this.btView.Text = "Visualizar";
             this.btView.UseVisualStyleBackColor = true;
+            this.btView.Click += new System.EventHandler(this.btView_Click);
             // 
             // btExcluir
             // 

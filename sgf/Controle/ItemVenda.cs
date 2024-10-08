@@ -2,6 +2,7 @@
 using sgf.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -101,6 +102,39 @@ namespace sgf.Controle
                     MessageBox.Show($"Erro ao atualizar o estoque: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        public static DataTable CarregarItensVenda(int idVenda)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = @"
+                    SELECT iv.name_produto, iv.quantidade_produto, iv.valor_unitario
+                    FROM item_venda iv
+                    WHERE iv.id_venda = @id_venda";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id_venda", idVenda);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(dt);
+
+                    // Definir os nomes das colunas (opcional)
+                    dt.Columns["name_produto"].ColumnName = "Nome do Produto";
+                    dt.Columns["quantidade_produto"].ColumnName = "Quantidade";
+                    dt.Columns["valor_unitario"].ColumnName = "Valor Unitário";
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao carregar itens da venda: " + ex.Message);
+                }
+            }
+
+            return dt;
         }
     }
 }

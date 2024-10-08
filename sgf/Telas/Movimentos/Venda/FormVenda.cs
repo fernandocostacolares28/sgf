@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using sgf.Controle;
 using sgf.Entidades;
+using sgf.Telas.Movimentos.Venda;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace sgf.Telas.Movimentos
             InitializeComponent();
             CarregarProdutos();
             CarregarClientes();
-            DataTable vendas = Venda.CarregarVendas();
+            DataTable vendas = Controle.Venda.CarregarVendas();
             DGV_Venda.DataSource = vendas; // Atribui a DataTable ao DataGridView
 
         }
@@ -225,7 +226,7 @@ namespace sgf.Telas.Movimentos
                 }
 
                 MessageBox.Show("Venda salva com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DataTable vendas = Venda.CarregarVendas();
+                DataTable vendas = Controle.Venda.CarregarVendas();
                 DGV_Venda.DataSource = vendas;
             }
             catch (Exception ex)
@@ -243,10 +244,10 @@ namespace sgf.Telas.Movimentos
                 // Exclui a venda
                 try
                 {
-                    Venda.Excluir(idVenda);
+                    Controle.Venda.Excluir(idVenda);
                     MessageBox.Show("Venda excluída com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    DataTable vendas = Venda.CarregarVendas();
+                    DataTable vendas = Controle.Venda.CarregarVendas();
                     DGV_Venda.DataSource = vendas;
                 }
                 catch (Exception ex)
@@ -257,6 +258,23 @@ namespace sgf.Telas.Movimentos
             else
             {
                 MessageBox.Show("Selecione uma venda para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btView_Click(object sender, EventArgs e)
+        {
+            if (DGV_Venda.SelectedRows.Count > 0) // Verifica se uma linha está selecionada no DataGridView
+            {
+                // Obtém o ID da venda da linha selecionada
+                int idVenda = Convert.ToInt32(DGV_Venda.SelectedRows[0].Cells["ID"].Value);
+
+                // Abre o formulário de detalhes da venda
+                FormDetalhesVenda detalhesVendaForm = new FormDetalhesVenda(idVenda);
+                detalhesVendaForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma venda para visualizar os detalhes.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

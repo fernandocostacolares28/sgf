@@ -51,3 +51,4 @@ C:\Git\sgf\sgf\obj\Debug\sgf.pdb
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.Lote.FormCadLote.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Cadastros.Lote.FormDetalhesLote.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Movimentos.FormVenda.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Movimentos.Venda.FormDetalhesVenda.resources

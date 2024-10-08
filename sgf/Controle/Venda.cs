@@ -3,9 +3,6 @@ using sgf.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace sgf.Controle
@@ -13,7 +10,7 @@ namespace sgf.Controle
     internal class Venda
     {
         public int Id { get; set; }
-        public int Cliente { get; set; }
+        public string Cliente { get; set; }
         public string Receita_venda { get; set; }
         public DateTime Data_venda { get; set; }
         public string Metodopagamento_venda { get; set; }
@@ -21,7 +18,7 @@ namespace sgf.Controle
         public float Total_venda { get; set; }
         public float Desconto_venda { get; set; }
 
-        public void VendaID(int id, int cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
+        public Venda(int id, string cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
         {
             Id = id;
             Cliente = cliente;
@@ -32,18 +29,6 @@ namespace sgf.Controle
             Total_venda = total_venda;
             Desconto_venda = desconto_venda;
         }
-
-        public Venda(int cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
-        {
-            Cliente = cliente;
-            Receita_venda = receita_venda;
-            Data_venda = data_venda;
-            Metodopagamento_venda = metodopagamento_venda;
-            Parcelas_venda = parcelas_venda;
-            Total_venda = total_venda;
-            Desconto_venda = desconto_venda;
-        }
-
 
         public static float ObterValorProduto(string nomeProduto)
         {
@@ -82,7 +67,7 @@ namespace sgf.Controle
                 string query = @"
             INSERT INTO venda (id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda)
             VALUES (@id_cliente, @receita, @data, @metodo_pagamento, @parcelas, @total_venda, @desconto);
-            SELECT LAST_INSERT_ID();";  // O ID da última inserção será retornado aqui.
+            SELECT LAST_INSERT_ID();";
 
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@id_cliente", id_cliente);
@@ -96,7 +81,6 @@ namespace sgf.Controle
                 try
                 {
                     connection.Open();
-                    // ExecuteScalar() retorna o ID da última inserção
                     idVenda = Convert.ToInt32(command.ExecuteScalar());
                 }
                 catch (Exception ex)
@@ -104,7 +88,7 @@ namespace sgf.Controle
                     MessageBox.Show($"Erro ao salvar a venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            return idVenda;  // Retorna o ID da venda recém-inserida
+            return idVenda;
         }
 
         public static int ObterIdCliente(string nomeCliente)
@@ -143,7 +127,6 @@ namespace sgf.Controle
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
                 string query = "SELECT id_venda, id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda FROM venda";
-
                 MySqlCommand command = new MySqlCommand(query, connection);
 
                 try
@@ -170,30 +153,60 @@ namespace sgf.Controle
 
             return dt;
         }
+
         public static void Excluir(int idVenda)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Inicia uma transação para garantir a integridade dos dados
                 connection.Open();
                 MySqlTransaction transaction = connection.BeginTransaction();
 
                 try
                 {
-                    // Primeiro, exclui os itens da venda
-                    string deleteItemsQuery = "DELETE FROM item_venda WHERE id_venda = @id_venda";
-                    using (MySqlCommand command = new MySqlCommand(deleteItemsQuery, connection, transaction))
+                    // Seleciona todos os itens da venda
+                    string selectItemsQuery = "SELECT name_produto, quantidade_produto FROM item_venda WHERE id_venda = @id_venda";
+                    List<(string nomeProduto, int quantidade)> itensVenda = new List<(string, int)>();
+
+                    using (MySqlCommand selectCommand = new MySqlCommand(selectItemsQuery, connection, transaction))
                     {
-                        command.Parameters.AddWithValue("@id_venda", idVenda);
-                        command.ExecuteNonQuery();
+                        selectCommand.Parameters.AddWithValue("@id_venda", idVenda);
+                        using (MySqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string nomeProduto = reader.GetString("name_produto");
+                                int quantidade = reader.GetInt32("quantidade_produto");
+                                itensVenda.Add((nomeProduto, quantidade));
+                            }
+                        }
                     }
 
-                    // Em seguida, exclui a venda
-                    string deleteVendaQuery = "DELETE FROM venda WHERE id_venda = @id_venda";
-                    using (MySqlCommand command = new MySqlCommand(deleteVendaQuery, connection, transaction))
+                    // Para cada item da venda, devolve a quantidade ao estoque
+                    foreach (var item in itensVenda)
                     {
-                        command.Parameters.AddWithValue("@id_venda", idVenda);
-                        command.ExecuteNonQuery();
+                        string updateEstoqueQuery = "UPDATE produto_lote pl JOIN lote l ON pl.id_lote = l.id_lote SET pl.qtd_produto = pl.qtd_produto + @quantidade WHERE pl.name_produto = @name_produto AND l.status_lote = 'Ativo'";
+                        using (MySqlCommand updateCommand = new MySqlCommand(updateEstoqueQuery, connection, transaction))
+                        {
+                            updateCommand.Parameters.AddWithValue("@quantidade", item.quantidade);
+                            updateCommand.Parameters.AddWithValue("@name_produto", item.nomeProduto);
+                            updateCommand.ExecuteNonQuery();
+                        }
+                    }
+
+                    // Exclui os itens da venda
+                    string deleteItemsQuery = "DELETE FROM item_venda WHERE id_venda = @id_venda";
+                    using (MySqlCommand deleteCommand = new MySqlCommand(deleteItemsQuery, connection, transaction))
+                    {
+                        deleteCommand.Parameters.AddWithValue("@id_venda", idVenda);
+                        deleteCommand.ExecuteNonQuery();
+                    }
+
+                    // Exclui a venda
+                    string deleteVendaQuery = "DELETE FROM venda WHERE id_venda = @id_venda";
+                    using (MySqlCommand deleteCommand = new MySqlCommand(deleteVendaQuery, connection, transaction))
+                    {
+                        deleteCommand.Parameters.AddWithValue("@id_venda", idVenda);
+                        deleteCommand.ExecuteNonQuery();
                     }
 
                     // Confirma a transação
@@ -201,11 +214,52 @@ namespace sgf.Controle
                 }
                 catch (Exception ex)
                 {
-                    // Desfaz a transação em caso de erro
                     transaction.Rollback();
                     throw new Exception("Erro ao excluir a venda: " + ex.Message);
                 }
             }
+        }
+
+        public static Venda CarregarDetalhesVenda(int idVenda)
+        {
+            Venda venda = null;
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                connection.Open();
+
+                string query = @"
+                SELECT v.id_venda, v.metodopagamento_venda, v.parcelas_venda, v.receita_venda, 
+                       v.data_venda, c.name_cliente, v.total_venda, v.desconto_venda
+                FROM venda v
+                JOIN cliente c ON v.id_cliente = c.id_cliente
+                WHERE v.id_venda = @id_venda";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id_venda", idVenda);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            venda = new Venda
+                            (
+                                Convert.ToInt32(reader["id_venda"]),
+                                reader["name_cliente"].ToString(),
+                                reader["receita_venda"].ToString(),
+                                Convert.ToDateTime(reader["data_venda"]),
+                                reader["metodopagamento_venda"].ToString(),
+                                Convert.ToInt32(reader["parcelas_venda"]),
+                                Convert.ToSingle(reader["total_venda"]),
+                                Convert.ToSingle(reader["desconto_venda"])
+                            );
+                        }
+                    }
+                }
+            }
+
+            return venda;
         }
     }
 }

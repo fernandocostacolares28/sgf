@@ -171,10 +171,16 @@
     <Compile Include="Telas\Movimentos\FormCompraLote.Designer.cs">
       <DependentUpon>FormCompraLote.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Movimentos\FormVenda.cs">
+    <Compile Include="Telas\Movimentos\Venda\FormDetalhesVenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Movimentos\FormVenda.Designer.cs">
+    <Compile Include="Telas\Movimentos\Venda\FormDetalhesVenda.Designer.cs">
+      <DependentUpon>FormDetalhesVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Movimentos\Venda\FormVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Movimentos\Venda\FormVenda.Designer.cs">
       <DependentUpon>FormVenda.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -214,7 +220,10 @@
     <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Movimentos\FormVenda.resx">
+    <EmbeddedResource Include="Telas\Movimentos\Venda\FormDetalhesVenda.resx">
+      <DependentUpon>FormDetalhesVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Movimentos\Venda\FormVenda.resx">
       <DependentUpon>FormVenda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -234,6 +243,8 @@
   <ItemGroup>
     <None Include="img\fundo de tela.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="img\Captura de tela 2023-10-18 100921.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
