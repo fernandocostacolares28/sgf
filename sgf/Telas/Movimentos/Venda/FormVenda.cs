@@ -277,5 +277,23 @@ namespace sgf.Telas.Movimentos
                 MessageBox.Show("Selecione uma venda para visualizar os detalhes.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void tb_pesquisa_TextChanged(object sender, EventArgs e)
+        {
+            // Obter o texto digitado
+            string filtro = tb_pesquisa.Text;
+
+            // Carregar produtos filtrados
+            DataTable produtosFiltrados = sgf.Controle.ProdutoLote.FiltrarProdutos(filtro);
+
+            // Limpar o ListBox
+            lb_prod.Items.Clear();
+
+            // Adicionar os produtos filtrados ao ListBox
+            foreach (DataRow row in produtosFiltrados.Rows)
+            {
+                lb_prod.Items.Add(row["name_produto"].ToString());
+            }
+        }
     }
 }

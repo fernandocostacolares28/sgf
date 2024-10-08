@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Git\\sgf\\sgf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\formcompralote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FormDetalhesVenda.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Venda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
               "RelativeDocumentMoniker": "Controle\\Venda.cs",
@@ -111,46 +111,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "ProdutoLote.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
               "RelativeDocumentMoniker": "Controle\\ProdutoLote.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
               "RelativeToolTip": "Controle\\ProdutoLote.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAADgv4AAAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAmwLgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T18:04:03.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "FormVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormVenda.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAMwAQBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAiwCYBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T20:04:40.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ItemVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
               "RelativeDocumentMoniker": "Controle\\ItemVenda.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
               "RelativeToolTip": "Controle\\ItemVenda.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAuwHEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwIkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T19:47:45.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FormDetalhesVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
@@ -163,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormVenda.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormDetalhesLote.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",

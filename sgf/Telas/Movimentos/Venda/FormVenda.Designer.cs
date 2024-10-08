@@ -60,6 +60,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.cb_cliente = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.tb_pesquisa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Venda)).BeginInit();
             this.SuspendLayout();
@@ -354,11 +355,20 @@
             this.label14.TabIndex = 88;
             this.label14.Text = "Cliente";
             // 
+            // tb_pesquisa
+            // 
+            this.tb_pesquisa.Location = new System.Drawing.Point(340, 40);
+            this.tb_pesquisa.Name = "tb_pesquisa";
+            this.tb_pesquisa.Size = new System.Drawing.Size(158, 20);
+            this.tb_pesquisa.TabIndex = 90;
+            this.tb_pesquisa.TextChanged += new System.EventHandler(this.tb_pesquisa_TextChanged);
+            // 
             // FormVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 513);
+            this.Controls.Add(this.tb_pesquisa);
             this.Controls.Add(this.cb_cliente);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -437,5 +447,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cb_cliente;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tb_pesquisa;
     }
 }

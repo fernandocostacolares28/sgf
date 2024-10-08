@@ -171,5 +171,35 @@ namespace sgf.Controle
 
             return dataTable;
         }
+
+        public static DataTable FiltrarProdutos(string filtro)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = @"
+                    SELECT pl.name_produto 
+                    FROM produto_lote pl
+                    JOIN lote l ON pl.id_lote = l.id_lote
+                    WHERE pl.name_produto LIKE @filtro AND l.status_lote = 'Ativo'";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@filtro", "%" + filtro + "%");
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao filtrar produtos: " + ex.Message);
+                }
+            }
+
+            return dt;
+        }
     }
 }
