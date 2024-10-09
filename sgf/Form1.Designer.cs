@@ -62,7 +62,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.Color.Red;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
@@ -79,7 +79,7 @@
             // 
             // cadastrosToolStripMenuItem
             // 
-            this.cadastrosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cadastrosToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtoToolStripMenuItem,
             this.funcionarioToolStripMenuItem,
@@ -105,7 +105,7 @@
             // 
             this.estoqueToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             this.estoqueToolStripMenuItem.Click += new System.EventHandler(this.estoqueToolStripMenuItem_Click);
             // 
@@ -151,6 +151,7 @@
             // 
             // movimentosToolStripMenuItem
             // 
+            this.movimentosToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.movimentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.compraToolStripMenuItem,
             this.vendaToolStripMenuItem});
@@ -175,6 +176,7 @@
             // 
             // financeiroToolStripMenuItem
             // 
+            this.financeiroToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.financeiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contasAReceberToolStripMenuItem,
             this.contasAPagarToolStripMenuItem});
@@ -185,17 +187,19 @@
             // contasAReceberToolStripMenuItem
             // 
             this.contasAReceberToolStripMenuItem.Name = "contasAReceberToolStripMenuItem";
-            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contasAReceberToolStripMenuItem.Text = "Contas a Receber";
+            this.contasAReceberToolStripMenuItem.Click += new System.EventHandler(this.contasAReceberToolStripMenuItem_Click);
             // 
             // contasAPagarToolStripMenuItem
             // 
             this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
-            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contasAPagarToolStripMenuItem.Text = "Contas a Pagar";
             // 
             // relatóriosToolStripMenuItem
             // 
+            this.relatóriosToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vendaToolStripMenuItem1,
             this.compraToolStripMenuItem1,
@@ -209,35 +213,36 @@
             // vendaToolStripMenuItem1
             // 
             this.vendaToolStripMenuItem1.Name = "vendaToolStripMenuItem1";
-            this.vendaToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.vendaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.vendaToolStripMenuItem1.Text = "Venda";
             // 
             // compraToolStripMenuItem1
             // 
             this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
-            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.compraToolStripMenuItem1.Text = "Compra";
             // 
             // contasAPagarToolStripMenuItem1
             // 
             this.contasAPagarToolStripMenuItem1.Name = "contasAPagarToolStripMenuItem1";
-            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contasAPagarToolStripMenuItem1.Text = "Contas a Pagar";
             // 
             // contasAReceberToolStripMenuItem1
             // 
             this.contasAReceberToolStripMenuItem1.Name = "contasAReceberToolStripMenuItem1";
-            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contasAReceberToolStripMenuItem1.Text = "Contas a Receber";
             // 
             // ganhosToolStripMenuItem
             // 
             this.ganhosToolStripMenuItem.Name = "ganhosToolStripMenuItem";
-            this.ganhosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.ganhosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ganhosToolStripMenuItem.Text = "Ganhos";
             // 
             // opçõesToolStripMenuItem
             // 
+            this.opçõesToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logoutToolStripMenuItem,
             this.sairToolStripMenuItem});
@@ -248,13 +253,13 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // panel1
@@ -262,6 +267,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(0, 429);
@@ -286,7 +292,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "V 2.0 - 2024";
+            this.label6.Text = "V 3.0 - 2024";
             // 
             // Form1
             // 

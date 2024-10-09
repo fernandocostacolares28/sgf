@@ -222,7 +222,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 13);
             this.label8.TabIndex = 0;
-            this.label8.Text = "V 2.0 - 2024";
+            this.label8.Text = "V 3.0 - 2024";
             // 
             // FormCadFuncionario
             // 

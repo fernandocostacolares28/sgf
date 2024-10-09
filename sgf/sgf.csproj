@@ -100,6 +100,7 @@
   <ItemGroup>
     <Compile Include="Controle\ContasPagar.cs" />
     <Compile Include="Controle\ContasReceber.cs" />
+    <Compile Include="Controle\DetalhesContaReceber.cs" />
     <Compile Include="Controle\Estoque.cs" />
     <Compile Include="Controle\ItemVenda.cs" />
     <Compile Include="Controle\Lote.cs" />
@@ -161,11 +162,17 @@
     <Compile Include="Telas\Cadastros\Lote\FormDetalhesLote.Designer.cs">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Financeiro\FormContasReceber.cs">
+    <Compile Include="Telas\Financeiro\ContasReceber\FormContasReceber.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Financeiro\FormContasReceber.Designer.cs">
+    <Compile Include="Telas\Financeiro\ContasReceber\FormContasReceber.Designer.cs">
       <DependentUpon>FormContasReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\ContasReceber\FormDetalhesContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\ContasReceber\FormDetalhesContasReceber.Designer.cs">
+      <DependentUpon>FormDetalhesContasReceber.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Gerenciamento\FormEstoque.cs">
       <SubType>Form</SubType>
@@ -225,8 +232,11 @@
     <EmbeddedResource Include="Telas\Cadastros\Lote\FormDetalhesLote.resx">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Financeiro\FormContasReceber.resx">
+    <EmbeddedResource Include="Telas\Financeiro\ContasReceber\FormContasReceber.resx">
       <DependentUpon>FormContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\ContasReceber\FormDetalhesContasReceber.resx">
+      <DependentUpon>FormDetalhesContasReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>

@@ -61,8 +61,12 @@
             this.cb_cliente = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tb_pesquisa = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Venda)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // nud_parcelas
@@ -283,7 +287,7 @@
             this.DGV_Venda.Name = "DGV_Venda";
             this.DGV_Venda.ReadOnly = true;
             this.DGV_Venda.RowHeadersWidth = 51;
-            this.DGV_Venda.Size = new System.Drawing.Size(828, 150);
+            this.DGV_Venda.Size = new System.Drawing.Size(828, 168);
             this.DGV_Venda.TabIndex = 56;
             // 
             // label12
@@ -363,11 +367,43 @@
             this.tb_pesquisa.TabIndex = 90;
             this.tb_pesquisa.TextChanged += new System.EventHandler(this.tb_pesquisa_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Location = new System.Drawing.Point(0, 537);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(853, 22);
+            this.panel1.TabIndex = 91;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(715, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(134, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "by Fernando Costa Colares";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "V 3.0 - 2024";
+            // 
             // FormVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 513);
+            this.ClientSize = new System.Drawing.Size(852, 557);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_pesquisa);
             this.Controls.Add(this.cb_cliente);
             this.Controls.Add(this.label14);
@@ -409,6 +445,8 @@
             this.Load += new System.EventHandler(this.FormVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Venda)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,5 +486,8 @@
         private System.Windows.Forms.ComboBox cb_cliente;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tb_pesquisa;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label15;
     }
 }

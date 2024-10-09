@@ -218,7 +218,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "V 2.0 - 2024";
+            this.label6.Text = "V 3.0 - 2024";
             // 
             // FormCadUsuario
             // 

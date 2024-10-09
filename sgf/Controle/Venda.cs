@@ -87,6 +87,19 @@ namespace sgf.Controle
                 {
                     MessageBox.Show($"Erro ao salvar a venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                if(metodoPagamento == "Cartão Crédito")
+                {
+                    float restante = totalVenda;
+                    DateTime dataparcela = data.AddMonths(1);
+                    String status_contareceber = "ativo";
+
+                    ContasReceber.SalvarContasReceber(idVenda, parcelas, totalVenda, restante, dataparcela, status_contareceber);
+                }
+                else 
+                {
+                    
+                }
+
             }
             return idVenda;
         }

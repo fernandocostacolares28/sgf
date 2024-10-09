@@ -8,5 +8,6 @@ namespace sgf.Controle
 {
     internal class ContasPagar
     {
+
     }
 }
