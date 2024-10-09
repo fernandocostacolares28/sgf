@@ -98,6 +98,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controle\ContasPagar.cs" />
+    <Compile Include="Controle\ContasReceber.cs" />
     <Compile Include="Controle\Estoque.cs" />
     <Compile Include="Controle\ItemVenda.cs" />
     <Compile Include="Controle\Lote.cs" />
@@ -159,6 +161,12 @@
     <Compile Include="Telas\Cadastros\Lote\FormDetalhesLote.Designer.cs">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Financeiro\FormContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\FormContasReceber.Designer.cs">
+      <DependentUpon>FormContasReceber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Gerenciamento\FormEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\Lote\FormDetalhesLote.resx">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\FormContasReceber.resx">
+      <DependentUpon>FormContasReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Gerenciamento\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
