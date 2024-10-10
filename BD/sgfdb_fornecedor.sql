@@ -29,7 +29,7 @@ CREATE TABLE `fornecedor` (
   `telefone_fornecedor` varchar(255) NOT NULL,
   `endereco_fornecedor` varchar(255) NOT NULL,
   PRIMARY KEY (`id_fornecedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `fornecedor` (
 
 LOCK TABLES `fornecedor` WRITE;
 /*!40000 ALTER TABLE `fornecedor` DISABLE KEYS */;
-INSERT INTO `fornecedor` VALUES (1,'tese','213123','2312321','ruaaa'),(2,'teste','1231312312','2312312','rua aaq');
+INSERT INTO `fornecedor` VALUES (1,'tese','213123','2312321','ruaaa'),(2,'teste','1231312312','2312312','rua aaq'),(3,'Farmaceutica Fernando','123213123123','31231231232','eaaerareraerar');
 /*!40000 ALTER TABLE `fornecedor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-03 19:19:16
+-- Dump completed on 2024-10-10 17:09:58

@@ -24,13 +24,13 @@ DROP TABLE IF EXISTS `itenscompra`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `itenscompra` (
   `id_itenscompra` int NOT NULL AUTO_INCREMENT,
+  `id_compra` int NOT NULL,
   `name_itenscompra` varchar(255) NOT NULL,
   `qtd_itenscompra` int NOT NULL,
   `subtotal_itenscompra` float NOT NULL,
-  `id_produto` int NOT NULL,
   PRIMARY KEY (`id_itenscompra`),
-  KEY `fk_id_produtocompra` (`id_produto`),
-  CONSTRAINT `fk_id_produtocompra` FOREIGN KEY (`id_produto`) REFERENCES `produto` (`id_produto`) ON DELETE CASCADE
+  KEY `id_compra_idx` (`id_compra`),
+  CONSTRAINT `id_compra` FOREIGN KEY (`id_compra`) REFERENCES `compra` (`id_compra`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-03 19:19:16
+-- Dump completed on 2024-10-10 17:09:58

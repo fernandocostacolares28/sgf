@@ -16,31 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `lote`
+-- Table structure for table `item_venda`
 --
 
-DROP TABLE IF EXISTS `lote`;
+DROP TABLE IF EXISTS `item_venda`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `lote` (
-  `id_lote` int NOT NULL AUTO_INCREMENT,
-  `code_lote` varchar(45) NOT NULL,
-  `dt_validade_lote` varchar(45) NOT NULL,
-  `status_lote` varchar(45) NOT NULL,
-  `farmaceutica_lote` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_lote`),
-  UNIQUE KEY `code_lote_UNIQUE` (`code_lote`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `item_venda` (
+  `id_item` int NOT NULL AUTO_INCREMENT,
+  `id_venda` int DEFAULT NULL,
+  `name_produto` varchar(255) DEFAULT NULL,
+  `quantidade_produto` int DEFAULT NULL,
+  `valor_unitario` float DEFAULT NULL,
+  PRIMARY KEY (`id_item`),
+  KEY `id_venda` (`id_venda`),
+  CONSTRAINT `id_venda` FOREIGN KEY (`id_venda`) REFERENCES `venda` (`id_venda`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `lote`
+-- Dumping data for table `item_venda`
 --
 
-LOCK TABLES `lote` WRITE;
-/*!40000 ALTER TABLE `lote` DISABLE KEYS */;
-INSERT INTO `lote` VALUES (11,'212','10-12-2025','Ativo','teste');
-/*!40000 ALTER TABLE `lote` ENABLE KEYS */;
+LOCK TABLES `item_venda` WRITE;
+/*!40000 ALTER TABLE `item_venda` DISABLE KEYS */;
+INSERT INTO `item_venda` VALUES (17,21,'Dipirona 1 g',1,12.34),(18,21,'Lamotrigina 50 mg',3,35.22),(19,22,'Deller 50 mg',1,37.55),(20,22,'Dipirona 5 mg',5,6.23),(21,23,'Deller 50 mg',3,37.55),(22,24,'Deller 50 mg',1,37.55),(23,24,'Dipirona 1 g',1,12.34),(24,25,'Lamotrigina 50 mg',2,35.22),(25,25,'Dipirona 1 g',2,12.34);
+/*!40000 ALTER TABLE `item_venda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

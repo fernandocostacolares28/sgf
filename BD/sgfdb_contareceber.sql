@@ -28,10 +28,12 @@ CREATE TABLE `contareceber` (
   `parcela_contareceber` int NOT NULL,
   `total_contareceber` float NOT NULL,
   `restante_contareceber` float NOT NULL,
+  `dataparcela_contareceber` datetime(6) DEFAULT NULL,
+  `status_contareceber` varchar(45) NOT NULL,
   PRIMARY KEY (`id_contareceber`),
   KEY `fk_id_venda` (`id_venda`),
   CONSTRAINT `fk_id_venda` FOREIGN KEY (`id_venda`) REFERENCES `venda` (`id_venda`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +42,7 @@ CREATE TABLE `contareceber` (
 
 LOCK TABLES `contareceber` WRITE;
 /*!40000 ALTER TABLE `contareceber` DISABLE KEYS */;
+INSERT INTO `contareceber` VALUES (2,22,3,68.7,0,NULL,'Pago'),(3,23,3,111.52,0,NULL,'Pago'),(4,24,4,49.39,0,NULL,'Pago'),(5,25,4,93.22,0,NULL,'Pago');
 /*!40000 ALTER TABLE `contareceber` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-03 19:19:15
+-- Dump completed on 2024-10-10 17:09:58

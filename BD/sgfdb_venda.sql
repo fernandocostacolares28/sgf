@@ -24,19 +24,17 @@ DROP TABLE IF EXISTS `venda`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `venda` (
   `id_venda` int NOT NULL AUTO_INCREMENT,
-  `id_itensvenda` int NOT NULL,
   `id_cliente` int NOT NULL,
   `receita_venda` varchar(255) DEFAULT NULL,
-  `data_venda` date DEFAULT NULL,
+  `data_venda` datetime(6) NOT NULL,
   `metodopagamento_venda` varchar(50) NOT NULL,
   `parcelas_venda` int DEFAULT NULL,
   `total_venda` float NOT NULL,
+  `desconto_venda` float DEFAULT NULL,
   PRIMARY KEY (`id_venda`),
-  KEY `fk_id_itensvenda` (`id_itensvenda`),
   KEY `fk_id_cliente` (`id_cliente`),
-  CONSTRAINT `fk_id_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE CASCADE,
-  CONSTRAINT `fk_id_itensvenda` FOREIGN KEY (`id_itensvenda`) REFERENCES `itensvenda` (`id_itensvenda`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `fk_id_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +43,7 @@ CREATE TABLE `venda` (
 
 LOCK TABLES `venda` WRITE;
 /*!40000 ALTER TABLE `venda` DISABLE KEYS */;
+INSERT INTO `venda` VALUES (21,2,'124','2024-10-09 11:44:41.678110','Pix',1,106.68,2),(22,3,'125','2024-10-09 12:49:00.291605','Cartão Crédito',3,68.7,10),(23,3,'126','2024-10-09 16:50:47.115692','Cartão Crédito',3,111.52,1),(24,2,'127','2024-10-10 16:51:16.520950','Cartão Crédito',4,49.39,1),(25,2,'128','2024-10-10 16:59:13.977474','Cartão Crédito',4,93.22,2);
 /*!40000 ALTER TABLE `venda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-03 19:19:15
+-- Dump completed on 2024-10-10 17:09:59

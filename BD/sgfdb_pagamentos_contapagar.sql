@@ -16,31 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `itensvenda`
+-- Table structure for table `pagamentos_contapagar`
 --
 
-DROP TABLE IF EXISTS `itensvenda`;
+DROP TABLE IF EXISTS `pagamentos_contapagar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `itensvenda` (
-  `id_itensvenda` int NOT NULL AUTO_INCREMENT,
-  `name_itensvenda` varchar(255) NOT NULL,
-  `qtd_itensvenda` int NOT NULL,
-  `subtotal_itensvenda` float NOT NULL,
-  `id_produto` int NOT NULL,
-  PRIMARY KEY (`id_itensvenda`),
-  KEY `fk_id_produtovenda` (`id_produto`),
-  CONSTRAINT `fk_id_produtovenda` FOREIGN KEY (`id_produto`) REFERENCES `produto` (`id_produto`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `pagamentos_contapagar` (
+  `id_pagamento` int NOT NULL AUTO_INCREMENT,
+  `id_contapagar` int NOT NULL,
+  `data_pagamento` datetime(6) NOT NULL,
+  `valorparcela_pagamento` float NOT NULL,
+  `status_pagamento` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_pagamento`),
+  KEY `fk_id_contapagar_idx` (`id_contapagar`),
+  CONSTRAINT `fk_id_contapagar` FOREIGN KEY (`id_contapagar`) REFERENCES `contapagar` (`id_contapagar`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `itensvenda`
+-- Dumping data for table `pagamentos_contapagar`
 --
 
-LOCK TABLES `itensvenda` WRITE;
-/*!40000 ALTER TABLE `itensvenda` DISABLE KEYS */;
-/*!40000 ALTER TABLE `itensvenda` ENABLE KEYS */;
+LOCK TABLES `pagamentos_contapagar` WRITE;
+/*!40000 ALTER TABLE `pagamentos_contapagar` DISABLE KEYS */;
+INSERT INTO `pagamentos_contapagar` VALUES (1,8,'2024-10-10 16:32:45.521525',500,'pago'),(2,9,'2024-10-10 16:52:13.692016',1000.04,'pago'),(3,9,'2024-10-10 16:54:10.125233',1000.04,'pago'),(4,10,'2024-10-10 16:58:52.565787',1000,'pago'),(5,10,'2024-10-10 16:58:55.639167',1000,'pago'),(6,10,'2024-10-10 16:58:58.117238',1000,'pago'),(7,10,'2024-10-10 16:59:00.703236',1000,'pago');
+/*!40000 ALTER TABLE `pagamentos_contapagar` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-03 19:19:15
+-- Dump completed on 2024-10-10 17:09:58
