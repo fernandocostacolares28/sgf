@@ -288,6 +288,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Location = new System.Drawing.Point(0, 515);
@@ -348,7 +349,7 @@
             this.MaximizeBox = false;
             this.Name = "FormCadLote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCadLote";
+            this.Text = "Cadastro Lote";
             this.Load += new System.EventHandler(this.FormCadLote_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Lote)).EndInit();
             this.panel1.ResumeLayout(false);

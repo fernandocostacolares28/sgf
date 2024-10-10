@@ -45,8 +45,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.bt_excluir = new System.Windows.Forms.Button();
             this.bt_entregue = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Compra)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtp_data
@@ -88,11 +92,17 @@
             // 
             // DGV_Compra
             // 
+            this.DGV_Compra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGV_Compra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV_Compra.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_Compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Compra.Location = new System.Drawing.Point(12, 261);
             this.DGV_Compra.Name = "DGV_Compra";
-            this.DGV_Compra.Size = new System.Drawing.Size(776, 165);
+            this.DGV_Compra.Size = new System.Drawing.Size(776, 191);
             this.DGV_Compra.TabIndex = 4;
+            this.DGV_Compra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Compra_CellContentClick);
             // 
             // tb_id
             // 
@@ -196,11 +206,44 @@
             this.bt_entregue.UseVisualStyleBackColor = true;
             this.bt_entregue.Click += new System.EventHandler(this.bt_entregue_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(1, 458);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 22);
+            this.panel1.TabIndex = 111;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(662, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "by Fernando Costa Colares";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "V 3.0 - 2024";
+            // 
             // FormCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_entregue);
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.label6);
@@ -218,11 +261,15 @@
             this.Controls.Add(this.cb_fornecedor);
             this.Controls.Add(this.dtp_data);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compra";
             this.Load += new System.EventHandler(this.FormCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Compra)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +293,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button bt_excluir;
         private System.Windows.Forms.Button bt_entregue;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

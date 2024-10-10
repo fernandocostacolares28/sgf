@@ -107,6 +107,7 @@ namespace sgf.Controle
                                     UPDATE contareceber 
                                     SET restante_contareceber = @restante_contareceber, status_contareceber = 'Pago', dataparcela_contareceber = NULL
                                     WHERE id_contareceber = @id_contasreceber";
+                                DetalhesContaReceber.SalvarDetalhes(id_contasreceber, DateTime.Now, valorParcela, "pago");
                             }
                             else
                             {

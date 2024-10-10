@@ -123,7 +123,7 @@ namespace sgf.Controle
 
                     // Definir os nomes das colunas
                     dt.Columns["id_compra"].ColumnName = "ID";
-                    dt.Columns["id_fornecedor"].ColumnName = "ID Cliente";
+                    dt.Columns["id_fornecedor"].ColumnName = "ID Fornecedor";
                     dt.Columns["data_compra"].ColumnName = "Data";
                     dt.Columns["metodopagamento_compra"].ColumnName = "Método de Pagamento";
                     dt.Columns["total_compra"].ColumnName = "Total";

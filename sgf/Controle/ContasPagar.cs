@@ -75,6 +75,7 @@ namespace sgf.Controle
                             UPDATE contapagar 
                             SET restante_contapagar = @restante_contapagar, status_contapagar = 'Pago', dataparcela_contapagar = NULL
                             WHERE id_contapagar = @id_contaspagar";
+                                DetalhesContaPagar.SalvarDetalhes(id_contaspagar, DateTime.Now, valorParcela, "pago");
                             }
                             else
                             {

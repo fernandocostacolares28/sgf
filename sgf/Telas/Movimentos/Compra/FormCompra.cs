@@ -128,6 +128,11 @@ namespace sgf.Telas.Movimentos.Compra
                 MessageBox.Show("Selecione uma compra para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void DGV_Compra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

@@ -80,5 +80,10 @@ namespace sgf.Telas.Financeiro
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
