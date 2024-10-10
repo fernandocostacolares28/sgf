@@ -164,14 +164,15 @@
             // 
             this.compraToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.compraToolStripMenuItem.Text = "Compra";
+            this.compraToolStripMenuItem.Click += new System.EventHandler(this.compraToolStripMenuItem_Click);
             // 
             // vendaToolStripMenuItem
             // 
             this.vendaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
-            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.vendaToolStripMenuItem.Text = "Venda";
             this.vendaToolStripMenuItem.Click += new System.EventHandler(this.vendaToolStripMenuItem_Click);
             // 

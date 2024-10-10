@@ -3,6 +3,7 @@ using sgf.Telas.Cadastros.Lote;
 using sgf.Telas.Financeiro;
 using sgf.Telas.Gerenciamento;
 using sgf.Telas.Movimentos;
+using sgf.Telas.Movimentos.Compra;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,6 +75,12 @@ namespace sgf
         {
             FormContasReceber formContasReceber = new FormContasReceber();
             formContasReceber.ShowDialog();
+        }
+
+        private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCompra formCompra = new FormCompra();
+            formCompra.ShowDialog();
         }
     }
 }

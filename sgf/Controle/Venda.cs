@@ -214,6 +214,20 @@ namespace sgf.Controle
                         deleteCommand.ExecuteNonQuery();
                     }
 
+                    string queryExcluirPagamentos = @"
+                        DELETE FROM pagamentos_contareceber 
+                        WHERE id_contareceber IN (SELECT id_contareceber FROM contareceber WHERE id_venda = @id_venda)";
+
+                    MySqlCommand commandExcluirPagamentos = new MySqlCommand(queryExcluirPagamentos, connection, transaction);
+                    commandExcluirPagamentos.Parameters.AddWithValue("@id_venda", idVenda);
+                    commandExcluirPagamentos.ExecuteNonQuery();
+
+                    string queryExcluirContaReceber = "DELETE FROM contareceber WHERE id_venda = @id_venda";
+
+                    MySqlCommand commandExcluirContaReceber = new MySqlCommand(queryExcluirContaReceber, connection, transaction);
+                    commandExcluirContaReceber.Parameters.AddWithValue("@id_venda", idVenda);
+                    commandExcluirContaReceber.ExecuteNonQuery();
+
                     // Exclui a venda
                     string deleteVendaQuery = "DELETE FROM venda WHERE id_venda = @id_venda";
                     using (MySqlCommand deleteCommand = new MySqlCommand(deleteVendaQuery, connection, transaction))
