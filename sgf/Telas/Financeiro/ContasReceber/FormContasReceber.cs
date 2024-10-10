@@ -75,5 +75,10 @@ namespace sgf.Telas.Financeiro
                 MessageBox.Show("Por favor, selecione uma conta a receber para visualizar os detalhes.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void FormContasReceber_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,5 +23,10 @@ namespace sgf.Telas.Financeiro.ContasReceber
         {
 
         }
+
+        private void DGV_pagamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

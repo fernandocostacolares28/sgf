@@ -49,6 +49,7 @@
             this.DGV_pagamentos.Name = "DGV_pagamentos";
             this.DGV_pagamentos.Size = new System.Drawing.Size(776, 386);
             this.DGV_pagamentos.TabIndex = 0;
+            this.DGV_pagamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_pagamentos_CellContentClick);
             // 
             // panel1
             // 

@@ -101,6 +101,7 @@
     <Compile Include="Controle\Compra.cs" />
     <Compile Include="Controle\ContasPagar.cs" />
     <Compile Include="Controle\ContasReceber.cs" />
+    <Compile Include="Controle\DetalhesContaPagar.cs" />
     <Compile Include="Controle\DetalhesContaReceber.cs" />
     <Compile Include="Controle\Estoque.cs" />
     <Compile Include="Controle\ItemVenda.cs" />
@@ -168,6 +169,18 @@
     <Compile Include="Telas\Cadastros\Lote\FormDetalhesLote.Designer.cs">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Financeiro\ContasPagar\FormContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\ContasPagar\FormContasPagar.Designer.cs">
+      <DependentUpon>FormContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\ContasPagar\FormDetalhesContaPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\ContasPagar\FormDetalhesContaPagar.Designer.cs">
+      <DependentUpon>FormDetalhesContaPagar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Financeiro\ContasReceber\FormContasReceber.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,12 +204,6 @@
     </Compile>
     <Compile Include="Telas\Movimentos\Compra\FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Movimentos\FormCompraLote.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Movimentos\FormCompraLote.Designer.cs">
-      <DependentUpon>FormCompraLote.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Movimentos\Venda\FormDetalhesVenda.cs">
       <SubType>Form</SubType>
@@ -238,6 +245,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\Lote\FormDetalhesLote.resx">
       <DependentUpon>FormDetalhesLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\ContasPagar\FormContasPagar.resx">
+      <DependentUpon>FormContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\ContasPagar\FormDetalhesContaPagar.resx">
+      <DependentUpon>FormDetalhesContaPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\ContasReceber\FormContasReceber.resx">
       <DependentUpon>FormContasReceber.cs</DependentUpon>

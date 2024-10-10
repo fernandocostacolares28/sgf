@@ -149,6 +149,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormContasReceber";
             this.Text = "Contas a Receber";
+            this.Load += new System.EventHandler(this.FormContasReceber_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_contareceber)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -55,3 +55,5 @@ C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Movimentos.Venda.FormDetalhesVenda.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Financeiro.FormContasReceber.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Financeiro.ContasReceber.FormDetalhesContasReceber.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Movimentos.Compra.FormCompra.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Financeiro.ContasPagar.FormContasPagar.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Financeiro.ContasPagar.FormDetalhesContaPagar.resources
