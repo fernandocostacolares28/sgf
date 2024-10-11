@@ -30,7 +30,7 @@ namespace sgf.Telas.Movimentos.Venda
 
             if (venda != null)
             {
-                tb_id.Text = venda.Id.ToString();
+                tb_id.Text = venda.IdVenda.ToString();
                 tb_metodo.Text = venda.Metodopagamento_venda;
                 tb_parcelas.Text = venda.Parcelas_venda.ToString();
                 tb_receita.Text = venda.Receita_venda;

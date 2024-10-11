@@ -9,7 +9,7 @@ namespace sgf.Controle
 {
     internal class Venda
     {
-        public int Id { get; set; }
+        public int IdVenda { get; set; }
         public string Cliente { get; set; }
         public string Receita_venda { get; set; }
         public DateTime Data_venda { get; set; }
@@ -18,9 +18,10 @@ namespace sgf.Controle
         public float Total_venda { get; set; }
         public float Desconto_venda { get; set; }
 
-        public Venda(int id, string cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
+        public Venda() { }
+        public Venda(int idvenda, string cliente, string receita_venda, DateTime data_venda, string metodopagamento_venda, int parcelas_venda, float total_venda, float desconto_venda)
         {
-            Id = id;
+            IdVenda = idvenda;
             Cliente = cliente;
             Receita_venda = receita_venda;
             Data_venda = data_venda;

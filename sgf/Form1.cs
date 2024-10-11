@@ -5,6 +5,7 @@ using sgf.Telas.Financeiro.ContasPagar;
 using sgf.Telas.Gerenciamento;
 using sgf.Telas.Movimentos;
 using sgf.Telas.Movimentos.Compra;
+using sgf.Telas.Relatorios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,6 +89,12 @@ namespace sgf
         {
             FormContasPagar formContasPagar = new FormContasPagar();
             formContasPagar.ShowDialog();
+        }
+
+        private void vendaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioVenda formRelatorioVenda = new FormRelatorioVenda();
+            formRelatorioVenda.ShowDialog();
         }
     }
 }

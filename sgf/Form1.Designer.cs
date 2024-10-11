@@ -164,7 +164,7 @@
             // 
             this.compraToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
             this.compraToolStripMenuItem.Text = "Compra";
             this.compraToolStripMenuItem.Click += new System.EventHandler(this.compraToolStripMenuItem_Click);
             // 
@@ -172,7 +172,7 @@
             // 
             this.vendaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
-            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
             this.vendaToolStripMenuItem.Text = "Venda";
             this.vendaToolStripMenuItem.Click += new System.EventHandler(this.vendaToolStripMenuItem_Click);
             // 
@@ -188,6 +188,7 @@
             // 
             // contasAReceberToolStripMenuItem
             // 
+            this.contasAReceberToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.contasAReceberToolStripMenuItem.Name = "contasAReceberToolStripMenuItem";
             this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.contasAReceberToolStripMenuItem.Text = "Contas a Receber";
@@ -195,6 +196,7 @@
             // 
             // contasAPagarToolStripMenuItem
             // 
+            this.contasAPagarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
             this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.contasAPagarToolStripMenuItem.Text = "Contas a Pagar";
@@ -218,6 +220,7 @@
             this.vendaToolStripMenuItem1.Name = "vendaToolStripMenuItem1";
             this.vendaToolStripMenuItem1.Size = new System.Drawing.Size(195, 24);
             this.vendaToolStripMenuItem1.Text = "Venda";
+            this.vendaToolStripMenuItem1.Click += new System.EventHandler(this.vendaToolStripMenuItem1_Click);
             // 
             // compraToolStripMenuItem1
             // 
