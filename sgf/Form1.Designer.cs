@@ -227,18 +227,21 @@
             this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
             this.compraToolStripMenuItem1.Size = new System.Drawing.Size(195, 24);
             this.compraToolStripMenuItem1.Text = "Compra";
+            this.compraToolStripMenuItem1.Click += new System.EventHandler(this.compraToolStripMenuItem1_Click);
             // 
             // contasAPagarToolStripMenuItem1
             // 
             this.contasAPagarToolStripMenuItem1.Name = "contasAPagarToolStripMenuItem1";
             this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(195, 24);
             this.contasAPagarToolStripMenuItem1.Text = "Contas a Pagar";
+            this.contasAPagarToolStripMenuItem1.Click += new System.EventHandler(this.contasAPagarToolStripMenuItem1_Click);
             // 
             // contasAReceberToolStripMenuItem1
             // 
             this.contasAReceberToolStripMenuItem1.Name = "contasAReceberToolStripMenuItem1";
             this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(195, 24);
             this.contasAReceberToolStripMenuItem1.Text = "Contas a Receber";
+            this.contasAReceberToolStripMenuItem1.Click += new System.EventHandler(this.contasAReceberToolStripMenuItem1_Click);
             // 
             // ganhosToolStripMenuItem
             // 

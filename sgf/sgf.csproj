@@ -160,6 +160,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Relatorio\RelatorioCompra.cs" />
+    <Compile Include="Relatorio\RelatorioContaPagar.cs" />
+    <Compile Include="Relatorio\RelatorioContaReceber.cs" />
     <Compile Include="Relatorio\RelatorioVenda.cs" />
     <Compile Include="Relatorio\Relatório.cs" />
     <Compile Include="Telas\Cadastros\FormCadCliente.cs">
@@ -252,6 +255,24 @@
     <Compile Include="Telas\Movimentos\Venda\FormVenda.Designer.cs">
       <DependentUpon>FormVenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioCompra.Designer.cs">
+      <DependentUpon>FormRelatorioCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioContasPagar.Designer.cs">
+      <DependentUpon>FormRelatorioContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioContasReceber.Designer.cs">
+      <DependentUpon>FormRelatorioContasReceber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Relatorios\FormRelatorioVenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +331,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Movimentos\Venda\FormVenda.resx">
       <DependentUpon>FormVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioCompra.resx">
+      <DependentUpon>FormRelatorioCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioContasPagar.resx">
+      <DependentUpon>FormRelatorioContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioContasReceber.resx">
+      <DependentUpon>FormRelatorioContasReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Relatorios\FormRelatorioVenda.resx">
       <DependentUpon>FormRelatorioVenda.cs</DependentUpon>

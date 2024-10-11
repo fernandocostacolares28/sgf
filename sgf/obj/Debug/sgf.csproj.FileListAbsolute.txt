@@ -73,3 +73,6 @@ C:\Git\sgf\sgf\bin\Debug\System.Text.Json.xml
 C:\Git\sgf\sgf\bin\Debug\System.ValueTuple.xml
 C:\Git\sgf\sgf\bin\Debug\itextsharp.dll
 C:\Git\sgf\sgf\bin\Debug\itextsharp.xml
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioCompra.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioContasReceber.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioContasPagar.resources

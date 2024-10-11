@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sgf.Relatorio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,30 +11,24 @@ using System.Windows.Forms;
 
 namespace sgf.Telas.Relatorios
 {
-    public partial class FormRelatorioVenda : Form
+    public partial class FormRelatorioCompra : Form
     {
-        public FormRelatorioVenda()
+        public FormRelatorioCompra()
         {
             InitializeComponent();
-            DataTable vendas = Controle.Venda.CarregarVendas();
-            DGV_Venda.DataSource = vendas;
+            DataTable compras = Controle.Compra.CarregarCompras();
+            DGV_Compra.DataSource = compras;
         }
 
-        private void FormRelatorioVenda_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void bt_gerar_Click(object sender, EventArgs e)
         {
             DateTime inicio = dtp_inicio.Value;
             DateTime fim = dtp_fim.Value;
 
-            RelatorioVenda.GerarRelatorioVendasPDF(inicio, fim);
-
+            RelatorioCompra.GerarRelatorioComprasPDF(inicio, fim);
         }
 
-        private void DGV_Venda_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DGV_Compra_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

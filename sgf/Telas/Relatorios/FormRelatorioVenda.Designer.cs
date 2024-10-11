@@ -48,6 +48,7 @@
             this.dtp_inicio.Name = "dtp_inicio";
             this.dtp_inicio.Size = new System.Drawing.Size(200, 20);
             this.dtp_inicio.TabIndex = 0;
+            this.dtp_inicio.ValueChanged += new System.EventHandler(this.dtp_inicio_ValueChanged);
             // 
             // dtp_fim
             // 
@@ -55,6 +56,7 @@
             this.dtp_fim.Name = "dtp_fim";
             this.dtp_fim.Size = new System.Drawing.Size(200, 20);
             this.dtp_fim.TabIndex = 1;
+            this.dtp_fim.ValueChanged += new System.EventHandler(this.dtp_fim_ValueChanged);
             // 
             // label1
             // 
@@ -64,6 +66,7 @@
             this.label1.Size = new System.Drawing.Size(22, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "até";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -73,6 +76,7 @@
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "De";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // bt_gerar
             // 
@@ -98,6 +102,7 @@
             this.DGV_Venda.RowHeadersWidth = 51;
             this.DGV_Venda.Size = new System.Drawing.Size(457, 277);
             this.DGV_Venda.TabIndex = 57;
+            this.DGV_Venda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Venda_CellContentClick);
             // 
             // panel1
             // 
@@ -111,6 +116,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 22);
             this.panel1.TabIndex = 58;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label7
             // 

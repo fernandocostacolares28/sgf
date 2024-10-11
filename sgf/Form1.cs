@@ -96,5 +96,23 @@ namespace sgf
             FormRelatorioVenda formRelatorioVenda = new FormRelatorioVenda();
             formRelatorioVenda.ShowDialog();
         }
+
+        private void compraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioCompra formRelatorio = new FormRelatorioCompra();
+            formRelatorio.ShowDialog();
+        }
+
+        private void contasAReceberToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioContasReceber formRelatorioContasReceber = new FormRelatorioContasReceber();
+            formRelatorioContasReceber.ShowDialog();
+        }
+
+        private void contasAPagarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioContasPagar formRelatorioContasPagar = new FormRelatorioContasPagar();
+            formRelatorioContasPagar.ShowDialog();
+        }
     }
 }
