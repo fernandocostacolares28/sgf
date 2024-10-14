@@ -33,7 +33,7 @@ CREATE TABLE `contapagar` (
   PRIMARY KEY (`id_contapagar`),
   KEY `fk_id_compra_idx` (`id_compra`),
   CONSTRAINT `fk_id_compra` FOREIGN KEY (`id_compra`) REFERENCES `compra` (`id_compra`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `contapagar` (
 
 LOCK TABLES `contapagar` WRITE;
 /*!40000 ALTER TABLE `contapagar` DISABLE KEYS */;
-INSERT INTO `contapagar` VALUES (8,2,2,1000,0,NULL,'Pago'),(9,3,3,3000.12,0,NULL,'Pago'),(10,4,4,4000,0,NULL,'Pago');
+INSERT INTO `contapagar` VALUES (8,2,2,1000,0,NULL,'Pago'),(9,3,3,3000.12,0,NULL,'Pago'),(10,4,4,4000,0,NULL,'Pago'),(11,5,2,2000.21,1000.1,'2024-12-11 13:38:25.567961','ativo');
 /*!40000 ALTER TABLE `contapagar` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10 17:09:58
+-- Dump completed on 2024-10-14 11:51:39

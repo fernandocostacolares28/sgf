@@ -31,7 +31,7 @@ CREATE TABLE `item_venda` (
   PRIMARY KEY (`id_item`),
   KEY `id_venda` (`id_venda`),
   CONSTRAINT `id_venda` FOREIGN KEY (`id_venda`) REFERENCES `venda` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `item_venda` (
 
 LOCK TABLES `item_venda` WRITE;
 /*!40000 ALTER TABLE `item_venda` DISABLE KEYS */;
-INSERT INTO `item_venda` VALUES (17,21,'Dipirona 1 g',1,12.34),(18,21,'Lamotrigina 50 mg',3,35.22),(19,22,'Deller 50 mg',1,37.55),(20,22,'Dipirona 5 mg',5,6.23),(21,23,'Deller 50 mg',3,37.55),(22,24,'Deller 50 mg',1,37.55),(23,24,'Dipirona 1 g',1,12.34),(24,25,'Lamotrigina 50 mg',2,35.22),(25,25,'Dipirona 1 g',2,12.34);
+INSERT INTO `item_venda` VALUES (17,21,'Dipirona 1 g',1,12.34),(18,21,'Lamotrigina 50 mg',3,35.22),(19,22,'Deller 50 mg',1,37.55),(20,22,'Dipirona 5 mg',5,6.23),(21,23,'Deller 50 mg',3,37.55),(22,24,'Deller 50 mg',1,37.55),(23,24,'Dipirona 1 g',1,12.34),(24,25,'Lamotrigina 50 mg',2,35.22),(25,25,'Dipirona 1 g',2,12.34),(26,26,'Lamotrigina 50 mg',2,35.22),(27,26,'Atentah 40 mg',3,113.3);
 /*!40000 ALTER TABLE `item_venda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10 17:09:58
+-- Dump completed on 2024-10-14 11:51:39

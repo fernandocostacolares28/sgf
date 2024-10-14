@@ -30,7 +30,7 @@ CREATE TABLE `funcionario` (
   `endereco_funcionario` varchar(255) NOT NULL,
   `funcao_funcionario` varchar(255) NOT NULL,
   PRIMARY KEY (`id_funcionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `funcionario` (
 
 LOCK TABLES `funcionario` WRITE;
 /*!40000 ALTER TABLE `funcionario` DISABLE KEYS */;
-INSERT INTO `funcionario` VALUES (3,'Plinio','123133','123123123','rua da lua','Vendedor'),(4,'Flávia','1321321321','213123123','rua da farmacia','CEO'),(7,'admin','000.000.000-00','000000000','-','CEO');
+INSERT INTO `funcionario` VALUES (3,'Plinio','123133','123123123','rua da lua','Vendedor'),(4,'Flávia','1321321321','213123123','rua da farmacia','CEO'),(7,'admin','000.000.000-00','000000000','-','CEO'),(8,'Geremias','222.333.444-11','12312312','aaaaaaaa','Auxiliar');
 /*!40000 ALTER TABLE `funcionario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10 17:09:58
+-- Dump completed on 2024-10-14 11:51:38

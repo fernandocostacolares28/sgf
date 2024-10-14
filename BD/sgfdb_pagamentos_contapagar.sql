@@ -31,7 +31,7 @@ CREATE TABLE `pagamentos_contapagar` (
   PRIMARY KEY (`id_pagamento`),
   KEY `fk_id_contapagar_idx` (`id_contapagar`),
   CONSTRAINT `fk_id_contapagar` FOREIGN KEY (`id_contapagar`) REFERENCES `contapagar` (`id_contapagar`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `pagamentos_contapagar` (
 
 LOCK TABLES `pagamentos_contapagar` WRITE;
 /*!40000 ALTER TABLE `pagamentos_contapagar` DISABLE KEYS */;
-INSERT INTO `pagamentos_contapagar` VALUES (1,8,'2024-10-10 16:32:45.521525',500,'pago'),(2,9,'2024-10-10 16:52:13.692016',1000.04,'pago'),(3,9,'2024-10-10 16:54:10.125233',1000.04,'pago'),(4,10,'2024-10-10 16:58:52.565787',1000,'pago'),(5,10,'2024-10-10 16:58:55.639167',1000,'pago'),(6,10,'2024-10-10 16:58:58.117238',1000,'pago'),(7,10,'2024-10-10 16:59:00.703236',1000,'pago');
+INSERT INTO `pagamentos_contapagar` VALUES (1,8,'2024-10-10 16:32:45.521525',500,'pago'),(2,9,'2024-10-10 16:52:13.692016',1000.04,'pago'),(3,9,'2024-10-10 16:54:10.125233',1000.04,'pago'),(4,10,'2024-10-10 16:58:52.565787',1000,'pago'),(5,10,'2024-10-10 16:58:55.639167',1000,'pago'),(6,10,'2024-10-10 16:58:58.117238',1000,'pago'),(7,10,'2024-10-10 16:59:00.703236',1000,'pago'),(8,11,'2024-10-11 14:51:41.835862',1000.1,'pago');
 /*!40000 ALTER TABLE `pagamentos_contapagar` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10 17:09:58
+-- Dump completed on 2024-10-14 11:51:39

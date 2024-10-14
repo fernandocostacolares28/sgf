@@ -33,7 +33,7 @@ CREATE TABLE `compra` (
   PRIMARY KEY (`id_compra`),
   KEY `fk_id_fornecedor` (`id_fornecedor`),
   CONSTRAINT `fk_id_fornecedor` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedor` (`id_fornecedor`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `compra` (
 
 LOCK TABLES `compra` WRITE;
 /*!40000 ALTER TABLE `compra` DISABLE KEYS */;
-INSERT INTO `compra` VALUES (2,2,'2024-10-10 16:27:04.337255','Cartão Crédito',1000,2,'Entregue'),(3,3,'2024-10-10 16:39:25.822835','Cartão Crédito',3000.12,3,'Entregue'),(4,3,'2024-10-10 16:57:47.913193','Cartão Crédito',4000,4,'Aguardando Entrega');
+INSERT INTO `compra` VALUES (2,2,'2024-10-10 16:27:04.337255','Cartão Crédito',1000,2,'Entregue'),(3,3,'2024-10-10 16:39:25.822835','Cartão Crédito',3000.12,3,'Entregue'),(4,3,'2024-10-10 16:57:47.913193','Cartão Crédito',4000,4,'Aguardando Entrega'),(5,3,'2024-10-11 13:38:25.567961','Cartão Crédito',2000.21,2,'Aguardando Entrega');
 /*!40000 ALTER TABLE `compra` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10 17:09:58
+-- Dump completed on 2024-10-14 11:51:39
