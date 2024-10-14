@@ -137,10 +137,22 @@ namespace sgf
                 // Desabilite opções de administração, por exemplo
                 financeiroToolStripMenuItem.Visible = false;
                 compraToolStripMenuItem.Visible = false;
-                cadastrosToolStripMenuItem.Visible = false;
+                usuárioToolStripMenuItem.Visible = false;
+                clienteToolStripMenuItem.Visible = false;
+                funcionarioToolStripMenuItem.Visible = false;
             }
             else if (NivelAcesso == "CEO") // Nível 3: acesso ainda mais restrito
             {
+            }
+            else if(NivelAcesso == "auxiliar")
+            {
+                financeiroToolStripMenuItem.Visible = false;
+                compraToolStripMenuItem.Visible = false;
+                usuárioToolStripMenuItem.Visible = false;
+                clienteToolStripMenuItem.Visible = false;
+                funcionarioToolStripMenuItem.Visible = false;
+                loteToolStripMenuItem.Visible = false;
+                fornecedorToolStripMenuItem.Visible = false;
             }
         }
 

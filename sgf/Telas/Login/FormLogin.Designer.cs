@@ -34,6 +34,8 @@
             this.tb_user = new System.Windows.Forms.TextBox();
             this.tb_senha = new System.Windows.Forms.TextBox();
             this.bt_login = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,12 +67,13 @@
             // 
             this.tb_senha.Location = new System.Drawing.Point(43, 87);
             this.tb_senha.Name = "tb_senha";
+            this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(100, 20);
             this.tb_senha.TabIndex = 4;
             // 
             // bt_login
             // 
-            this.bt_login.Location = new System.Drawing.Point(57, 113);
+            this.bt_login.Location = new System.Drawing.Point(53, 113);
             this.bt_login.Name = "bt_login";
             this.bt_login.Size = new System.Drawing.Size(75, 23);
             this.bt_login.TabIndex = 5;
@@ -78,12 +81,34 @@
             this.bt_login.UseVisualStyleBackColor = true;
             this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(151, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(310, 16);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "SGF - Sistema de Gerenciamento Farmaceutico";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(277, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(185, 14);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "V 3.0 by Fernando Costa Colares";
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(192, 168);
+            this.ClientSize = new System.Drawing.Size(474, 168);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_login);
             this.Controls.Add(this.tb_senha);
             this.Controls.Add(this.tb_user);
@@ -105,5 +130,7 @@
         private System.Windows.Forms.TextBox tb_user;
         private System.Windows.Forms.TextBox tb_senha;
         private System.Windows.Forms.Button bt_login;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
