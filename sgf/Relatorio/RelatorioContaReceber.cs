@@ -29,11 +29,11 @@ namespace sgf.Relatorio
                 FROM contareceber cr
                 JOIN venda v ON v.id_venda = cr.id_venda
                 JOIN cliente c ON c.id_cliente = v.id_cliente
-            WHERE v.data_venda BETWEEN @dataInicio AND @dataFim ORDER BY v.data_venda";
+            WHERE v.data_venda >= @dataInicio AND v.data_venda < @dataFim ORDER BY v.data_venda";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@dataInicio", dataInicio);
+                    command.Parameters.AddWithValue("@dataInicio", dataInicio.Date);
                     command.Parameters.AddWithValue("@dataFim", dataFimAjustada);
 
                     try
@@ -71,7 +71,7 @@ namespace sgf.Relatorio
                 var fonteTabelaCabecalho = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10, BaseColor.WHITE);
                 var fonteTabelaCabecalhoItem = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 7, BaseColor.BLACK);
                 var fonteTabelaConteudo = FontFactory.GetFont(FontFactory.HELVETICA, 10, BaseColor.BLACK);
-                var fonteTabelaItem = FontFactory.GetFont(FontFactory.HELVETICA, 6, BaseColor.GRAY);
+                var fonteTabelaItem = FontFactory.GetFont(FontFactory.HELVETICA, 6, BaseColor.BLACK);
                 var fonteTotal = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
 
                 // Título do relatório

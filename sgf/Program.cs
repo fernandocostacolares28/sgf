@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using sgf.Telas;
+using sgf.Telas.Login;
 
 namespace sgf
 {
@@ -17,7 +19,9 @@ namespace sgf
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Entidades.DBConnection.TestarConexao();
-            Application.Run(new Form1());
+            FormLogin loginForm = new FormLogin();
+            loginForm.ShowDialog();
+
             
         }
     }

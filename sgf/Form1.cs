@@ -1,8 +1,10 @@
-﻿using sgf.Telas.Cadastros;
+﻿using sgf.AutenticacaoUser;
+using sgf.Telas.Cadastros;
 using sgf.Telas.Cadastros.Lote;
 using sgf.Telas.Financeiro;
 using sgf.Telas.Financeiro.ContasPagar;
 using sgf.Telas.Gerenciamento;
+using sgf.Telas.Login;
 using sgf.Telas.Movimentos;
 using sgf.Telas.Movimentos.Compra;
 using sgf.Telas.Relatorios;
@@ -20,9 +22,12 @@ namespace sgf
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string NivelAcesso)
         {
+            //ConfigurarPermissoes(NivelAcesso);
             InitializeComponent();
+            ConfigurarPermissoes(NivelAcesso);
+            
         }
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -113,6 +118,46 @@ namespace sgf
         {
             FormRelatorioContasPagar formRelatorioContasPagar = new FormRelatorioContasPagar();
             formRelatorioContasPagar.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConfigurarPermissoes(string NivelAcesso)
+        {
+            // Exemplo de controle de acesso
+            if (NivelAcesso == "sysadmin") // Nível 1: acesso total
+            {
+                // Habilite todas as opções
+            }
+            else if (NivelAcesso == "vendedor") // Nível 2: acesso limitado
+            {
+                // Desabilite opções de administração, por exemplo
+                financeiroToolStripMenuItem.Visible = false;
+                compraToolStripMenuItem.Visible = false;
+                cadastrosToolStripMenuItem.Visible = false;
+            }
+            else if (NivelAcesso == "CEO") // Nível 3: acesso ainda mais restrito
+            {
+            }
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+
+            FormLogin formLogin = new FormLogin();
+            formLogin.ShowDialog();
+            
+            
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

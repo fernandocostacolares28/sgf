@@ -17,21 +17,22 @@ public class RelatorioVenda
     {
         DataTable dt = new DataTable();
 
-        // Ajustar a data de fim para considerar até o final do dia (23:59:59)
-        DateTime dataFimAjustada = dataFim.Date.AddHours(23).AddMinutes(59).AddSeconds(59);
+        // Ajustar a data de fim para considerar até o final do dia seguinte (exclusivo)
+        DateTime dataFimAjustada = dataFim.Date.AddDays(1); // Adiciona um dia e usa '<' no filtro SQL
 
         using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
         {
             string query = @"
             SELECT v.id_venda, v.id_cliente, c.name_cliente, v.receita_venda, v.data_venda, v.metodopagamento_venda, v.parcelas_venda, v.total_venda, v.desconto_venda
-                FROM venda v
-                JOIN cliente c ON v.id_cliente = c.id_cliente
-            WHERE data_venda BETWEEN @dataInicio AND @dataFim ORDER BY data_venda";
+            FROM venda v
+            JOIN cliente c ON v.id_cliente = c.id_cliente
+            WHERE data_venda >= @dataInicio AND data_venda <= @dataFimAjustada
+            ORDER BY data_venda";
 
             using (MySqlCommand command = new MySqlCommand(query, connection))
             {
-                command.Parameters.AddWithValue("@dataInicio", dataInicio);
-                command.Parameters.AddWithValue("@dataFim", dataFimAjustada);
+                command.Parameters.AddWithValue("@dataInicio", dataInicio.Date);
+                command.Parameters.AddWithValue("@dataFimAjustada", dataFimAjustada);  // Data fim ajustada
 
                 try
                 {
@@ -68,7 +69,7 @@ public class RelatorioVenda
             var fonteTabelaCabecalho = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10, BaseColor.WHITE);
             var fonteTabelaCabecalhoItem = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 7, BaseColor.BLACK);
             var fonteTabelaConteudo = FontFactory.GetFont(FontFactory.HELVETICA, 10, BaseColor.BLACK);
-            var fonteTabelaItem = FontFactory.GetFont(FontFactory.HELVETICA, 6, BaseColor.GRAY);
+            var fonteTabelaItem = FontFactory.GetFont(FontFactory.HELVETICA, 6, BaseColor.BLACK);
             var fonteTotal = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
 
             // Título do relatório
