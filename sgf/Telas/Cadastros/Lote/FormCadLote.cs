@@ -113,7 +113,7 @@ namespace sgf.Telas.Cadastros.Lote
         {
             // Pegar os valores dos controles
             string code_lote = tb_codelote.Text;
-            string vencimento = tb_vencimento.Text;
+            DateTime vencimento = dtp_vencimento.Value;
             string fornecedor = cb_fornecedor.SelectedItem.ToString();
 
             // Verificar o status do checkbox (Ativo ou Inativo)
@@ -294,6 +294,11 @@ namespace sgf.Telas.Cadastros.Lote
         }
 
         private void FormCadLote_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -14,10 +14,10 @@ namespace sgf.Controle
         public int Id { get; set; }
         public string Code_Lote { get; set; }
         public string Fornecedor { get; set; }
-        public string Vencimento { get; set; }
+        public DateTime Vencimento { get; set; }
         public string Status { get; set; }
 
-        public void Lote_id(int id, string code_Lote, string fornecedor, string vencimento, string status)
+        public void Lote_id(int id, string code_Lote, string fornecedor, DateTime vencimento, string status)
         {
             Id = id;
             Code_Lote = code_Lote;
@@ -26,7 +26,7 @@ namespace sgf.Controle
             Status = status;
         }
 
-        public Lote(string code_Lote, string vencimento, string status, string fornecedor)
+        public Lote(string code_Lote, DateTime vencimento, string status, string fornecedor)
         {
             Code_Lote = code_Lote;
             Fornecedor = fornecedor;

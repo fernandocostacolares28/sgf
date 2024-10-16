@@ -36,7 +36,6 @@
             this.lb_pc = new System.Windows.Forms.ListBox();
             this.lb_pl = new System.Windows.Forms.ListBox();
             this.cb_fornecedor = new System.Windows.Forms.ComboBox();
-            this.tb_vencimento = new System.Windows.Forms.TextBox();
             this.tb_codelote = new System.Windows.Forms.TextBox();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.dtp_vencimento = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Lote)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -130,13 +130,6 @@
             this.cb_fornecedor.Name = "cb_fornecedor";
             this.cb_fornecedor.Size = new System.Drawing.Size(121, 21);
             this.cb_fornecedor.TabIndex = 6;
-            // 
-            // tb_vencimento
-            // 
-            this.tb_vencimento.Location = new System.Drawing.Point(14, 108);
-            this.tb_vencimento.Name = "tb_vencimento";
-            this.tb_vencimento.Size = new System.Drawing.Size(100, 20);
-            this.tb_vencimento.TabIndex = 7;
             // 
             // tb_codelote
             // 
@@ -315,11 +308,20 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "V 3.0 - 2024";
             // 
+            // dtp_vencimento
+            // 
+            this.dtp_vencimento.Location = new System.Drawing.Point(12, 108);
+            this.dtp_vencimento.Name = "dtp_vencimento";
+            this.dtp_vencimento.Size = new System.Drawing.Size(200, 20);
+            this.dtp_vencimento.TabIndex = 48;
+            this.dtp_vencimento.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // FormCadLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 537);
+            this.Controls.Add(this.dtp_vencimento);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_desativar);
             this.Controls.Add(this.cbx_ativo);
@@ -337,7 +339,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.tb_codelote);
-            this.Controls.Add(this.tb_vencimento);
             this.Controls.Add(this.cb_fornecedor);
             this.Controls.Add(this.lb_pl);
             this.Controls.Add(this.lb_pc);
@@ -368,7 +369,6 @@
         private System.Windows.Forms.ListBox lb_pc;
         private System.Windows.Forms.ListBox lb_pl;
         private System.Windows.Forms.ComboBox cb_fornecedor;
-        private System.Windows.Forms.TextBox tb_vencimento;
         private System.Windows.Forms.TextBox tb_codelote;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label1;
@@ -388,5 +388,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dtp_vencimento;
     }
 }
