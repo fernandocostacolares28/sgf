@@ -149,7 +149,6 @@ namespace sgf.Controle
                     MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                     adapter.Fill(dt);
 
-                    // Definir os nomes das colunas
                     dt.Columns["id_venda"].ColumnName = "ID";
                     dt.Columns["id_cliente"].ColumnName = "ID Cliente";
                     dt.Columns["receita_venda"].ColumnName = "Receita";
@@ -177,7 +176,6 @@ namespace sgf.Controle
 
                 try
                 {
-                    // Seleciona todos os itens da venda
                     string selectItemsQuery = "SELECT name_produto, quantidade_produto FROM item_venda WHERE id_venda = @id_venda";
                     List<(string nomeProduto, int quantidade)> itensVenda = new List<(string, int)>();
 
@@ -195,7 +193,6 @@ namespace sgf.Controle
                         }
                     }
 
-                    // Para cada item da venda, devolve a quantidade ao estoque
                     foreach (var item in itensVenda)
                     {
                         string updateEstoqueQuery = "UPDATE produto_lote pl JOIN lote l ON pl.id_lote = l.id_lote SET pl.qtd_produto = pl.qtd_produto + @quantidade WHERE pl.name_produto = @name_produto AND l.status_lote = 'Ativo'";
@@ -207,7 +204,6 @@ namespace sgf.Controle
                         }
                     }
 
-                    // Exclui os itens da venda
                     string deleteItemsQuery = "DELETE FROM item_venda WHERE id_venda = @id_venda";
                     using (MySqlCommand deleteCommand = new MySqlCommand(deleteItemsQuery, connection, transaction))
                     {
@@ -229,7 +225,6 @@ namespace sgf.Controle
                     commandExcluirContaReceber.Parameters.AddWithValue("@id_venda", idVenda);
                     commandExcluirContaReceber.ExecuteNonQuery();
 
-                    // Exclui a venda
                     string deleteVendaQuery = "DELETE FROM venda WHERE id_venda = @id_venda";
                     using (MySqlCommand deleteCommand = new MySqlCommand(deleteVendaQuery, connection, transaction))
                     {
@@ -237,7 +232,6 @@ namespace sgf.Controle
                         deleteCommand.ExecuteNonQuery();
                     }
 
-                    // Confirma a transação
                     transaction.Commit();
                 }
                 catch (Exception ex)
