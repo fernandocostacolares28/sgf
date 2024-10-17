@@ -77,3 +77,6 @@ C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioCompra.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioContasReceber.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioContasPagar.resources
 C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Login.FormLogin.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioLote.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioMaisVendidos.resources
+C:\Git\sgf\sgf\obj\Debug\sgf.Telas.Relatorios.FormRelatorioFinanceiro.resources

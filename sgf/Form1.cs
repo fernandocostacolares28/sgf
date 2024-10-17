@@ -171,5 +171,23 @@ namespace sgf
         {
             this.Close();
         }
+
+        private void maisVendidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioMaisVendidos formRelatorioMaisVendidos = new FormRelatorioMaisVendidos();
+            formRelatorioMaisVendidos.ShowDialog();
+        }
+
+        private void loteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioLote lote = new FormRelatorioLote();
+            lote.ShowDialog();
+        }
+
+        private void vencimentoLoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioFinanceiro formRelatorioFinanceiro = new FormRelatorioFinanceiro();
+            formRelatorioFinanceiro.ShowDialog();
+        }
     }
 }

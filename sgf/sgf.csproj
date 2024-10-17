@@ -164,6 +164,9 @@
     <Compile Include="Relatorio\RelatorioCompra.cs" />
     <Compile Include="Relatorio\RelatorioContaPagar.cs" />
     <Compile Include="Relatorio\RelatorioContaReceber.cs" />
+    <Compile Include="Relatorio\RelatorioFinanceiro.cs" />
+    <Compile Include="Relatorio\RelatorioLote.cs" />
+    <Compile Include="Relatorio\RelatorioProdutosMaisVendidos.cs" />
     <Compile Include="Relatorio\RelatorioVenda.cs" />
     <Compile Include="Relatorio\Relatório.cs" />
     <Compile Include="Telas\Cadastros\FormCadCliente.cs">
@@ -280,6 +283,24 @@
     <Compile Include="Telas\Relatorios\FormRelatorioContasReceber.Designer.cs">
       <DependentUpon>FormRelatorioContasReceber.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioFinanceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioFinanceiro.Designer.cs">
+      <DependentUpon>FormRelatorioFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioLote.Designer.cs">
+      <DependentUpon>FormRelatorioLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioMaisVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\FormRelatorioMaisVendidos.Designer.cs">
+      <DependentUpon>FormRelatorioMaisVendidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Relatorios\FormRelatorioVenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +371,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Relatorios\FormRelatorioContasReceber.resx">
       <DependentUpon>FormRelatorioContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioFinanceiro.resx">
+      <DependentUpon>FormRelatorioFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioLote.resx">
+      <DependentUpon>FormRelatorioLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\FormRelatorioMaisVendidos.resx">
+      <DependentUpon>FormRelatorioMaisVendidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Relatorios\FormRelatorioVenda.resx">
       <DependentUpon>FormRelatorioVenda.cs</DependentUpon>

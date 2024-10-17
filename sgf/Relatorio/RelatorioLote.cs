@@ -1,6 +1,7 @@
 ﻿using iTextSharp.text.pdf;
 using iTextSharp.text;
 using MySql.Data.MySqlClient;
+using sgf.Controle;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,28 +14,24 @@ using sgf.Entidades;
 
 namespace sgf.Relatorio
 {
-    internal class RelatorioContaPagar
+    internal class RelatorioLote
     {
-        public static DataTable FiltrarContaPagarPorData(DateTime dataInicio, DateTime dataFim)
+
+        public static DataTable FiltrarLote(string lote)
         {
             DataTable dt = new DataTable();
 
-            // Ajustar a data de fim para considerar até o final do dia (23:59:59)
-            DateTime dataFimAjustada = dataFim.Date.AddHours(23).AddMinutes(59).AddSeconds(59);
 
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
                 string query = @"
-            SELECT cp.id_contapagar, cp.id_compra, c.id_fornecedor, f.razaosocial_fornecedor, cp.parcela_compra, cp.total_contapagar, cp.restante_contapagar, cp.status_contapagar
-                FROM contapagar cp
-                JOIN compra c ON c.id_compra = cp.id_compra
-                JOIN fornecedor f ON f.id_fornecedor = c.id_fornecedor
-            WHERE c.data_compra BETWEEN @dataInicio AND @dataFim ORDER BY c.data_compra";
+            SELECT id_lote, code_lote, dt_validade_lote, status_lote,farmaceutica_lote
+            FROM lote
+            WHERE code_lote = @lote";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@dataInicio", dataInicio);
-                    command.Parameters.AddWithValue("@dataFim", dataFimAjustada);
+                    command.Parameters.AddWithValue("@lote", lote);
 
                     try
                     {
@@ -44,19 +41,19 @@ namespace sgf.Relatorio
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"Erro ao filtrar contas pagar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Erro ao filtrar lote: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
 
             return dt;
         }
-        public static void GerarRelatorioContasPagarPDF(DateTime dataInicio, DateTime dataFim)
+        public static void GerarRelatorioLotePDF(string lote)
         {
-            DataTable contas = FiltrarContaPagarPorData(dataInicio, dataFim);
+            DataTable lotes = FiltrarLote(lote);
 
             string pastaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string nomeArquivo = $"RelatorioContasPagar_{dataInicio.ToString("yyyyMMdd")}_a_{dataFim.ToString("yyyyMMdd")}.pdf";
+            string nomeArquivo = $"RelatorioLote_{lote.ToString()}.pdf";
             string caminhoRelatorio = Path.Combine(pastaDocumentos, nomeArquivo);
 
             Document documento = new Document(PageSize.A4, 25, 25, 30, 30);
@@ -75,19 +72,19 @@ namespace sgf.Relatorio
                 var fonteTotal = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.BLACK);
 
                 // Título do relatório
-                Paragraph titulo = new Paragraph($"Relatório de Contas Pagar\n\n", fonteTitulo);
+                Paragraph titulo = new Paragraph($"Relatório de Lote\n\n", fonteTitulo);
                 titulo.Alignment = Element.ALIGN_CENTER;
                 documento.Add(titulo);
 
                 // Período
-                Paragraph periodo = new Paragraph($"Período: {dataInicio.ToShortDateString()} a {dataFim.ToShortDateString()}\n\n", fonteSubTitulo);
+                Paragraph periodo = new Paragraph($"Lote: {lote}\n\n", fonteSubTitulo);
                 periodo.Alignment = Element.ALIGN_CENTER;
                 documento.Add(periodo);
 
                 // Tabela com estilo
-                PdfPTable tabela = new PdfPTable(6); // 7 colunas
+                PdfPTable tabela = new PdfPTable(5); // 7 colunas
                 tabela.WidthPercentage = 100; // Largura completa da página
-                tabela.SetWidths(new float[] { 2, 2, 2, 2, 2, 2 }); // Definir proporções das colunas
+                tabela.SetWidths(new float[] { 1, 3, 3, 3, 3 }); // Definir proporções das colunas
 
                 // Definir cabeçalhos com cor de fundo
                 PdfPCell celulaCabecalho = new PdfPCell();
@@ -96,50 +93,42 @@ namespace sgf.Relatorio
                 celulaCabecalho.Padding = 5;
 
                 // Cabeçalhos
-                string[] colunas = { "ID Conta Pagar", "Razão Social", "Parcela", "Total", "Restante", "Status" };
+                string[] colunas = { "ID Lote", "Code", "Validade", "Status", "Farmaceutica" };
                 foreach (string coluna in colunas)
                 {
                     celulaCabecalho.Phrase = new Phrase(coluna, fonteTabelaCabecalho);
                     tabela.AddCell(celulaCabecalho);
                 }
 
-                // Variável para armazenar o total geral
-                float totalGeral = 0;
 
                 // Preencher os dados
                 PdfPCell celulaConteudo = new PdfPCell();
                 celulaConteudo.Padding = 5;
                 celulaConteudo.HorizontalAlignment = Element.ALIGN_CENTER;
 
-                foreach (DataRow conta in contas.Rows)
+                foreach (DataRow row in lotes.Rows)
                 {
-                    celulaConteudo.Phrase = new Phrase(conta["id_contapagar"].ToString(), fonteTabelaConteudo);
+                    celulaConteudo.Phrase = new Phrase(row["id_lote"].ToString(), fonteTabelaConteudo);
                     tabela.AddCell(celulaConteudo);
 
-                    celulaConteudo.Phrase = new Phrase(conta["razaosocial_fornecedor"].ToString(), fonteTabelaConteudo);
+                    celulaConteudo.Phrase = new Phrase(row["code_lote"].ToString(), fonteTabelaConteudo);
                     tabela.AddCell(celulaConteudo);
 
-                    celulaConteudo.Phrase = new Phrase(conta["parcela_compra"].ToString(), fonteTabelaConteudo);
+                    celulaConteudo.Phrase = new Phrase(Convert.ToDateTime(row["dt_validade_lote"]).ToShortDateString(), fonteTabelaConteudo);
                     tabela.AddCell(celulaConteudo);
 
-                    float totalconta = Convert.ToSingle(conta["total_contapagar"]);
-                    celulaConteudo.Phrase = new Phrase(totalconta.ToString("C", new System.Globalization.CultureInfo("pt-BR")), fonteTabelaConteudo);
+                    celulaConteudo.Phrase = new Phrase(row["status_lote"].ToString(), fonteTabelaConteudo);
                     tabela.AddCell(celulaConteudo);
 
-                    float restante = Convert.ToSingle(conta["restante_contapagar"]);
-                    celulaConteudo.Phrase = new Phrase(restante.ToString("C", new System.Globalization.CultureInfo("pt-BR")), fonteTabelaConteudo);
-                    tabela.AddCell(celulaConteudo);
-
-
-                    celulaConteudo.Phrase = new Phrase(conta["status_contapagar"].ToString(), fonteTabelaConteudo);
+                    celulaConteudo.Phrase = new Phrase(row["farmaceutica_lote"].ToString(), fonteTabelaConteudo);
                     tabela.AddCell(celulaConteudo);
 
 
                     // Aqui, você precisa obter os itens da venda
-                    int idContaPagar = Convert.ToInt32(conta["id_contapagar"]);
-                    DataTable dtConta = ObterPagamentoContaPagar(idContaPagar); // Método que você precisará criar
+                    int idLote = Convert.ToInt32(row["id_lote"]);
+                    DataTable dtItens = ObterItensLote(idLote); // Método que você precisará criar
 
-                    string[] colunasitens = { "ID Pagamento", "Data Pagamento", "Valor Parcela", "Status" };
+                    string[] colunasitens = { "Produto", "Valor", "Quantidade" };
                     foreach (string coluna in colunasitens)
                     {
                         celulaCabecalho.Phrase = new Phrase(coluna, fonteTabelaCabecalhoItem);
@@ -147,39 +136,29 @@ namespace sgf.Relatorio
                     }
 
                     // Adiciona os itens abaixo da venda
-                    foreach (DataRow itemRow in dtConta.Rows)
+                    foreach (DataRow itemRow in dtItens.Rows)
                     {
                         tabela.AddCell("");
                         tabela.AddCell("");
-                        //tabela.AddCell("");
 
-                        celulaConteudo.Phrase = new Phrase(itemRow["id_pagamento"].ToString(), fonteTabelaItem);
+                        celulaConteudo.Phrase = new Phrase(itemRow["name_produto"].ToString(), fonteTabelaItem);
                         tabela.AddCell(celulaConteudo);
 
-                        celulaConteudo.Phrase = new Phrase(Convert.ToDateTime(itemRow["data_pagamento"]).ToShortDateString(), fonteTabelaItem);
+                        celulaConteudo.Phrase = new Phrase(Convert.ToDecimal(itemRow["valor_produto"]).ToString("C2"), fonteTabelaItem);
                         tabela.AddCell(celulaConteudo);
 
-                        celulaConteudo.Phrase = new Phrase(Convert.ToDecimal(itemRow["valorparcela_pagamento"]).ToString("C2"), fonteTabelaItem);
+                        celulaConteudo.Phrase = new Phrase(itemRow["qtd_produto"].ToString(), fonteTabelaItem);
                         tabela.AddCell(celulaConteudo);
-
-                        celulaConteudo.Phrase = new Phrase(itemRow["status_pagamento"].ToString(), fonteTabelaItem);
-                        tabela.AddCell(celulaConteudo);
-
 
 
                     }
                     tabela.AddCell("");
-                    tabela.AddCell("");
-                    //tabela.AddCell("");
+
                 }
 
                 // Adicionar a tabela ao documento
                 documento.Add(tabela);
 
-                // Adicionar a soma total no final
-                // Paragraph total = new Paragraph($"\nTotal Geral: {totalGeral.ToString("C", new System.Globalization.CultureInfo("pt-BR"))}\n", fonteTotal);
-                //total.Alignment = Element.ALIGN_RIGHT;
-                //documento.Add(total);
 
                 // Fechar o documento
                 documento.Close();
@@ -191,36 +170,36 @@ namespace sgf.Relatorio
             }
         }
 
-        private static DataTable ObterPagamentoContaPagar(int idContaPagar)
+        private static DataTable ObterItensLote(int idLote)
         {
-            DataTable dtPagamentos = new DataTable();
+            DataTable dtItens = new DataTable();
 
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
                 string query = @"
-            SELECT id_pagamento, data_pagamento, valorparcela_pagamento, status_pagamento
-                From pagamentos_contapagar
-            WHERE id_contapagar = @id_contapagar";
+            SELECT name_produto, valor_produto, qtd_produto
+                From produto_lote
+            WHERE id_lote = @id_lote";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@id_contapagar", idContaPagar);
+                    command.Parameters.AddWithValue("@id_lote", idLote);
 
                     try
                     {
                         connection.Open();
                         MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                        adapter.Fill(dtPagamentos);
+                        adapter.Fill(dtItens);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"Erro ao obter pagamentos contas pagar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Erro ao obter itens do lote: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
 
-            return dtPagamentos;
+            return dtItens;
         }
+
     }
 }
-

@@ -2,6 +2,7 @@
 using sgf.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,76 @@ namespace sgf.Controle
             Fornecedor = fornecedor;
             Vencimento = vencimento;
             Status = status;
+        }
+
+        public static void PreencherComboBoxLote(ComboBox comboBox)
+        {
+            // Limpar os itens atuais do ComboBox
+            comboBox.Items.Clear();
+
+            // Definir a string de conexão (substitua pelos seus próprios parâmetros)
+            string connectionString = DBConnection.GetConnectionString();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Abrir a conexão com o banco de dados
+                    connection.Open();
+
+                    // Consulta SQL para buscar os códigos de lote
+                    string query = "SELECT code_lote FROM lote";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Adicionar os resultados ao ComboBox
+                            while (reader.Read())
+                            {
+                                string codeLote = reader.GetString("code_lote");
+                                comboBox.Items.Add(codeLote);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao preencher o ComboBox: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        public static DataTable CarregarDadosLote()
+        {
+
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
+            {
+                string query = "SELECT id_lote, Code_Lote, dt_validade_lote, farmaceutica_lote, status_lote FROM lote";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(dt);
+
+                    dt.Columns["id_lote"].ColumnName = "ID";
+                    dt.Columns["code_lote"].ColumnName = "Code";
+                    dt.Columns["dt_validade_lote"].ColumnName = "Validade";
+                    dt.Columns["status_lote"].ColumnName = "Status";
+                    dt.Columns["farmaceutica_lote"].ColumnName = "Farmaceutica";
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao carregar lotes: " + ex.Message);
+                }
+            }
+
+            return dt;
         }
 
         public static void SalvarLote(Lote Lote) 
