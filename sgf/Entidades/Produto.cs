@@ -15,7 +15,7 @@ namespace sgf.Entidades
         public string NomeProduto { get; set; }
         public float Valor { get; set; }
 
-        // Construtor 
+
         public Produto(int id, string nomeProduto, float valor)
         {
             Id = id;

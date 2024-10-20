@@ -18,15 +18,6 @@ namespace sgf.Controle
         public int Quantidade { get; set; }
         public Int32 Lote { get; set; }
 
-        public void ProdutoLoteID(int id, string nomeProduto, float valor, int quantidade, Int32 lote)
-        {
-            Id = id;
-            NomeProduto = nomeProduto;
-            Valor = valor;
-            Quantidade = quantidade;
-            Lote = lote;
-        }
-
         public ProdutoLote(string nomeProduto, float valor, int quantidade, Int32 lote)
         {
             NomeProduto = nomeProduto;

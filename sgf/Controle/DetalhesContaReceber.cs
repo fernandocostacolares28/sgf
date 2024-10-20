@@ -13,20 +13,6 @@ namespace sgf.Controle
 {
     internal class DetalhesContaReceber
     {
-        public int Id { get; set; }
-        public int ContaReceber { get; set; }
-        public DateTime DataPagamento { get; set; }
-        public float ValorParcelaPagamento { get; set; }
-        public string StatusPagamento { get; set; }
-
-        public DetalhesContaReceber(int contarreceber, DateTime datapagamento, float valorparcelapagamento, string statuspagamento)
-        {
-            ContaReceber = contarreceber;
-            DataPagamento = datapagamento;
-            ValorParcelaPagamento = valorparcelapagamento;
-            StatusPagamento = statuspagamento;
-        }
-
         public static void SalvarDetalhes(int contareceber, DateTime data, float valor, string status)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))

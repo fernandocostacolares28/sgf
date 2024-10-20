@@ -62,18 +62,5 @@ namespace sgf.Controle
             return dataTable;
         }
 
-        public static void ExcluirLote(int lote)
-        {
-            using (MySqlConnection connection = new MySqlConnection(Entidades.DBConnection.GetConnectionString()))
-            {
-                string query = "DELETE FROM Produto WHERE lote_produto = @Lote";
-
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Lote", lote);
-
-                connection.Open();
-                command.ExecuteNonQuery();
-            }
-        }
     }
 }

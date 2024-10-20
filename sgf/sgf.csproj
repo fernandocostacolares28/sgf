@@ -168,7 +168,6 @@
     <Compile Include="Relatorio\RelatorioLote.cs" />
     <Compile Include="Relatorio\RelatorioProdutosMaisVendidos.cs" />
     <Compile Include="Relatorio\RelatorioVenda.cs" />
-    <Compile Include="Relatorio\Relatório.cs" />
     <Compile Include="Telas\Cadastros\FormCadCliente.cs">
       <SubType>Form</SubType>
     </Compile>

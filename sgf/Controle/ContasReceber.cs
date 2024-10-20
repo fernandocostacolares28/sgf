@@ -13,37 +13,6 @@ namespace sgf.Controle
 {
     internal class ContasReceber
     {
-        public int Id { get; set; }
-        public int Venda { get; set; }
-        public int Parcela_contareceber { get; set; }
-        public float Total_contareceber { get; set; }
-        public string Restante_contareceber { get; set; }
-        public DateTime Dataparcela_contareceber { get; set; }
-        public float Status_contareceber { get; set; }
-
-        public void ContasReceberID(int id, int venda, int parcela_contareceber, float total_contareceber,
-                    string restante_contareceber, DateTime dataparcela_contareceber, float status_contareceber)
-        {
-            Id = id;
-            Venda = venda;
-            Parcela_contareceber = parcela_contareceber;
-            Total_contareceber = total_contareceber;
-            Restante_contareceber = restante_contareceber;
-            Dataparcela_contareceber = dataparcela_contareceber;
-            Status_contareceber = status_contareceber;
-        }
-
-        public ContasReceber(int venda, int parcela_contareceber, float total_contareceber,
-            string restante_contareceber, DateTime dataparcela_contareceber, float status_contareceber)
-        {
-            Venda = venda;
-            Parcela_contareceber = parcela_contareceber;
-            Total_contareceber = total_contareceber;
-            Restante_contareceber = restante_contareceber;
-            Dataparcela_contareceber = dataparcela_contareceber;
-            Status_contareceber = status_contareceber;
-        }
-
         public static void SalvarContasReceber(int idVenda, int parcelas, float totalVenda, float restante, DateTime dataparcela, string status)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))

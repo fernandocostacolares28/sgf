@@ -18,14 +18,7 @@ namespace sgf.Controle
         public DateTime Vencimento { get; set; }
         public string Status { get; set; }
 
-        public void Lote_id(int id, string code_Lote, string fornecedor, DateTime vencimento, string status)
-        {
-            Id = id;
-            Code_Lote = code_Lote;
-            Fornecedor = fornecedor;
-            Vencimento = vencimento;
-            Status = status;
-        }
+
 
         public Lote(string code_Lote, DateTime vencimento, string status, string fornecedor)
         {
