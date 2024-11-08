@@ -127,6 +127,36 @@ namespace sgf.Telas.Cadastros
             dgv_funcionario.Columns["telefone_funcionario"].HeaderText = "Telefone";
             dgv_funcionario.Columns["funcao_funcionario"].HeaderText = "Função";
         }
+
+        private void tb_cpf_TextChanged(object sender, EventArgs e)
+        {
+            string cpf = tb_cpf.Text.Replace(".", "").Replace("-", "");
+
+
+            if (cpf.Length > 11)
+            {
+                cpf = cpf.Substring(0, 11);
+            }
+
+
+            if (cpf.Length >= 3)
+            {
+                cpf = cpf.Insert(3, ".");
+            }
+            if (cpf.Length >= 7)
+            {
+                cpf = cpf.Insert(7, ".");
+            }
+            if (cpf.Length >= 11)
+            {
+                cpf = cpf.Insert(11, "-");
+            }
+
+            tb_cpf.Text = cpf;
+
+
+            tb_cpf.SelectionStart = tb_cpf.Text.Length;
+        }
     }
 }
 

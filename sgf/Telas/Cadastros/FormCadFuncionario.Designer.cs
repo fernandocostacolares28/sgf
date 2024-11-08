@@ -126,6 +126,7 @@
             this.tb_cpf.Name = "tb_cpf";
             this.tb_cpf.Size = new System.Drawing.Size(164, 20);
             this.tb_cpf.TabIndex = 19;
+            this.tb_cpf.TextChanged += new System.EventHandler(this.tb_cpf_TextChanged);
             // 
             // tb_nome
             // 
