@@ -65,6 +65,7 @@
             this.label7.Size = new System.Drawing.Size(134, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "by Fernando Costa Colares";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -74,6 +75,7 @@
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "V 3.0 - 2024";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // DGV_Compra
             // 
@@ -154,6 +156,7 @@
             this.Name = "FormRelatorioCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatório Compra";
+            this.Load += new System.EventHandler(this.FormRelatorioCompra_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Compra)).EndInit();

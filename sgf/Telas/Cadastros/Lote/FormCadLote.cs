@@ -43,10 +43,10 @@ namespace sgf.Telas.Cadastros.Lote
         {
             if (lb_pc.SelectedItem != null && !string.IsNullOrWhiteSpace(tb_Qtd.Text))
             {
-                // Obter o produto selecionado na ListBox1
+                
                 string produtoSelecionado = lb_pc.SelectedItem.ToString();
 
-                // Obter a quantidade digitada no TextBox
+               
                 string quantidade = tb_Qtd.Text;
 
                 // Adicionar o produto e a quantidade na ListBox2
@@ -89,7 +89,6 @@ namespace sgf.Telas.Cadastros.Lote
                 }
                 catch (Exception ex)
                 {
-                    // Exibir mensagem de erro, se ocorrer
                     MessageBox.Show($"Erro ao carregar produtos: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -155,25 +154,24 @@ namespace sgf.Telas.Cadastros.Lote
         private void CarregarFornecedores()
         {
 
-            // Usar SqlConnection e SqlCommand para conectar ao banco de dados
+
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
                 string query = "SELECT razaosocial_fornecedor FROM Fornecedor";
                 try
                 {
-                    // Abrir a conexão com o banco
+
                     connection.Open();
 
                     
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        // Executar a leitura dos dados
+
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            // Limpar o ComboBox antes de adicionar os novos itens
+
                             cb_fornecedor.Items.Clear();
 
-                            // Adicionar os fornecedores no ComboBox
                             while (reader.Read())
                             {
                                 // Pegar o valor da coluna 'NomeFornecedor' e adicionar ao ComboBox
@@ -184,7 +182,7 @@ namespace sgf.Telas.Cadastros.Lote
                 }
                 catch (Exception ex)
                 {
-                    // Exibir mensagem de erro, se ocorrer
+
                     MessageBox.Show($"Erro ao carregar fornecedores: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -285,7 +283,7 @@ namespace sgf.Telas.Cadastros.Lote
 
                 // Criar e mostrar o formulário de detalhes
                 FormDetalhesLote formDetalhes = new FormDetalhesLote(idLote);
-                formDetalhes.ShowDialog(); // Ou Show() se você não quiser que o formulário seja modal
+                formDetalhes.ShowDialog(); 
             }
             else
             {
@@ -299,6 +297,11 @@ namespace sgf.Telas.Cadastros.Lote
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_pl_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

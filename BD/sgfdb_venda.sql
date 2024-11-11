@@ -34,7 +34,7 @@ CREATE TABLE `venda` (
   PRIMARY KEY (`id_venda`),
   KEY `fk_id_cliente` (`id_cliente`),
   CONSTRAINT `fk_id_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `venda` (
 
 LOCK TABLES `venda` WRITE;
 /*!40000 ALTER TABLE `venda` DISABLE KEYS */;
-INSERT INTO `venda` VALUES (21,2,'124','2024-10-09 11:44:41.678110','Pix',1,106.68,2),(22,3,'125','2024-10-09 12:49:00.291605','Cartão Crédito',3,68.7,10),(23,3,'126','2024-10-09 16:50:47.115692','Cartão Crédito',3,111.52,1),(24,2,'127','2024-10-10 16:51:16.520950','Cartão Crédito',4,49.39,1),(25,2,'128','2024-10-10 16:59:13.977474','Cartão Crédito',4,93.22,2),(26,2,'129','2024-10-14 11:09:16.723460','Cartão Crédito',2,369.31,10);
+INSERT INTO `venda` VALUES (27,2,'123123','2024-11-11 00:48:19.163849','Cartão Crédito',1,220.57,13),(28,3,'3221334','2024-11-11 13:33:01.489133','Cartão Crédito',3,56.01,10),(29,5,'32131233','2024-11-11 13:49:17.080181','Cartão Crédito',4,36.42,3),(30,2,'111111','2024-11-11 14:00:23.832460','Cartão Débito',1,113.3,0);
 /*!40000 ALTER TABLE `venda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-14 11:51:38
+-- Dump completed on 2024-11-11 14:09:29

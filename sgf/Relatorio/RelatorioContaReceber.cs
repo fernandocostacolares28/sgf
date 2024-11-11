@@ -184,11 +184,7 @@ namespace sgf.Relatorio
                 // Adicionar a tabela ao documento
                 documento.Add(tabela);
 
-                // Adicionar a soma total no final
-               // Paragraph total = new Paragraph($"\nTotal Geral: {totalGeral.ToString("C", new System.Globalization.CultureInfo("pt-BR"))}\n", fonteTotal);
-                //total.Alignment = Element.ALIGN_RIGHT;
-                //documento.Add(total);
-
+ 
                 // Fechar o documento
                 documento.Close();
                 MessageBox.Show($"Relatório gerado com sucesso! Salvo em: {caminhoRelatorio}");

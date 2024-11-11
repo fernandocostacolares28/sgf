@@ -25,7 +25,7 @@ namespace sgf.Controle
 
         public static ItemVenda ExtrairProdutoDoCarrinho(string itemCarrinho)
         {
-            // Exemplo: "NomeProduto - Quantidade: X - Valor Unitário: R$Y.YY"
+            
             string[] partesItem = itemCarrinho.Split('-');
             string nomeProduto = partesItem[0].Trim();
             int quantidade = int.Parse(partesItem[1].Replace("Quantidade: ", "").Trim());
@@ -60,7 +60,7 @@ namespace sgf.Controle
                         command.Parameters.AddWithValue("@quantidade", item.Quantidade);
                         command.Parameters.AddWithValue("@valor_unitario", item.ValorUnitario);
 
-                        // Inserindo cada item do carrinho na tabela item_venda
+                        
                         command.ExecuteNonQuery();
                     }
                 }
@@ -123,7 +123,7 @@ namespace sgf.Controle
                     MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                     adapter.Fill(dt);
 
-                    // Definir os nomes das colunas (opcional)
+
                     dt.Columns["name_produto"].ColumnName = "Nome do Produto";
                     dt.Columns["quantidade_produto"].ColumnName = "Quantidade";
                     dt.Columns["valor_unitario"].ColumnName = "Valor Unitário";

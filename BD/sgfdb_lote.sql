@@ -30,7 +30,7 @@ CREATE TABLE `lote` (
   `farmaceutica_lote` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_lote`),
   UNIQUE KEY `code_lote_UNIQUE` (`code_lote`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `lote` (
 
 LOCK TABLES `lote` WRITE;
 /*!40000 ALTER TABLE `lote` DISABLE KEYS */;
-INSERT INTO `lote` VALUES (11,'212','10-12-2025','Desativado','teste'),(12,'321','22/01/2025','Ativo','tese');
+INSERT INTO `lote` VALUES (12,'321','22/01/2025','Desativado','tese'),(14,'2233','2025-01-31 13:27:48','Ativo','Farmaceutica Fernando');
 /*!40000 ALTER TABLE `lote` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-14 11:51:38
+-- Dump completed on 2024-11-11 14:09:28

@@ -33,27 +33,27 @@ namespace sgf.Controle
             Lote = lote;
         }
 
-        // Método para listar todos os produtos
+
         public static DataTable ListarProdutos(string lote)
         {
             DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(Entidades.DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+                
                 connection.Open();
 
-                // Define a consulta SQL
+                
                 string query = "SELECT * FROM Produto WHERE lote_produto = @Lote";
                 MySqlCommand command1 = new MySqlCommand(query, connection);
                 command1.Parameters.AddWithValue("@Lote", lote);
 
-                // Cria um comando para executar a consulta
+                
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Cria um adaptador de dados MySQL
+                   
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command1))
                     {
-                        // Preenche o DataTable com os dados da consulta
+                     
                         adapter.Fill(dataTable);
                     }
                 }

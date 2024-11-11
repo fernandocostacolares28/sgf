@@ -38,19 +38,19 @@ namespace sgf.Entidades
             DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+
                 connection.Open();
 
-                // Define a consulta SQL
+
                 string query = "SELECT * FROM Fornecedor";
 
-                // Cria um comando para executar a consulta
+
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Cria um adaptador de dados MySQL
+
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        // Preenche o DataTable com os dados da consulta
+
                         adapter.Fill(dataTable);
                     }
                 }
@@ -79,27 +79,25 @@ namespace sgf.Entidades
         public static void EditarFornecedor(int id, string razaosocial, string cnpj, string telefone, string endereco)
         {
 
-            // Cria uma conexão com o banco de dados
+
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+
                 connection.Open();
 
-                // Define a consulta SQL de atualização
+
                 string query = "UPDATE Fornecedor SET razaosocial_fornecedor = @RazaoSocial, cnpj_fornecedor = @CNPJ, telefone_fornecedor = @Telefone, endereco_fornecedor = @Endereco WHERE id_fornecedor = @Id";
 
-                // Cria um comando para executar a consulta
+
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Define os parâmetros da consulta
+
                     command.Parameters.AddWithValue("@RazaoSocial", razaosocial);
                     command.Parameters.AddWithValue("@CNPJ", cnpj);
                     command.Parameters.AddWithValue("@Telefone", telefone);
                     command.Parameters.AddWithValue("@Endereco", endereco);
                     command.Parameters.AddWithValue("@Id", id);
 
-
-                    // Executa a consulta
                     command.ExecuteNonQuery();
                 }
             }

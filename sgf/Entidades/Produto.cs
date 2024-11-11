@@ -71,30 +71,26 @@ namespace sgf.Entidades
         public static void EditarProduto(int id, string nomeProduto, float valor)
         {
 
-            // Cria uma conexão com o banco de dados
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+
                 connection.Open();
 
-                // Define a consulta SQL de atualização
                 string query = "UPDATE Produto SET name_produto = @NomeProduto, valor_produto = @Valor WHERE id_produto = @Id";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Define os parâmetros da consulta
+
                     command.Parameters.AddWithValue("@NomeProduto", nomeProduto);
                     command.Parameters.AddWithValue("@Valor", valor);
                     command.Parameters.AddWithValue("@Id", id);
 
-                    // Executa a consulta
+
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        // Método para excluir um produto
         public static void ExcluirProduto(int id)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
@@ -109,7 +105,7 @@ namespace sgf.Entidades
             }
         }
 
-        // Método para exibir os detalhes do produto
+
         public void ExibirDetalhes()
         {
             Console.WriteLine($"ID: {Id}");

@@ -30,27 +30,26 @@ namespace sgf.Controle
 
         public static void PreencherComboBoxLote(ComboBox comboBox)
         {
-            // Limpar os itens atuais do ComboBox
+           
             comboBox.Items.Clear();
 
-            // Definir a string de conexão (substitua pelos seus próprios parâmetros)
             string connectionString = DBConnection.GetConnectionString();
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
                 {
-                    // Abrir a conexão com o banco de dados
+
                     connection.Open();
 
-                    // Consulta SQL para buscar os códigos de lote
+
                     string query = "SELECT code_lote FROM lote";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            // Adicionar os resultados ao ComboBox
+
                             while (reader.Read())
                             {
                                 string codeLote = reader.GetString("code_lote");
@@ -144,7 +143,7 @@ namespace sgf.Controle
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@idLote", idLote);
-                        command.ExecuteNonQuery(); // Executa a atualização
+                        command.ExecuteNonQuery(); 
                     }
                 }
                 catch (Exception ex)

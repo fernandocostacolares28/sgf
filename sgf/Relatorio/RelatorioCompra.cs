@@ -19,7 +19,7 @@ namespace sgf.Relatorio
         {
             DataTable dt = new DataTable();
 
-            // Ajustar a data de fim para considerar até o final do dia (23:59:59)
+
             DateTime dataFimAjustada = dataFim.Date.AddHours(23).AddMinutes(59).AddSeconds(59);
 
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))

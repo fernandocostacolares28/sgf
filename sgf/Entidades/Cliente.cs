@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace sgf.Entidades
 {
@@ -38,19 +39,17 @@ namespace sgf.Entidades
             DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+               
                 connection.Open();
 
-                // Define a consulta SQL
                 string query = "SELECT * FROM Cliente";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Cria um adaptador de dados MySQL
+
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        // Preenche o DataTable com os dados da consulta
+
                         adapter.Fill(dataTable);
                     }
                 }
@@ -59,39 +58,50 @@ namespace sgf.Entidades
             return dataTable;
         }
 
-        public static void SalvarCliente(Cliente Cliente)
+        public static void SalvarCliente(Cliente cliente)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "INSERT INTO Cliente (name_cliente, cpf_cliente, telefone_cliente, endereco_cliente) VALUES (@Nome, @CPF, @Telefone, @Endereco)";
-
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Nome", Cliente.Nome);
-                command.Parameters.AddWithValue("@CPF", Cliente.CPF);
-                command.Parameters.AddWithValue("@Telefone", Cliente.Telefone);
-                command.Parameters.AddWithValue("@Endereco", Cliente.Endereco);
-
                 connection.Open();
-                command.ExecuteNonQuery();
+
+                string queryVerificarCPF = "SELECT COUNT(*) FROM Cliente WHERE cpf_cliente = @CPF";
+                MySqlCommand commandVerificar = new MySqlCommand(queryVerificarCPF, connection);
+                commandVerificar.Parameters.AddWithValue("@CPF", cliente.CPF);
+
+                int cpfExiste = Convert.ToInt32(commandVerificar.ExecuteScalar());
+
+                if (cpfExiste > 0)
+                {
+                    MessageBox.Show("Já existe um cliente com esse CPF.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; 
+                }
+
+
+                string queryInserir = "INSERT INTO Cliente (name_cliente, cpf_cliente, telefone_cliente, endereco_cliente) VALUES (@Nome, @CPF, @Telefone, @Endereco)";
+                MySqlCommand commandInserir = new MySqlCommand(queryInserir, connection);
+                commandInserir.Parameters.AddWithValue("@Nome", cliente.Nome);
+                commandInserir.Parameters.AddWithValue("@CPF", cliente.CPF);
+                commandInserir.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                commandInserir.Parameters.AddWithValue("@Endereco", cliente.Endereco);
+
+                commandInserir.ExecuteNonQuery();
+                MessageBox.Show("Cliente salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         public static void EditarCliente(int id, string nome, string cpf, string telefone, string endereco)
         {
 
-            // Cria uma conexão com o banco de dados
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+
                 connection.Open();
 
-                // Define a consulta SQL de atualização
                 string query = "UPDATE Cliente SET name_cliente = @Nome, cpf_cliente = @CPF, telefone_cliente = @Telefone, endereco_cliente = @Endereco WHERE id_cliente = @Id";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Define os parâmetros da consulta
+
                     command.Parameters.AddWithValue("@Nome", nome);
                     command.Parameters.AddWithValue("@CPF", cpf);
                     command.Parameters.AddWithValue("@Telefone", telefone);
@@ -99,7 +109,6 @@ namespace sgf.Entidades
                     command.Parameters.AddWithValue("@Id", id);
 
 
-                    // Executa a consulta
                     command.ExecuteNonQuery();
                 }
             }

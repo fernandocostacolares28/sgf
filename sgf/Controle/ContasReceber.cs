@@ -41,7 +41,6 @@ namespace sgf.Controle
                 {
                     connection.Open();
 
-                    // Buscar as informações da conta a receber
                     string query = @"
                         SELECT total_contareceber, restante_contareceber, parcela_contareceber, dataparcela_contareceber 
                         FROM contareceber 
@@ -59,19 +58,18 @@ namespace sgf.Controle
                             int parcelas_contareceber = reader.GetInt32("parcela_contareceber");
                             DateTime dataparcela_contareceber = reader.GetDateTime("dataparcela_contareceber");
 
-                            // Calcular o valor da parcela
                             float valorParcela = total_contareceber / parcelas_contareceber;
 
-                            // Subtrair o valor da parcela do restante
+
                             restante_contareceber -= valorParcela;
 
                             reader.Close();
 
-                            // Verificar se o restante chegou a zero e atualizar a data e o status
+
                             string updateQuery;
                             if (restante_contareceber <= 0)
                             {
-                                restante_contareceber = 0; // Certificar-se de que o restante não fique negativo
+                                restante_contareceber = 0;
                                 updateQuery = @"
                                     UPDATE contareceber 
                                     SET restante_contareceber = @restante_contareceber, status_contareceber = 'Pago', dataparcela_contareceber = NULL
@@ -80,7 +78,7 @@ namespace sgf.Controle
                             }
                             else
                             {
-                                // Incrementa a data em um mês
+            
                                 dataparcela_contareceber = dataparcela_contareceber.AddMonths(1);
 
                                 updateQuery = @"
@@ -91,7 +89,7 @@ namespace sgf.Controle
                                 DetalhesContaReceber.SalvarDetalhes(id_contasreceber, DateTime.Now, valorParcela, "pago");
                             }
 
-                            // Atualizar o valor restante, a data e o status se necessário
+
                             MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection);
                             updateCommand.Parameters.AddWithValue("@restante_contareceber", restante_contareceber);
                             updateCommand.Parameters.AddWithValue("@id_contasreceber", id_contasreceber);
@@ -134,7 +132,7 @@ namespace sgf.Controle
                     connection.Open();
                     adapter.Fill(dt);
 
-                    // Definindo os nomes das colunas
+
                     dt.Columns["id_contareceber"].ColumnName = "ID Conta Receber";
                     dt.Columns["id_venda"].ColumnName = "ID Venda";
                     dt.Columns["name_cliente"].ColumnName = "Nome do Cliente";
@@ -145,7 +143,6 @@ namespace sgf.Controle
                     dt.Columns["status_contareceber"].ColumnName = "Status";
 
 
-                    // Opcional: Ocultar a coluna id_cliente, se não for necessária
                     dt.Columns.Remove("id_cliente");
                 }
                 catch (Exception ex)
@@ -180,7 +177,7 @@ namespace sgf.Controle
                         MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                         adapter.Fill(dt);
 
-                        // Definir os nomes das colunas
+
                         dt.Columns["id_contareceber"].ColumnName = "ID Conta a Receber";
                         dt.Columns["id_venda"].ColumnName = "ID Venda";
                         dt.Columns["parcela_contareceber"].ColumnName = "Parcela";

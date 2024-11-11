@@ -63,45 +63,59 @@ namespace sgf.Controle
         public static int SalvarVenda(int id_cliente, string receita, DateTime data, string metodoPagamento, int parcelas, float totalVenda, float desconto_venda)
         {
             int idVenda = 0;
+
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = @"
+                connection.Open();
+
+
+                string queryVerificarReceita = "SELECT COUNT(*) FROM venda WHERE receita_venda = @receita";
+                MySqlCommand commandVerificar = new MySqlCommand(queryVerificarReceita, connection);
+                commandVerificar.Parameters.AddWithValue("@receita", receita);
+
+                int receitaExiste = Convert.ToInt32(commandVerificar.ExecuteScalar());
+
+                if (receitaExiste > 0)
+                {
+                    MessageBox.Show("Já existe uma venda com essa receita.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return idVenda; 
+                }
+
+
+                string queryInserir = @"
             INSERT INTO venda (id_cliente, receita_venda, data_venda, metodopagamento_venda, parcelas_venda, total_venda, desconto_venda)
             VALUES (@id_cliente, @receita, @data, @metodo_pagamento, @parcelas, @total_venda, @desconto);
             SELECT LAST_INSERT_ID();";
 
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@id_cliente", id_cliente);
-                command.Parameters.AddWithValue("@receita", receita);
-                command.Parameters.AddWithValue("@data", data);
-                command.Parameters.AddWithValue("@metodo_pagamento", metodoPagamento);
-                command.Parameters.AddWithValue("@parcelas", parcelas);
-                command.Parameters.AddWithValue("@total_venda", totalVenda);
-                command.Parameters.AddWithValue("@desconto", desconto_venda);
+                MySqlCommand commandInserir = new MySqlCommand(queryInserir, connection);
+                commandInserir.Parameters.AddWithValue("@id_cliente", id_cliente);
+                commandInserir.Parameters.AddWithValue("@receita", receita);
+                commandInserir.Parameters.AddWithValue("@data", data);
+                commandInserir.Parameters.AddWithValue("@metodo_pagamento", metodoPagamento);
+                commandInserir.Parameters.AddWithValue("@parcelas", parcelas);
+                commandInserir.Parameters.AddWithValue("@total_venda", totalVenda);
+                commandInserir.Parameters.AddWithValue("@desconto", desconto_venda);
 
                 try
                 {
-                    connection.Open();
-                    idVenda = Convert.ToInt32(command.ExecuteScalar());
+                    idVenda = Convert.ToInt32(commandInserir.ExecuteScalar());
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Erro ao salvar a venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                if(metodoPagamento == "Cartão Crédito")
+
+
+                if (metodoPagamento == "Cartão Crédito")
                 {
                     float restante = totalVenda;
                     DateTime dataparcela = data.AddMonths(1);
-                    String status_contareceber = "ativo";
+                    string status_contareceber = "ativo";
 
                     ContasReceber.SalvarContasReceber(idVenda, parcelas, totalVenda, restante, dataparcela, status_contareceber);
                 }
-                else 
-                {
-                    
-                }
-
             }
+
             return idVenda;
         }
 

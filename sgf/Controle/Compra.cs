@@ -179,10 +179,10 @@ namespace sgf.Controle
                 {
                     connection.Open();
 
-                    // Iniciando uma transação para garantir que todas as exclusões ocorram corretamente
+
                     MySqlTransaction transaction = connection.BeginTransaction();
 
-                    // Excluir pagamentos_contapagar com base no id_contapagar relacionado a id_compra
+
                     string queryExcluirPagamentos = @"
                         DELETE FROM pagamentos_contapagar 
                         WHERE id_contapagar IN (SELECT id_contapagar FROM contapagar WHERE id_compra = @id_compra)";
@@ -191,24 +191,24 @@ namespace sgf.Controle
                     commandExcluirPagamentos.Parameters.AddWithValue("@id_compra", id_compra);
                     commandExcluirPagamentos.ExecuteNonQuery();
 
-                    // Excluir contapagar com base no id_compra
+
                     string queryExcluirContaPagar = "DELETE FROM contapagar WHERE id_compra = @id_compra";
 
                     MySqlCommand commandExcluirContaPagar = new MySqlCommand(queryExcluirContaPagar, connection, transaction);
                     commandExcluirContaPagar.Parameters.AddWithValue("@id_compra", id_compra);
                     commandExcluirContaPagar.ExecuteNonQuery();
 
-                    // Excluir compra com base no id_compra
+
                     string queryExcluirCompra = "DELETE FROM compra WHERE id_compra = @id_compra";
 
                     MySqlCommand commandExcluirCompra = new MySqlCommand(queryExcluirCompra, connection, transaction);
                     commandExcluirCompra.Parameters.AddWithValue("@id_compra", id_compra);
                     int rowsAffected = commandExcluirCompra.ExecuteNonQuery();
 
-                    // Confirma a transação se tudo der certo
+
                     transaction.Commit();
 
-                    // Verifica se a compra foi excluída
+ 
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Compra e registros associados excluídos com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
