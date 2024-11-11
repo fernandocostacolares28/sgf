@@ -103,6 +103,20 @@ namespace sgf.Telas.Cadastros
             int id = int.Parse(tb_id.Text);
 
             Fornecedor.ExcluirFornecedor(id);
+
+            tb_id.Clear();
+            tb_razaosocial.Clear();
+            tb_cnpj.Clear();
+            tb_telefone.Clear();
+            tb_endereco.Clear();
+
+            dgv_fornecedor.DataSource = Fornecedor.ListarFornecedor();
+
+            dgv_fornecedor.Columns["id_fornecedor"].HeaderText = "ID";
+            dgv_fornecedor.Columns["razaosocial_fornecedor"].HeaderText = "Razão Social";
+            dgv_fornecedor.Columns["cnpj_fornecedor"].HeaderText = "CNPJ";
+            dgv_fornecedor.Columns["telefone_fornecedor"].HeaderText = "Telefone";
+            dgv_fornecedor.Columns["endereco_fornecedor"].HeaderText = "Endereço";
         }
     }
 }
