@@ -27,7 +27,7 @@ CREATE TABLE `produto` (
   `name_produto` varchar(255) NOT NULL,
   `valor_produto` float NOT NULL,
   PRIMARY KEY (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `produto` (
 
 LOCK TABLES `produto` WRITE;
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
-INSERT INTO `produto` VALUES (21,'Deller 50 mg',37.55),(23,'Lamotrigina 50 mg',35.22),(24,'Atentah 40 mg',113.3),(25,'Dipirona 1 g',12.34),(26,'Dipirona 5 mg',6.23);
+INSERT INTO `produto` VALUES (21,'Deller 50 mg',37.55),(23,'Lamotrigina 50 mg',35.22),(24,'Atentah 40 mg',113.3),(25,'Dipirona 1 g',12.34),(28,'Ritalina',11.33),(29,'Dipirona 500 mg',6.23);
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-14 11:51:38
+-- Dump completed on 2024-11-11 14:09:29

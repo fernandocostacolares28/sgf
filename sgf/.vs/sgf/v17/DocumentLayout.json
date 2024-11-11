@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Git\\sgf\\sgf\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -47,6 +55,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormCadCliente.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadCliente.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadCliente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T17:03:41.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Telas\\Login\\FormLogin.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs [Design]",
+              "RelativeToolTip": "Telas\\Login\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T17:03:34.951Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormVenda.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
@@ -58,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FormVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
@@ -71,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Venda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
               "RelativeDocumentMoniker": "Controle\\Venda.cs",
@@ -84,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Funcionario.cs",
               "RelativeDocumentMoniker": "Entidades\\Funcionario.cs",
@@ -97,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Fornecedor.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Fornecedor.cs",
               "RelativeDocumentMoniker": "Entidades\\Fornecedor.cs",
@@ -110,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "Entidades\\Cliente.cs",
@@ -123,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FormEstoque.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Gerenciamento\\FormEstoque.cs",
               "RelativeDocumentMoniker": "Telas\\Gerenciamento\\FormEstoque.cs",
@@ -135,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FormRelatorioMaisVendidos.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
               "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",

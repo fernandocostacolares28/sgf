@@ -31,7 +31,7 @@ CREATE TABLE `produto_lote` (
   PRIMARY KEY (`id_produto`),
   KEY `id_lote` (`id_lote`),
   CONSTRAINT `id_lote` FOREIGN KEY (`id_lote`) REFERENCES `lote` (`id_lote`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `produto_lote` (
 
 LOCK TABLES `produto_lote` WRITE;
 /*!40000 ALTER TABLE `produto_lote` DISABLE KEYS */;
-INSERT INTO `produto_lote` VALUES (19,'Deller 50 mg',37.55,'92',11),(20,'Lamotrigina 50 mg',35.22,'95',11),(21,'Atentah 40 mg',113.3,'88',11),(22,'Dipirona 1 g',12.34,'96',11),(23,'Dipirona 5 mg',6.23,'93',11),(24,'Deller 50 mg',37.55,'2',12),(25,'Lamotrigina 50 mg',35.22,'98',12),(26,'Atentah 40 mg',113.3,'97',12);
+INSERT INTO `produto_lote` VALUES (24,'Deller 50 mg',37.55,'4',12),(25,'Lamotrigina 50 mg',35.22,'101',12),(26,'Atentah 40 mg',113.3,'100',12),(28,'Deller 50 mg',37.55,'95',14),(29,'Lamotrigina 50 mg',35.22,'100',14),(30,'Atentah 40 mg',113.3,'99',14),(31,'Dipirona 1 g',12.34,'98',14),(32,'Ritalina',11.33,'100',14),(33,'Dipirona 500 mg',6.23,'100',14);
 /*!40000 ALTER TABLE `produto_lote` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-14 11:51:39
+-- Dump completed on 2024-11-11 14:09:29

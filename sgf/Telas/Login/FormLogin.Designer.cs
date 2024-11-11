@@ -36,6 +36,8 @@
             this.bt_login = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@
             // 
             this.tb_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_user.Location = new System.Drawing.Point(64, 59);
-            this.tb_user.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_user.Margin = new System.Windows.Forms.Padding(4);
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(148, 22);
             this.tb_user.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             this.tb_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_senha.Location = new System.Drawing.Point(64, 107);
-            this.tb_senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_senha.Margin = new System.Windows.Forms.Padding(4);
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(148, 22);
@@ -83,7 +85,7 @@
             // 
             this.bt_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_login.Location = new System.Drawing.Point(80, 139);
-            this.bt_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt_login.Margin = new System.Windows.Forms.Padding(4);
             this.bt_login.Name = "bt_login";
             this.bt_login.Size = new System.Drawing.Size(112, 28);
             this.bt_login.TabIndex = 5;
@@ -113,12 +115,23 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "V 3.0 by Fernando Costa Colares";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sgf.Properties.Resources.teste;
+            this.pictureBox1.Location = new System.Drawing.Point(359, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(323, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(711, 207);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_login);
@@ -128,12 +141,13 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +161,6 @@
         private System.Windows.Forms.Button bt_login;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

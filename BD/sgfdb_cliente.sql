@@ -29,7 +29,7 @@ CREATE TABLE `cliente` (
   `telefone_cliente` varchar(255) NOT NULL,
   `endereco_cliente` varchar(255) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `cliente` (
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (2,'Fernando Costa Colares','749.830.081-87','(44) 98812-8048','Tv.Sumaré n°90 - Jd.Santos Dumont'),(3,'André Vitor Costa Colares','112.333.444-22','(44) 11223-3331','aaaaaaaa');
+INSERT INTO `cliente` VALUES (2,'Fernando Costa Colares','123.323.112-33','(44) 98812-8048','Tv.Sumaré n°90 - Jd.Santos Dumont'),(3,'André Vitor Costa Colares','112.333.444-22','(44) 11223-3331','aaaaaaaa'),(5,'Cleber','123.333.111-11','23233','3333333');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-14 11:51:39
+-- Dump completed on 2024-11-11 14:09:29
