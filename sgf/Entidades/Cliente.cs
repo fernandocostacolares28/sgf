@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace sgf.Entidades
 {
@@ -57,20 +58,34 @@ namespace sgf.Entidades
             return dataTable;
         }
 
-        public static void SalvarCliente(Cliente Cliente)
+        public static void SalvarCliente(Cliente cliente)
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                string query = "INSERT INTO Cliente (name_cliente, cpf_cliente, telefone_cliente, endereco_cliente) VALUES (@Nome, @CPF, @Telefone, @Endereco)";
-
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Nome", Cliente.Nome);
-                command.Parameters.AddWithValue("@CPF", Cliente.CPF);
-                command.Parameters.AddWithValue("@Telefone", Cliente.Telefone);
-                command.Parameters.AddWithValue("@Endereco", Cliente.Endereco);
-
                 connection.Open();
-                command.ExecuteNonQuery();
+
+                string queryVerificarCPF = "SELECT COUNT(*) FROM Cliente WHERE cpf_cliente = @CPF";
+                MySqlCommand commandVerificar = new MySqlCommand(queryVerificarCPF, connection);
+                commandVerificar.Parameters.AddWithValue("@CPF", cliente.CPF);
+
+                int cpfExiste = Convert.ToInt32(commandVerificar.ExecuteScalar());
+
+                if (cpfExiste > 0)
+                {
+                    MessageBox.Show("Já existe um cliente com esse CPF.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; 
+                }
+
+
+                string queryInserir = "INSERT INTO Cliente (name_cliente, cpf_cliente, telefone_cliente, endereco_cliente) VALUES (@Nome, @CPF, @Telefone, @Endereco)";
+                MySqlCommand commandInserir = new MySqlCommand(queryInserir, connection);
+                commandInserir.Parameters.AddWithValue("@Nome", cliente.Nome);
+                commandInserir.Parameters.AddWithValue("@CPF", cliente.CPF);
+                commandInserir.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                commandInserir.Parameters.AddWithValue("@Endereco", cliente.Endereco);
+
+                commandInserir.ExecuteNonQuery();
+                MessageBox.Show("Cliente salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

@@ -1,10 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace sgf.Entidades
 {
@@ -63,6 +65,21 @@ namespace sgf.Entidades
         {
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
+                connection.Open();
+
+                string queryVerificarCPF = "SELECT COUNT(*) FROM Funcionario WHERE cpf_funcionario = @CPF";
+                MySqlCommand commandVerificar = new MySqlCommand(queryVerificarCPF, connection);
+                commandVerificar.Parameters.AddWithValue("@CPF", funcionario.CPF);
+
+                int cpfExiste = Convert.ToInt32(commandVerificar.ExecuteScalar());
+
+                if (cpfExiste > 0)
+                {
+                    MessageBox.Show("Já existe um funcionario com esse CPF.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
                 string query = "INSERT INTO Funcionario (name_funcionario, cpf_funcionario, telefone_funcionario, endereco_funcionario, funcao_funcionario) VALUES (@Nome, @CPF, @Telefone, @Endereco, @Funcao)";
 
                 MySqlCommand command = new MySqlCommand(query, connection);
@@ -72,8 +89,9 @@ namespace sgf.Entidades
                 command.Parameters.AddWithValue("@Endereco", funcionario.Endereco);
                 command.Parameters.AddWithValue("@Funcao", funcionario.Funcao);
 
-                connection.Open();
                 command.ExecuteNonQuery();
+                MessageBox.Show("Funcionario salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
 

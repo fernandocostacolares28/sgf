@@ -169,7 +169,7 @@ namespace sgf.Telas.Movimentos
 
                     while (reader.Read())
                     {
-                        // Adiciona o nome do cliente ao ComboBox
+                        
                         cb_cliente.Items.Add(reader["name_cliente"].ToString());
                     }
                 }
@@ -186,7 +186,7 @@ namespace sgf.Telas.Movimentos
             {
                 // Obtenha o valor selecionado da ComboBox cliente
                 string nomeCliente = cb_cliente.SelectedItem.ToString();
-                int id_cliente = Controle.Venda.ObterIdCliente(nomeCliente); // Método que busca o ID do cliente no banco
+                int id_cliente = Controle.Venda.ObterIdCliente(nomeCliente);
 
                 // Obtenha o valor da receita do TextBox tb_receita
                 string receita = tb_receita.Text;
@@ -218,14 +218,19 @@ namespace sgf.Telas.Movimentos
                 int idVenda = Controle.Venda.SalvarVenda(id_cliente, receita, data, metodoPagamento, parcelas, totalVenda, desconto);
 
                 // Salva os itens do carrinho relacionados a essa venda
-                Controle.ItemVenda.SalvarItensVenda(idVenda, carrinho);
-
-                foreach (ItemVenda produto in carrinho)
+                if (idVenda > 0)
                 {
-                    Controle.ItemVenda.AtualizarEstoque(produto.NomeProduto, produto.Quantidade);
+                    Controle.ItemVenda.SalvarItensVenda(idVenda, carrinho);
+
+                    foreach (ItemVenda produto in carrinho)
+                    {
+                        Controle.ItemVenda.AtualizarEstoque(produto.NomeProduto, produto.Quantidade);
+                    }
+
+                    MessageBox.Show("Venda salva com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                MessageBox.Show("Venda salva com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 DataTable vendas = Controle.Venda.CarregarVendas();
                 DGV_Venda.DataSource = vendas;
             }

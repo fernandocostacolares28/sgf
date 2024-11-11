@@ -128,7 +128,7 @@
             // 
             this.tb_receita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_receita.Location = new System.Drawing.Point(39, 185);
-            this.tb_receita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_receita.Margin = new System.Windows.Forms.Padding(4);
             this.tb_receita.Name = "tb_receita";
             this.tb_receita.Size = new System.Drawing.Size(316, 22);
             this.tb_receita.TabIndex = 76;
@@ -143,7 +143,7 @@
             "Cartão Crédito",
             "Dinheiro"});
             this.cb_metodo.Location = new System.Drawing.Point(39, 89);
-            this.cb_metodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_metodo.Margin = new System.Windows.Forms.Padding(4);
             this.cb_metodo.Name = "cb_metodo";
             this.cb_metodo.Size = new System.Drawing.Size(180, 24);
             this.cb_metodo.TabIndex = 75;
@@ -163,7 +163,7 @@
             // 
             this.tb_Qtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Qtd.Location = new System.Drawing.Point(756, 126);
-            this.tb_Qtd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Qtd.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Qtd.Name = "tb_Qtd";
             this.tb_Qtd.Size = new System.Drawing.Size(110, 22);
             this.tb_Qtd.TabIndex = 70;
@@ -172,7 +172,7 @@
             // 
             this.btRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRemover.Location = new System.Drawing.Point(756, 199);
-            this.btRemover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRemover.Margin = new System.Windows.Forms.Padding(4);
             this.btRemover.Name = "btRemover";
             this.btRemover.Size = new System.Drawing.Size(112, 28);
             this.btRemover.TabIndex = 69;
@@ -184,7 +184,7 @@
             // 
             this.btAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAdicionar.Location = new System.Drawing.Point(756, 158);
-            this.btAdicionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btAdicionar.Name = "btAdicionar";
             this.btAdicionar.Size = new System.Drawing.Size(112, 28);
             this.btAdicionar.TabIndex = 68;
@@ -251,7 +251,7 @@
             // 
             this.tb_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_id.Location = new System.Drawing.Point(39, 41);
-            this.tb_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_id.Name = "tb_id";
             this.tb_id.ReadOnly = true;
             this.tb_id.Size = new System.Drawing.Size(148, 22);
@@ -265,7 +265,7 @@
             this.lb_carrinho.FormattingEnabled = true;
             this.lb_carrinho.ItemHeight = 16;
             this.lb_carrinho.Location = new System.Drawing.Point(882, 78);
-            this.lb_carrinho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lb_carrinho.Margin = new System.Windows.Forms.Padding(4);
             this.lb_carrinho.Name = "lb_carrinho";
             this.lb_carrinho.Size = new System.Drawing.Size(376, 260);
             this.lb_carrinho.TabIndex = 61;
@@ -276,7 +276,7 @@
             this.lb_prod.FormattingEnabled = true;
             this.lb_prod.ItemHeight = 16;
             this.lb_prod.Location = new System.Drawing.Point(432, 78);
-            this.lb_prod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lb_prod.Margin = new System.Windows.Forms.Padding(4);
             this.lb_prod.Name = "lb_prod";
             this.lb_prod.Size = new System.Drawing.Size(313, 260);
             this.lb_prod.TabIndex = 60;
@@ -286,7 +286,7 @@
             // 
             this.btView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btView.Location = new System.Drawing.Point(969, 395);
-            this.btView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btView.Margin = new System.Windows.Forms.Padding(4);
             this.btView.Name = "btView";
             this.btView.Size = new System.Drawing.Size(112, 28);
             this.btView.TabIndex = 59;
@@ -298,7 +298,7 @@
             // 
             this.btExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btExcluir.Location = new System.Drawing.Point(849, 395);
-            this.btExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(112, 28);
             this.btExcluir.TabIndex = 58;
@@ -310,7 +310,7 @@
             // 
             this.btSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSalvar.Location = new System.Drawing.Point(1092, 395);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(112, 28);
             this.btSalvar.TabIndex = 57;
@@ -327,7 +327,7 @@
             this.DGV_Venda.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_Venda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Venda.Location = new System.Drawing.Point(18, 431);
-            this.DGV_Venda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_Venda.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_Venda.Name = "DGV_Venda";
             this.DGV_Venda.ReadOnly = true;
             this.DGV_Venda.RowHeadersWidth = 51;
@@ -349,7 +349,7 @@
             // 
             this.tb_totalvenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_totalvenda.Location = new System.Drawing.Point(38, 364);
-            this.tb_totalvenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_totalvenda.Margin = new System.Windows.Forms.Padding(4);
             this.tb_totalvenda.Name = "tb_totalvenda";
             this.tb_totalvenda.ReadOnly = true;
             this.tb_totalvenda.Size = new System.Drawing.Size(316, 22);
@@ -370,16 +370,17 @@
             // 
             this.tb_desconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_desconto.Location = new System.Drawing.Point(369, 364);
-            this.tb_desconto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_desconto.Margin = new System.Windows.Forms.Padding(4);
             this.tb_desconto.Name = "tb_desconto";
             this.tb_desconto.Size = new System.Drawing.Size(106, 22);
             this.tb_desconto.TabIndex = 84;
+            this.tb_desconto.Text = "0";
             // 
             // bt_desconto
             // 
             this.bt_desconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_desconto.Location = new System.Drawing.Point(531, 361);
-            this.bt_desconto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt_desconto.Margin = new System.Windows.Forms.Padding(4);
             this.bt_desconto.Name = "bt_desconto";
             this.bt_desconto.Size = new System.Drawing.Size(184, 28);
             this.bt_desconto.TabIndex = 86;
@@ -403,7 +404,7 @@
             this.cb_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_cliente.FormattingEnabled = true;
             this.cb_cliente.Location = new System.Drawing.Point(38, 277);
-            this.cb_cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_cliente.Margin = new System.Windows.Forms.Padding(4);
             this.cb_cliente.Name = "cb_cliente";
             this.cb_cliente.Size = new System.Drawing.Size(180, 24);
             this.cb_cliente.TabIndex = 89;
@@ -423,7 +424,7 @@
             // 
             this.tb_pesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_pesquisa.Location = new System.Drawing.Point(510, 49);
-            this.tb_pesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pesquisa.Name = "tb_pesquisa";
             this.tb_pesquisa.Size = new System.Drawing.Size(235, 22);
             this.tb_pesquisa.TabIndex = 90;
@@ -438,7 +439,7 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Location = new System.Drawing.Point(0, 661);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1280, 27);
             this.panel1.TabIndex = 91;
