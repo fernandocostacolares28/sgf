@@ -511,7 +511,7 @@
             this.MaximizeBox = false;
             this.Name = "FormVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormVenda";
+            this.Text = "Venda";
             this.Load += new System.EventHandler(this.FormVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nud_parcelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Venda)).EndInit();

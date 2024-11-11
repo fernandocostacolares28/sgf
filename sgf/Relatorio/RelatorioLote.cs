@@ -62,6 +62,14 @@ namespace sgf.Relatorio
                 PdfWriter writer = PdfWriter.GetInstance(documento, new FileStream(caminhoRelatorio, FileMode.Create));
                 documento.Open();
 
+                string caminhoImagem = @"C:\Git\sgf\sgf\img\teste.png"; // Defina o caminho da imagem
+                Image logo = Image.GetInstance(caminhoImagem);
+                logo.ScaleToFit(140f, 120f); // Redimensiona a imagem se necessário
+                logo.Alignment = Element.ALIGN_CENTER; // Alinhar ao centro
+
+                // Adicionar a imagem no documento
+                documento.Add(logo);
+
                 // Fontes personalizadas
                 var fonteTitulo = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16, BaseColor.RED);
                 var fonteSubTitulo = FontFactory.GetFont(FontFactory.HELVETICA, 12, BaseColor.DARK_GRAY);
