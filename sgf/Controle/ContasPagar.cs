@@ -40,7 +40,7 @@ namespace sgf.Controle
                 {
                     connection.Open();
 
-                    // Buscar as informações da conta a pagar
+
                     string query = @"
                 SELECT total_contapagar, restante_contapagar, parcela_compra, dataparcela_contapagar
                 FROM contapagar 
@@ -66,11 +66,11 @@ namespace sgf.Controle
 
                             reader.Close();
 
-                            // Verificar se o restante chegou a zero e atualizar a data e o status
+
                             string updateQuery;
                             if (restante_contapagar <= 0)
                             {
-                                restante_contapagar = 0; // Certificar-se de que o restante não fique negativo
+                                restante_contapagar = 0; 
                                 updateQuery = @"
                             UPDATE contapagar 
                             SET restante_contapagar = @restante_contapagar, status_contapagar = 'Pago', dataparcela_contapagar = NULL
@@ -79,7 +79,7 @@ namespace sgf.Controle
                             }
                             else
                             {
-                                // Incrementa a data em um mês
+
                                 dataparcela_contapagar = dataparcela_contapagar.AddMonths(1);
 
                                 updateQuery = @"
@@ -87,11 +87,10 @@ namespace sgf.Controle
                             SET restante_contapagar = @restante_contapagar, dataparcela_contapagar = @dataparcela_contapagar 
                             WHERE id_contapagar = @id_contaspagar";
 
-                                // Salvar os detalhes do pagamento
+
                                 DetalhesContaPagar.SalvarDetalhes(id_contaspagar, DateTime.Now, valorParcela, "pago");
                             }
 
-                            // Atualizar o valor restante, a data e o status se necessário
                             MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection);
                             updateCommand.Parameters.AddWithValue("@restante_contapagar", restante_contapagar);
                             updateCommand.Parameters.AddWithValue("@id_contaspagar", id_contaspagar);
@@ -134,7 +133,7 @@ namespace sgf.Controle
                     connection.Open();
                     adapter.Fill(dt);
 
-                    // Definindo os nomes das colunas
+
                     dt.Columns["id_contapagar"].ColumnName = "ID Conta Pagar";
                     dt.Columns["id_compra"].ColumnName = "ID Compra";
                     dt.Columns["razaosocial_fornecedor"].ColumnName = "Razão Social";
@@ -145,7 +144,6 @@ namespace sgf.Controle
                     dt.Columns["status_contapagar"].ColumnName = "Status";
 
 
-                    // Opcional: Ocultar a coluna id_cliente, se não for necessária
                     dt.Columns.Remove("id_fornecedor");
                 }
                 catch (Exception ex)
@@ -181,7 +179,7 @@ namespace sgf.Controle
                         MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                         adapter.Fill(dt);
 
-                        // Definir os nomes das colunas
+
                         dt.Columns["id_contapagar"].ColumnName = "ID Conta a Pagar";
                         dt.Columns["id_compra"].ColumnName = "ID Compra";
                         dt.Columns["parcela_compra"].ColumnName = "Parcela";

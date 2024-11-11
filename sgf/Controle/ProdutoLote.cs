@@ -53,13 +53,12 @@ namespace sgf.Controle
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@nomeProduto", nomeProduto);
-                        // Executar a consulta e obter o valor
+
                         object resultado = command.ExecuteScalar();
 
-                        // Verificar se um valor foi retornado
                         if (resultado != null)
                         {
-                            return Convert.ToSingle(resultado); // Retorna o valor do produto
+                            return Convert.ToSingle(resultado); 
                         }
                         else
                         {
@@ -70,7 +69,7 @@ namespace sgf.Controle
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Erro ao obter valor do produto: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return 0; // Retorna 0 ou um valor padrão em caso de erro
+                    return 0; 
                 }
             }
         }
@@ -86,11 +85,11 @@ namespace sgf.Controle
                 {
                     command.Parameters.AddWithValue("@code_lote", code_lote);
 
-                    // Executar a consulta e obter o ID
+                    
                     object resultado = command.ExecuteScalar();
                     if (resultado != null)
                     {
-                        return Convert.ToInt32(resultado); // Retorna o ID do lote
+                        return Convert.ToInt32(resultado); 
                     }
                     else
                     {
@@ -147,8 +146,7 @@ namespace sgf.Controle
 
                 string query = "SELECT p.id_produto, p.name_produto, p.qtd_produto, p.valor_produto, l.code_lote FROM produto_lote" +
                     " p INNER JOIN lote l ON p.id_Lote = l.id_lote WHERE p.id_lote = @Id;";
-                //MySqlCommand command = new MySqlCommand(query, connection);
-                //command1.Parameters.AddWithValue("@Id", id);
+
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {

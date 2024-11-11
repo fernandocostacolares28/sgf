@@ -42,7 +42,7 @@ namespace sgf.Controle
                 {
                     connection.Open();
 
-                    // Consulta para buscar os dados da tabela pagamentos_contareceber com base no id_contareceber
+
                     string query = @"
                         SELECT 
                             id_pagamento, 
@@ -56,15 +56,15 @@ namespace sgf.Controle
                     {
                         command.Parameters.AddWithValue("@idContaReceber", idContaReceber);
 
-                        // Adaptador para preencher o DataTable com os dados da consulta
+
                         MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                         adapter.Fill(dt);
                     }
 
-                    // Preencher o DataGridView com o DataTable
+
                     dgv.DataSource = dt;
 
-                    // Formatando os cabeçalhos das colunas
+
                     dgv.Columns["id_pagamento"].HeaderText = "ID Pagamento";
                     dgv.Columns["data_pagamento"].HeaderText = "Data do Pagamento";
                     dgv.Columns["valorparcela_pagamento"].HeaderText = "Valor da Parcela";

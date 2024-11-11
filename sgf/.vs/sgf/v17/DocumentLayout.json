@@ -3,76 +3,28 @@
   "WorkspaceRootPath": "C:\\Git\\sgf\\sgf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\contaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\contaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\relatorios\\formrelatoriocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\relatorios\\formrelatoriocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\detalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\detalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\detalhescontareceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\detalhescontareceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\contasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\contasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formdetalhesvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\compra\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,24 +35,112 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\compra\\formcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\gerenciamento\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\gerenciamento\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\gerenciamento\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\gerenciamento\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\autenticacaouser\\autenticacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:autenticacaouser\\autenticacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formdetalhescontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formdetalhescontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formdetalhescontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formdetalhescontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contasreceber\\formcontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formdetalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formdetalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formdetalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formdetalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\financeiro\\contaspagar\\formcontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadfornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\formcadcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formdetalheslote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\cadastros\\lote\\formcadlote.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formcadlote.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\relatorio\\relatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,16 +171,28 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:relatorio\\relatoriocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\entidades\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\produtolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,44 +203,80 @@
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\cadastros\\lote\\formcadlote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\detalhescontareceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\detalhescontareceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\detalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\detalhescontapagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\contasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\contasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriomaisvendidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriomaisvendidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\contaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\contaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\controle\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:controle\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\autenticacaouser\\autenticacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:autenticacaouser\\autenticacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriomaisvendidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriomaisvendidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriolote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\relatorios\\formrelatoriocontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriocontasreceber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|c:\\git\\sgf\\sgf\\telas\\relatorios\\formrelatoriocontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriocontaspagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\movimentos\\venda\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|solutionrelative:telas\\relatorios\\formrelatoriovenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20785ED0-5A64-48B6-903C-CD6F941BF8DD}|sgf.csproj|C:\\Git\\sgf\\sgf\\telas\\relatorios\\formrelatoriomaisvendidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -206,24 +294,324 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormRelatorioCompra.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:51.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormDetalhesVenda.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAlwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:47.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Telas\\Login\\FormLogin.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs",
+              "RelativeToolTip": "Telas\\Login\\FormLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:35.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormEstoque.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Gerenciamento\\FormEstoque.cs",
+              "RelativeDocumentMoniker": "Telas\\Gerenciamento\\FormEstoque.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Gerenciamento\\FormEstoque.cs",
+              "RelativeToolTip": "Telas\\Gerenciamento\\FormEstoque.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:34:28.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormCompra.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "RelativeDocumentMoniker": "Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs [Design]",
+              "RelativeToolTip": "Telas\\Movimentos\\Compra\\FormCompra.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T18:46:32.515Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormCompra.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "RelativeDocumentMoniker": "Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "RelativeToolTip": "Telas\\Movimentos\\Compra\\FormCompra.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAawE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T18:46:39.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:06:58.201Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAawHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:07:44.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormEstoque.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Gerenciamento\\FormEstoque.cs",
+              "RelativeDocumentMoniker": "Telas\\Gerenciamento\\FormEstoque.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Gerenciamento\\FormEstoque.cs [Design]",
+              "RelativeToolTip": "Telas\\Gerenciamento\\FormEstoque.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:34:13.704Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormRelatorioCompra.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioCompra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioCompra.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioCompra.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:37:32.659Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormDetalhesVenda.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs [Design]",
+              "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormDetalhesVenda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:35:47.474Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormDetalhesContasReceber.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:25.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormContasReceber.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAhwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:15:07.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormContasReceber.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs [Design]",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:14:58.18Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormDetalhesContaPagar.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:16.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Telas\\Login\\FormLogin.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Login\\FormLogin.cs [Design]",
+              "RelativeToolTip": "Telas\\Login\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:34:51.452Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormContasPagar.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:46:35.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FormContasPagar.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs [Design]",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:46:07.591Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormCadUsuario.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadUsuario.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadUsuario.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAADgvx0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:06.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormDetalhesContasReceber.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs [Design]",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormDetalhesContasReceber.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:33:30.387Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FormCadUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadUsuario.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadUsuario.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:29:47.46Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FormCadProduto.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadProduto.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAlwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T04:02:01.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormCadProduto.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadProduto.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadProduto.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadProduto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:27:45.751Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormDetalhesContaPagar.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs [Design]",
+              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormDetalhesContaPagar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:31:46.874Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "FormCadFuncionario.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFuncionario.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadFuncionario.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAwJ0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAtwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T16:49:13.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "FormCadFuncionario.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFuncionario.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFuncionario.cs",
@@ -235,20 +623,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
+              "Title": "FormCadFornecedor.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFornecedor.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAD4vxYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T22:24:12.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FormCadFornecedor.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFornecedor.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T22:24:50.553Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "FormCadCliente.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadCliente.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs",
               "RelativeToolTip": "Telas\\Cadastros\\FormCadCliente.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAuwJUAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAuwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T16:46:09.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 29,
               "Title": "FormCadCliente.cs [Design]",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadCliente.cs",
               "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadCliente.cs",
@@ -260,159 +673,457 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormCadFornecedor.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
-              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFornecedor.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
-              "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAIA9wGgAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "FormDetalhesLote.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T22:24:12.179Z",
+              "WhenOpened": "2024-11-11T04:01:44.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormCadFornecedor.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs",
-              "RelativeDocumentMoniker": "Telas\\Cadastros\\FormCadFornecedor.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
-              "RelativeToolTip": "Telas\\Cadastros\\FormCadFornecedor.cs [Design]",
+              "DocumentIndex": 32,
+              "Title": "FormCadLote.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "ViewState": "AgIAADEBAAAAAAAAAAAEwLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T22:24:50.553Z"
+              "WhenOpened": "2024-10-17T16:13:51.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormContasReceber.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAApwCYAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "FormCadLote.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormCadLote.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:15:07.557Z"
+              "WhenOpened": "2024-10-17T16:13:49.165Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormContasReceber.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs [Design]",
-              "RelativeToolTip": "Telas\\Financeiro\\ContasReceber\\FormContasReceber.cs [Design]",
+              "DocumentIndex": 34,
+              "Title": "FormCadLote.Designer.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.Designer.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormCadLote.Designer.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.Designer.cs",
+              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormCadLote.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:14:58.18Z"
+              "WhenOpened": "2024-11-11T04:00:17.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FormCompra.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "RelativeDocumentMoniker": "Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "RelativeToolTip": "Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAewHIAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 36,
+              "Title": "RelatorioProdutosMaisVendidos.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioProdutosMaisVendidos.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioProdutosMaisVendidos.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioProdutosMaisVendidos.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioProdutosMaisVendidos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T18:46:39.248Z"
+              "WhenOpened": "2024-10-17T16:29:17.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ContasReceber.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ContasReceber.cs",
-              "RelativeDocumentMoniker": "Controle\\ContasReceber.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ContasReceber.cs",
-              "RelativeToolTip": "Controle\\ContasReceber.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAvwCMAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 37,
+              "Title": "RelatorioLote.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioLote.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioLote.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioLote.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwKwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:45:55.242Z"
+              "WhenOpened": "2024-10-17T15:50:51.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ContasPagar.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ContasPagar.cs",
-              "RelativeDocumentMoniker": "Controle\\ContasPagar.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ContasPagar.cs",
-              "RelativeToolTip": "Controle\\ContasPagar.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAEwCIAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "FormDetalhesLote.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormDetalhesLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormDetalhesLote.cs [Design]",
+              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormDetalhesLote.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:44:01.815Z"
+              "WhenOpened": "2024-11-11T03:24:31.62Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 38,
+              "Title": "RelatorioFinanceiro.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioFinanceiro.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioFinanceiro.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioFinanceiro.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioFinanceiro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:09:24.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RelatorioContaReceber.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaReceber.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioContaReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaReceber.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioContaReceber.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAowLIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:25:52.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RelatorioContaPagar.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaPagar.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioContaPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaPagar.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioContaPagar.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAowLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:25:38.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RelatorioVenda.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioVenda.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioVenda.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioVenda.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwOMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T15:51:11.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RelatorioCompra.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioCompra.cs",
+              "RelativeDocumentMoniker": "Relatorio\\RelatorioCompra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioCompra.cs",
+              "RelativeToolTip": "Relatorio\\RelatorioCompra.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAowEIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:25:34.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
+              "RelativeDocumentMoniker": "Entidades\\Produto.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
+              "RelativeToolTip": "Entidades\\Produto.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T02:27:34.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Entidades\\Funcionario.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Funcionario.cs",
+              "RelativeToolTip": "Entidades\\Funcionario.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswGYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T02:20:55.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "Fornecedor.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Fornecedor.cs",
               "RelativeDocumentMoniker": "Entidades\\Fornecedor.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Fornecedor.cs",
               "RelativeToolTip": "Entidades\\Fornecedor.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAnwGsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAApwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T02:16:52.866Z"
+              "WhenOpened": "2024-10-20T02:16:52.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 45,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\DBConnection.cs",
+              "RelativeDocumentMoniker": "Entidades\\DBConnection.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\DBConnection.cs",
+              "RelativeToolTip": "Entidades\\DBConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:06:58.201Z"
+              "WhenOpened": "2024-11-11T03:56:34.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormCompra.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "RelativeDocumentMoniker": "Telas\\Movimentos\\Compra\\FormCompra.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Compra\\FormCompra.cs [Design]",
-              "RelativeToolTip": "Telas\\Movimentos\\Compra\\FormCompra.cs [Design]",
+              "DocumentIndex": 47,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
+              "RelativeDocumentMoniker": "Controle\\Venda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
+              "RelativeToolTip": "Controle\\Venda.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAvwKkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T18:46:32.515Z"
+              "WhenOpened": "2024-10-17T16:14:43.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 48,
+              "Title": "ProdutoLote.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
+              "RelativeDocumentMoniker": "Controle\\ProdutoLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
+              "RelativeToolTip": "Controle\\ProdutoLote.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAUwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T01:06:30.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Lote.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Lote.cs",
+              "RelativeDocumentMoniker": "Controle\\Lote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Lote.cs",
+              "RelativeToolTip": "Controle\\Lote.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAkwJEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T15:52:42.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ItemVenda.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
+              "RelativeDocumentMoniker": "Controle\\ItemVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
+              "RelativeToolTip": "Controle\\ItemVenda.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAEwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:57:45.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Estoque.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Estoque.cs",
+              "RelativeDocumentMoniker": "Controle\\Estoque.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Estoque.cs",
+              "RelativeToolTip": "Controle\\Estoque.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwDcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:54:15.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DetalhesContaReceber.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaReceber.cs",
+              "RelativeDocumentMoniker": "Controle\\DetalhesContaReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaReceber.cs",
+              "RelativeToolTip": "Controle\\DetalhesContaReceber.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:52:01.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DetalhesContaPagar.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaPagar.cs",
+              "RelativeDocumentMoniker": "Controle\\DetalhesContaPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaPagar.cs",
+              "RelativeToolTip": "Controle\\DetalhesContaPagar.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:30:31.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ContasReceber.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ContasReceber.cs",
+              "RelativeDocumentMoniker": "Controle\\ContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ContasReceber.cs",
+              "RelativeToolTip": "Controle\\ContasReceber.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAIwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:45:55.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ContasPagar.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ContasPagar.cs",
+              "RelativeDocumentMoniker": "Controle\\ContasPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ContasPagar.cs",
+              "RelativeToolTip": "Controle\\ContasPagar.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAIwLUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T00:44:01.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "Entidades\\Cliente.cs",
               "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Cliente.cs",
               "RelativeToolTip": "Entidades\\Cliente.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAADwv3UAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv18AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T02:13:23.399Z"
+              "WhenOpened": "2024-10-20T02:13:23.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormContasPagar.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs [Design]",
-              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs [Design]",
+              "DocumentIndex": 56,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Compra.cs",
+              "RelativeDocumentMoniker": "Controle\\Compra.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Compra.cs",
+              "RelativeToolTip": "Controle\\Compra.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAUwNIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:46:07.591Z"
+              "WhenOpened": "2024-10-20T00:34:02.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormContasPagar.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "RelativeDocumentMoniker": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "RelativeToolTip": "Telas\\Financeiro\\ContasPagar\\FormContasPagar.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAnwCEAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 57,
+              "Title": "Autenticacao.cs",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\AutenticacaoUser\\Autenticacao.cs",
+              "RelativeDocumentMoniker": "AutenticacaoUser\\Autenticacao.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\AutenticacaoUser\\Autenticacao.cs",
+              "RelativeToolTip": "AutenticacaoUser\\Autenticacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:46:35.049Z"
+              "WhenOpened": "2024-10-20T00:31:37.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 58,
+              "Title": "FormRelatorioVenda.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioVenda.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioVenda.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioVenda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:23:18.698Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FormRelatorioMaisVendidos.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:42:13.676Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "FormRelatorioLote.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioLote.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioLote.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioLote.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioLote.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:08:11.606Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FormRelatorioFinanceiro.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioFinanceiro.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:14:14.928Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "FormRelatorioContasReceber.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioContasReceber.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioContasReceber.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioContasReceber.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioContasReceber.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:38:39.98Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "FormRelatorioContasPagar.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioContasPagar.cs",
+              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioContasPagar.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioContasPagar.cs [Design]",
+              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioContasPagar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T03:38:01.652Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "FormVenda.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
+              "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
+              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs [Design]",
+              "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormVenda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T17:42:52.638Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
               "Title": "FormVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
@@ -420,178 +1131,12 @@
               "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormVenda.cs",
               "ViewState": "AgIAAOIAAAAAAAAAAAAnwPYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:42:54.401Z"
+              "WhenOpened": "2024-10-20T17:42:54.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DetalhesContaReceber.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaReceber.cs",
-              "RelativeDocumentMoniker": "Controle\\DetalhesContaReceber.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaReceber.cs",
-              "RelativeToolTip": "Controle\\DetalhesContaReceber.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:52:01.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DetalhesContaPagar.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaPagar.cs",
-              "RelativeDocumentMoniker": "Controle\\DetalhesContaPagar.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\DetalhesContaPagar.cs",
-              "RelativeToolTip": "Controle\\DetalhesContaPagar.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:30:31.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FormVenda.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs",
-              "RelativeDocumentMoniker": "Telas\\Movimentos\\Venda\\FormVenda.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Movimentos\\Venda\\FormVenda.cs [Design]",
-              "RelativeToolTip": "Telas\\Movimentos\\Venda\\FormVenda.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:42:52.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RelatorioLote.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioLote.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioLote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioLote.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioLote.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAqwKwAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:50:51.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RelatorioProdutosMaisVendidos.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioProdutosMaisVendidos.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioProdutosMaisVendidos.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioProdutosMaisVendidos.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioProdutosMaisVendidos.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowD8AAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:29:17.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RelatorioVenda.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioVenda.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioVenda.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioVenda.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioVenda.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAowOMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:51:11.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Compra.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Compra.cs",
-              "RelativeDocumentMoniker": "Controle\\Compra.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Compra.cs",
-              "RelativeToolTip": "Controle\\Compra.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAewK0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:34:02.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RelatorioFinanceiro.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioFinanceiro.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioFinanceiro.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioFinanceiro.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioFinanceiro.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowEgAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:09:24.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Autenticacao.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\AutenticacaoUser\\Autenticacao.cs",
-              "RelativeDocumentMoniker": "AutenticacaoUser\\Autenticacao.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\AutenticacaoUser\\Autenticacao.cs",
-              "RelativeToolTip": "AutenticacaoUser\\Autenticacao.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBEAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:31:37.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ItemVenda.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
-              "RelativeDocumentMoniker": "Controle\\ItemVenda.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ItemVenda.cs",
-              "RelativeToolTip": "Controle\\ItemVenda.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAASwBkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:57:45.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Venda.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
-              "RelativeDocumentMoniker": "Controle\\Venda.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Venda.cs",
-              "RelativeToolTip": "Controle\\Venda.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAewKkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:14:43.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RelatorioContaReceber.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaReceber.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioContaReceber.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaReceber.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioContaReceber.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAowMEAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:25:52.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RelatorioContaPagar.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaPagar.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioContaPagar.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioContaPagar.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioContaPagar.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAwwMEAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:25:38.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "RelatorioCompra.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioCompra.cs",
-              "RelativeDocumentMoniker": "Relatorio\\RelatorioCompra.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Relatorio\\RelatorioCompra.cs",
-              "RelativeToolTip": "Relatorio\\RelatorioCompra.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwDQAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:25:34.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 66,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Usuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Usuario.cs",
@@ -603,90 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
-              "RelativeDocumentMoniker": "Entidades\\Produto.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Produto.cs",
-              "RelativeToolTip": "Entidades\\Produto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGEAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T02:27:34.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Funcionario.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Entidades\\Funcionario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Funcionario.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Entidades\\Funcionario.cs",
-              "RelativeToolTip": "Entidades\\Funcionario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T02:20:55.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Lote.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Lote.cs",
-              "RelativeDocumentMoniker": "Controle\\Lote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Lote.cs",
-              "RelativeToolTip": "Controle\\Lote.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAkwIcAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:52:42.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Estoque.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\Estoque.cs",
-              "RelativeDocumentMoniker": "Controle\\Estoque.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\Estoque.cs",
-              "RelativeToolTip": "Controle\\Estoque.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T00:54:15.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProdutoLote.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
-              "RelativeDocumentMoniker": "Controle\\ProdutoLote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Controle\\ProdutoLote.cs",
-              "RelativeToolTip": "Controle\\ProdutoLote.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAKUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T01:06:30.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "FormCadLote.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs [Design]",
-              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormCadLote.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:13:49.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "FormCadLote.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "RelativeDocumentMoniker": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "RelativeToolTip": "Telas\\Cadastros\\Lote\\FormCadLote.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAnwGMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:13:51.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 68,
               "Title": "FormRelatorioVenda.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioVenda.cs",
               "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioVenda.cs",
@@ -694,45 +1156,12 @@
               "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioVenda.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAApwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:21:49.995Z"
+              "WhenOpened": "2024-10-17T16:21:49.995Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "FormRelatorioVenda.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioVenda.cs",
-              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioVenda.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioVenda.cs [Design]",
-              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioVenda.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:23:18.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAIA9wL0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:07:44.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "FormRelatorioFinanceiro.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
-              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioFinanceiro.cs [Design]",
-              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:14:14.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 67,
               "Title": "FormRelatorioFinanceiro.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
               "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
@@ -740,33 +1169,12 @@
               "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioFinanceiro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAnwBgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:15:34.684Z"
+              "WhenOpened": "2024-10-17T17:15:34.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "FormRelatorioMaisVendidos.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
-              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs [Design]",
-              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:42:13.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FormRelatorioLote.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioLote.cs",
-              "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioLote.cs",
-              "ToolTip": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioLote.cs [Design]",
-              "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioLote.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:08:11.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 69,
               "Title": "FormRelatorioMaisVendidos.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
               "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
@@ -774,11 +1182,12 @@
               "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioMaisVendidos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAnwBkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:43:10.906Z"
+              "WhenOpened": "2024-10-17T16:43:10.906Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 70,
               "Title": "FormRelatorioLote.cs",
               "DocumentMoniker": "C:\\Git\\sgf\\sgf\\Telas\\Relatorios\\FormRelatorioLote.cs",
               "RelativeDocumentMoniker": "Telas\\Relatorios\\FormRelatorioLote.cs",
@@ -786,7 +1195,8 @@
               "RelativeToolTip": "Telas\\Relatorios\\FormRelatorioLote.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAIAwwB4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:11:52.211Z"
+              "WhenOpened": "2024-10-17T16:11:52.211Z",
+              "EditorCaption": ""
             }
           ]
         }

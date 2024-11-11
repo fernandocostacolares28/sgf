@@ -38,19 +38,17 @@ namespace sgf.Entidades
             DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+               
                 connection.Open();
 
-                // Define a consulta SQL
                 string query = "SELECT * FROM Cliente";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Cria um adaptador de dados MySQL
+
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        // Preenche o DataTable com os dados da consulta
+
                         adapter.Fill(dataTable);
                     }
                 }
@@ -79,19 +77,16 @@ namespace sgf.Entidades
         public static void EditarCliente(int id, string nome, string cpf, string telefone, string endereco)
         {
 
-            // Cria uma conexão com o banco de dados
             using (MySqlConnection connection = new MySqlConnection(DBConnection.GetConnectionString()))
             {
-                // Abre a conexão
+
                 connection.Open();
 
-                // Define a consulta SQL de atualização
                 string query = "UPDATE Cliente SET name_cliente = @Nome, cpf_cliente = @CPF, telefone_cliente = @Telefone, endereco_cliente = @Endereco WHERE id_cliente = @Id";
 
-                // Cria um comando para executar a consulta
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    // Define os parâmetros da consulta
+
                     command.Parameters.AddWithValue("@Nome", nome);
                     command.Parameters.AddWithValue("@CPF", cpf);
                     command.Parameters.AddWithValue("@Telefone", telefone);
@@ -99,7 +94,6 @@ namespace sgf.Entidades
                     command.Parameters.AddWithValue("@Id", id);
 
 
-                    // Executa a consulta
                     command.ExecuteNonQuery();
                 }
             }
