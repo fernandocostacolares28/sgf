@@ -90,6 +90,7 @@
             this.fornecedorToolStripMenuItem,
             this.usuárioToolStripMenuItem,
             this.loteToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.cadastrosToolStripMenuItem.Text = "+Cadastros";
@@ -108,7 +109,7 @@
             // 
             this.estoqueToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             this.estoqueToolStripMenuItem.Click += new System.EventHandler(this.estoqueToolStripMenuItem_Click);
             // 
