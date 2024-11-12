@@ -189,5 +189,10 @@ namespace sgf
             FormRelatorioFinanceiro formRelatorioFinanceiro = new FormRelatorioFinanceiro();
             formRelatorioFinanceiro.ShowDialog();
         }
+
+        private void opçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
