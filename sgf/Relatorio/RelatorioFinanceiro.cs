@@ -50,6 +50,10 @@ public class RelatorioFinanceiro
             periodo.Alignment = Element.ALIGN_CENTER;
             documento.Add(periodo);
 
+            Paragraph info = new Paragraph($"CNPJ: 40.581.185/0001-90 - 40581185000190 Telefone: (44) 99931-0222 \n\n", fonteSubTitulo);
+            info.Alignment = Element.ALIGN_LEFT;
+            documento.Add(info);
+
             // Adicionando os totais
             Paragraph vendas = new Paragraph($"Total de Vendas: {totais.TotalVendas.ToString("C", new System.Globalization.CultureInfo("pt-BR"))}\n", fonteConteudo);
             documento.Add(vendas);

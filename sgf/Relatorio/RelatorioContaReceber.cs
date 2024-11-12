@@ -92,6 +92,10 @@ namespace sgf.Relatorio
                 periodo.Alignment = Element.ALIGN_CENTER;
                 documento.Add(periodo);
 
+                Paragraph info = new Paragraph($"CNPJ: 40.581.185/0001-90 - 40581185000190 Telefone: (44) 99931-0222 \n\n", fonteSubTitulo);
+                info.Alignment = Element.ALIGN_LEFT;
+                documento.Add(info);
+
                 // Tabela com estilo
                 PdfPTable tabela = new PdfPTable(6); // 7 colunas
                 tabela.WidthPercentage = 100; // Largura completa da página
